@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Chiara Starcich, UX &amp; Product Designer</title>
+<title>Chiara Starcich, Research-led Product Designer</title>
 <meta name="description" content="Portfolio of Chiara Starcich, interaction designer. MSc Design for Interaction, TU Delft.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -4076,13 +4076,20 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
 /* add91: keep the divider above the last project */
 #work .wl > li:last-child { border-top: 1px solid rgba(255,255,255,0.22) !important; }
+
+/* add92: insights rows */
+.reshape.insights li { grid-template-columns: 9rem minmax(0,1fr) minmax(0,1fr); }
+@media (max-width: 900px) { .reshape.insights li { grid-template-columns: 1fr; } }
+
+/* add93 */
+.facts__result .facts__more { display:block; margin-top:0.5rem; font-weight:400 !important; font-size:0.95rem; line-height:1.5; color:#55555f; }
 </style>
 </head>
 <body class="c-yellow">
 <aside class="side-profile" id="sideProfile" aria-label="Profile">
   <div class="sp__pic"><img decoding="async" loading="lazy" src="../images/selfie_pink.webp" alt="Chiara Starcich"></div>
   <p class="sp__name">Chiara Starcich</p>
-  <p class="sp__role">UX &amp; Product Designer</p>
+  <p class="sp__role">Research-led Product Designer</p>
   <p class="sp__loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Netherlands</p>
   <div class="sp__actions">
     <a class="sp__msg" href="mailto:starcich.chiara@gmail.com" data-cursor="Say hi!"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Message</a>
@@ -4115,7 +4122,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
         <p class="cover__label">
           <strong>Chiara Starcich</strong>
           <b>Portfolio 2026</b>
-          <b>UX &amp; Product Designer</b>
+          <b>Research-led Product Designer</b>
         </p>
         <p class="cover__pos">Research-led design across physical and digital products, with a focus on health and wellbeing.</p>
       </div>
@@ -4185,9 +4192,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
     <section class="contents contents--grid" id="work" aria-label="Content">
       <h2 class="contents__title">Selected work</h2>
             <ol class="wl" aria-label="Projects">
-        <li><a class="wl__row c-yellow" href="#/unfreeze" data-cursor="Open Unfreeze" data-img="../images/wl_unfreeze.webp" data-cut="1"><span class="wl__num">01.</span><span class="wl__name"><span class="wl__eye">01 · Wearable · Physical</span><b class="wl__t">Unfreeze</b><span class="wl__desc">A glove that breaks the freeze</span></span><span class="wl__cat">Wearable · Physical</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_unfreeze.webp" alt="" loading="lazy"></span></a></li>
-        <li><a class="wl__row c-sage" href="#/lit" data-cursor="Open LIT" data-img="../images/wl_lit.webp" data-cut="1"><span class="wl__num">02.</span><span class="wl__name"><span class="wl__eye">02 · Tiny house · Product design</span><b class="wl__t">LIT</b><span class="wl__desc">A tiny house that travels with you</span></span><span class="wl__cat">Tiny house · Product design</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_lit.webp" alt="" loading="lazy"></span></a></li>
-        <li><a class="wl__row c-mint" href="#/doc" data-cursor="Open DOC" data-img="../images/wl_doc.webp" data-cut="1"><span class="wl__num">03.</span><span class="wl__name"><span class="wl__eye">03 · Sight, sound, touch · Product + screen</span><b class="wl__t">DOC</b><span class="wl__desc">A calming companion for ER patients</span></span><span class="wl__cat">Sight, sound, touch · Product + screen</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_doc.webp" alt="" loading="lazy"></span></a></li>
+        <li><a class="wl__row c-yellow" href="#/unfreeze" data-cursor="Open Unfreeze" data-img="../images/wl_unfreeze.webp" data-cut="1"><span class="wl__num">01.</span><span class="wl__name"><span class="wl__eye">01 · Wearable · Physical</span><b class="wl__t">Unfreeze</b><span class="wl__desc">A running glove that senses panic and helps you call for help</span></span><span class="wl__cat">Wearable · Physical</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_unfreeze.webp" alt="" loading="lazy"></span></a></li>
+        <li><a class="wl__row c-sage" href="#/lit" data-cursor="Open LIT" data-img="../images/wl_lit.webp" data-cut="1"><span class="wl__num">02.</span><span class="wl__name"><span class="wl__eye">02 · Tiny house · Product design</span><b class="wl__t">LIT</b><span class="wl__desc">A tiny house on wheels you can live in all year</span></span><span class="wl__cat">Tiny house · Product design</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_lit.webp" alt="" loading="lazy"></span></a></li>
+        <li><a class="wl__row c-mint" href="#/doc" data-cursor="Open DOC" data-img="../images/wl_doc.webp" data-cut="1"><span class="wl__num">03.</span><span class="wl__name"><span class="wl__eye">03 · Sight, sound, touch · Product + screen</span><b class="wl__t">DOC</b><span class="wl__desc">A bedside device that explains vitals to ER patients</span></span><span class="wl__cat">Sight, sound, touch · Product + screen</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_doc.webp" alt="" loading="lazy"></span></a></li>
         <li><a class="wl__row c-apricot" href="#/balanced-fight" data-cursor="Open Balanced Fight" data-img="../images/wl_balanced-fight.webp" data-cut="1"><span class="wl__num">04.</span><span class="wl__name"><span class="wl__eye">04 · Balance boards · Tested with kids</span><b class="wl__t">Balanced Fight</b><span class="wl__desc">Balance boards for parents and kids</span></span><span class="wl__cat">Balance boards · Tested with kids</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_balanced-fight.webp" alt="" loading="lazy"></span></a></li>
         <li><a class="wl__row c-peach" href="#/re-play" data-cursor="Open Re-play" data-img="../images/wl_re-play.webp" data-cut="1"><span class="wl__num">05.</span><span class="wl__name"><span class="wl__eye">05 · Toy · Learning to recycle</span><b class="wl__t">Re-play</b><span class="wl__desc">A toy truck that teaches recycling</span></span><span class="wl__cat">Toy · Learning to recycle</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_re-play.webp" alt="" loading="lazy"></span></a></li>
         <li><a class="wl__row c-lavender" href="#/sao" data-cursor="Open SAO" data-img="../images/wl_sao.webp" data-cut="1"><span class="wl__num">06.</span><span class="wl__name"><span class="wl__eye">06 · Sleep · Product + smartwatch</span><b class="wl__t">SAO</b><span class="wl__desc">A diffuser that helps you sleep</span></span><span class="wl__cat">Sleep · Product + smartwatch</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_sao.webp" alt="" loading="lazy"></span></a></li>
@@ -4230,7 +4237,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
       <figure class="about__portrait"><span class="about__bubble about__bubble--back" aria-hidden="true"></span><span class="about__bubble" aria-hidden="true"></span><div class="about__cut"><img decoding="async" loading="lazy" src="../images/selfie_pink.webp" alt="Portrait of Chiara Starcich, smiling"></div></figure>
       <div class="about2__text">
         <div class="about2__head"><h2 class="about2__name">Chiara Starcich</h2></div>
-        <p class="about2__role">UX &amp; Product Designer <span>·</span> Netherlands</p>
+        <p class="about2__role">Research-led Product Designer <span>·</span> Netherlands</p>
         <p class="about2__intro">I design physical and digital products that people hold, wear and use every day. I start from research with the people who will use them, and I stay curious, as I was as a child: I explore, prototype and test early.</p>
         <p class="about2__edu">MSc Design for Interaction, TU Delft · BSc Industrial Product Design, Ferrara</p>
         
@@ -4298,8 +4305,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
       </div>
       
       <div class="facts__result">
-        <span class="label">Result</span>
-        <p><mark class="hl">A hand-sewn prototype. The vibration pulled testers out of the panic, then pressing the alarm came naturally.</mark></p>
+        <span class="label">What I designed</span>
+        <p><mark class="hl">A fingerless running glove that vibrates when it senses panic, with a palm button that sounds an alarm.</mark> <span class="facts__more">Built as a working, hand-sewn prototype and tested 5 times: the vibration pulled testers out of the panic, then pressing the alarm came naturally.</span></p>
       </div>
       <div class="facts__methods">
         <span class="label">Methods</span>
@@ -4418,8 +4425,6 @@ a, button { -webkit-tap-highlight-color: transparent; }
           </li>
         </ol>
 
-        <div class="reshape"><span class="label">What reshaped it</span><ul><li><em>Failed</em><span>A full glove got too sweaty on a run</span><b>→ A fingerless knit sleeve</b></li><li><em>Failed</em><span>Sound and smell annoyed testers</span><b>→ Vibration only</b></li><li><em>Failed</em><span>A flashy band reminded testers of harassment</span><b>→ A neutral black brace</b></li><li><em>Constraint</em><span>A GPS alert could be used to harm people</span><b>→ Dropped</b></li><li><em>Constraint</em><span>Real fear can’t be tested ethically</span><b>→ Jump-scare clips, a night run and VR</b></li></ul></div>
-
         <div class="proto">
           <h3 class="title">How the shape evolved</h3>
           <div class="uf-evo">
@@ -4470,6 +4475,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
         </div>
 
       
+        <div class="reshape insights"><span class="label">Insights → design decisions</span><ul><li><em>Night run, journey maps</em><span>In a freeze you can’t decide anything, so a button alone won’t help</span><b>→ Help starts from the body: the glove vibrates on its own</b></li><li><em>Tests 2 and 3</em><span>Vibration cut through the fear; sound and smell only annoyed people</span><b>→ Vibration only; the alarm sounds when you choose to press</b></li><li><em>Test 4</em><span>Being noticed reminded testers of harassment</span><b>→ A neutral black design that looks like normal running gear</b></li><li><em>Tests 1 and 5</em><span>A full glove got sweaty, and the fingers must stay free</span><b>→ A fingerless knit sleeve with the button low on the palm</b></li><li><em>Ethics</em><span>Real fear can’t be tested on people</span><b>→ Jump-scare clips, a night run and VR recreated it safely</b></li></ul></div>
+
         <p class="statement">Help people break the freeze, feel safer and call for help while they run.</p>
 
       </div>
@@ -4539,9 +4546,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
       </div>
       <div>
         <span class="label">My role</span>
-        <p>The only product designer, alongside architects Matteo Bazzicalupo and Marco Olivieri.</p>
+        <p>The only product designer, alongside architects Matteo Bazzicalupo and Marco Olivieri. <strong>My part:</strong></p>
         <ul class="dash">
-          <li>Interiors &amp; furniture</li><li>3D models &amp; renders</li><li>Technical drawings &amp; manuals</li><li>Working with manufacturers</li>
+          <li>Interiors &amp; furniture</li><li>3D models &amp; renders</li><li>Technical drawings &amp; manuals</li><li>Working with manufacturers</li><li>Brand, website &amp; launch</li>
         </ul>
       </div>
       
@@ -4664,7 +4671,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
           </ul>
         </div>
 
-      </div>
+      <div class="reshape insights"><span class="label">Constraints → design decisions</span><ul><li><em>Towing</em><span>It had to be towed by a car, under the 3.5 t limit</span><b>→ Expandable: 11 m² closed to tow, 22 m² open, 2.9 t</b></li><li><em>Interiors</em><span>In 22 m², every piece of furniture has to do two jobs</span><b>→ A Murphy bed and sliding panels turn the living room into a bedroom</b></li><li><em>Living closed</em><span>Kitchen and bathroom must work even when the house is closed</span><b>→ All the electrics in the small module</b></li><li><em>Clients</em><span>People wanted it for very different uses</span><b>→ Three configurations: open space, equipped, off-grid</b></li></ul></div>
+
+        </div>
     </section>
 
     <section class="chapter">
@@ -4733,7 +4742,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
         <span class="label">My role</span>
         <p>Team of 4, with Erasmus MC. I led the testing.</p>
         <ul class="dash">
-          <li><strong>Led:</strong> test design &amp; user testing: card sort, VR sound test, texture test, final test</li><li><strong>Contributed to:</strong> sound design, ideation, screen design, render refinement</li>
+          <li><strong>Led:</strong> test design &amp; user testing: card sort, VR sound test, texture test, final test</li><li><strong>Contributed to:</strong> sound design, ideation, screen design, render refinement</li><li><strong>Cover render:</strong> made by a teammate</li>
         </ul>
       </div>
       
@@ -4892,6 +4901,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
         
 
       
+        <div class="reshape insights"><span class="label">Insights → design decisions</span><ul><li><em>Card sort, visual test</em><span>Patients didn’t want more numbers; they wanted to know they were okay</span><b>→ An avatar and simple meters instead of raw numbers</b></li><li><em>VR sound test</em><span>Beeps raised anxiety; calm sounds lowered it</span><b>→ Relaxing sounds; beeping only in an emergency</b></li><li><em>Touch test</em><span>Hours stuck in bed made people restless</span><b>→ Bubble and ridged textures to squeeze and hold</b></li><li><em>Final test</em><span>A kind tone on bad news calmed people</span><b>→ A gentler message when a value drops: “You’re being looked after”</b></li><li><em>Final test</em><span>The green smiley looked sick and the meters confused people</span><b>→ Next step: clearer meters and colours</b></li></ul></div>
+
         <p class="statement">Show only what patients care about, explain it calmly, and tell them when they’re okay, without hiding anything.</p>
 
       </div>
@@ -5552,7 +5563,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
       var active = (h === '#/' + route) || (route !== 'about' && route !== 'experience' && h === '#/home/work');
       if (active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
-    var titles = { home: 'Chiara Starcich, Interaction & Product Designer', about: 'About | Chiara Starcich', experience: 'Experience | Chiara Starcich' };
+    var titles = { home: 'Chiara Starcich, Research-led Product Designer', about: 'About | Chiara Starcich', experience: 'Experience | Chiara Starcich' };
     var h1 = document.querySelector('.page:not([hidden]) h1');
     document.title = titles[route] || ((h1 ? h1.textContent : '') + ' | Chiara Starcich');
     var target = anchor ? document.getElementById(anchor) : null;

@@ -4076,6 +4076,13 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
 /* add91: keep the divider above the last project */
 #work .wl > li:last-child { border-top: 1px solid rgba(255,255,255,0.22) !important; }
+
+/* add92: insights rows */
+.reshape.insights li { grid-template-columns: 9rem minmax(0,1fr) minmax(0,1fr); }
+@media (max-width: 900px) { .reshape.insights li { grid-template-columns: 1fr; } }
+
+/* add93 */
+.facts__result .facts__more { display:block; margin-top:0.5rem; font-weight:400 !important; font-size:0.95rem; line-height:1.5; color:#55555f; }
 </style>
 </head>
 <body class="c-yellow">
@@ -4185,9 +4192,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
     <section class="contents contents--grid" id="work" aria-label="Content">
       <h2 class="contents__title">Selected work</h2>
             <ol class="wl" aria-label="Projects">
-        <li><a class="wl__row c-coral" href="#/unifood" data-cursor="Open Unifood" data-img="../images/wl_unifood.webp" data-cut="1"><span class="wl__num">01.</span><span class="wl__name"><span class="wl__eye">01 · Service · App design</span><b class="wl__t">Unifood</b><span class="wl__desc">An app that brings lunch to campus</span></span><span class="wl__cat">Service · App design</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_unifood.webp" alt="" loading="lazy"></span></a></li>
-        <li><a class="wl__row c-teal" href="#/healthblocks" data-cursor="Open HealthBlocks" data-img="../images/wl_healthblocks.webp" data-cut="1"><span class="wl__num">02.</span><span class="wl__name"><span class="wl__eye">02 · eHealth · App + reward system</span><b class="wl__t">HealthBlocks</b><span class="wl__desc">A walking app built on community</span></span><span class="wl__cat">eHealth · App + reward system</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_healthblocks.webp" alt="" loading="lazy"></span></a></li>
-        <li><a class="wl__row c-blue" href="#/reliance-toolbox" data-cursor="Open Reliance Toolbox" data-img="../images/wl_reliance-toolbox.webp" data-cut="1"><span class="wl__num">03.</span><span class="wl__name"><span class="wl__eye">03 · Digital tool for experts</span><b class="wl__t">Reliance Toolbox</b><span class="wl__desc">A method to study how doctors rely on AI</span></span><span class="wl__cat">Digital tool for experts</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_reliance-toolbox.webp" alt="" loading="lazy"></span></a></li>
+        <li><a class="wl__row c-coral" href="#/unifood" data-cursor="Open Unifood" data-img="../images/wl_unifood.webp" data-cut="1"><span class="wl__num">01.</span><span class="wl__name"><span class="wl__eye">01 · Service · App design</span><b class="wl__t">Unifood</b><span class="wl__desc">A campus lunch delivery service and app</span></span><span class="wl__cat">Service · App design</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_unifood.webp" alt="" loading="lazy"></span></a></li>
+        <li><a class="wl__row c-teal" href="#/healthblocks" data-cursor="Open HealthBlocks" data-img="../images/wl_healthblocks.webp" data-cut="1"><span class="wl__num">02.</span><span class="wl__name"><span class="wl__eye">02 · eHealth · App + reward system</span><b class="wl__t">HealthBlocks</b><span class="wl__desc">A walking-challenge app redesigned around community</span></span><span class="wl__cat">eHealth · App + reward system</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_healthblocks.webp" alt="" loading="lazy"></span></a></li>
+        <li><a class="wl__row c-blue" href="#/reliance-toolbox" data-cursor="Open Reliance Toolbox" data-img="../images/wl_reliance-toolbox.webp" data-cut="1"><span class="wl__num">03.</span><span class="wl__name"><span class="wl__eye">03 · Digital tool for experts</span><b class="wl__t">Reliance Toolbox</b><span class="wl__desc">A method and toolbox to study how doctors rely on AI</span></span><span class="wl__cat">Digital tool for experts</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_reliance-toolbox.webp" alt="" loading="lazy"></span></a></li>
       </ol>
       <div class="wl__float" aria-hidden="true"><div class="wl__blob"></div><img decoding="async" loading="lazy" alt=""></div>
       <div class="contents__list">
@@ -4665,6 +4672,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
       <div>
         <span class="label">The situation</span>
         <p>AI helps doctors diagnose but is never 100% right. Usability designers had no method to study how much doctors rely on it.</p>
+        <p><strong>The field lab:</strong> a real hospital ward used to test new medical technology with real data, without the answers affecting patient care.</p>
       </div>
       <div>
         <span class="label">My role</span>
@@ -4675,8 +4683,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
       </div>
       
       <div class="facts__result">
-        <span class="label">Result</span>
-        <p><mark class="hl">A method and toolbox for tests inside the hospital, tested with Philips usability experts.</mark></p>
+        <span class="label">What I designed</span>
+        <p><mark class="hl">Two things: a method to study how doctors’ reliance on AI changes over time in the field lab, and a clickable toolbox that helps usability designers apply it.</mark> <span class="facts__more">The method comes from my research; the toolbox was shaped by two rounds of testing with Philips usability experts.</span></p>
       </div>
       <div class="facts__methods">
         <span class="label">Methods</span>
@@ -4808,6 +4816,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
         
 
       
+        <div class="reshape insights"><span class="label">Insights → design decisions</span><ul><li><em>Field lab visit</em><span>Doctors have very little time, and measuring must not disturb their work</span><b>→ A table comparing every tool on 9 criteria, so designers pick what fits the ward</b></li><li><em>7 interviews</em><span>Reliance changes over time: fatigue, AI errors, workload, familiarity</span><b>→ Tools grouped before, during and after the test, to follow change over time</b></li><li><em>7 interviews</em><span>Designers didn’t need another tool; they needed guidance to choose</span><b>→ A method that guides the choice, plus a toolbox of existing tools</b></li><li><em>Expert testing, round 1</em><span>Experts wanted freedom, not fixed steps</span><b>→ A hub with four sections instead of a fixed sequence</b></li><li><em>Expert testing, round 2</em><span>A real example helped more than instructions</span><b>→ A one-page example study</b></li></ul></div>
+
         <p class="statement">Let designers pick their own tools, with guidance and a real example, not fixed steps.</p>
 
       </div>
@@ -4872,7 +4882,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
       var active = (h === '#/' + route) || (route !== 'about' && route !== 'experience' && h === '#/home/work');
       if (active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
-    var titles = { home: 'Chiara Starcich, Interaction & Product Designer', about: 'About | Chiara Starcich', experience: 'Experience | Chiara Starcich' };
+    var titles = { home: 'Chiara Starcich, UX & Product Designer', about: 'About | Chiara Starcich', experience: 'Experience | Chiara Starcich' };
     var h1 = document.querySelector('.page:not([hidden]) h1');
     document.title = titles[route] || ((h1 ? h1.textContent : '') + ' | Chiara Starcich');
     var target = anchor ? document.getElementById(anchor) : null;
