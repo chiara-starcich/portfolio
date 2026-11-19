@@ -4083,11 +4083,14 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
 /* add93 */
 .facts__result .facts__more { display:block; margin-top:0.5rem; font-weight:400 !important; font-size:0.95rem; line-height:1.5; color:#55555f; }
+
+/* add95: About photos load fast and appear together */
+.page[data-route="about"] .rv-k, .page[data-route="about"] .rv { transition-delay: 0s !important; }
 </style>
 </head>
 <body class="c-yellow">
 <aside class="side-profile" id="sideProfile" aria-label="Profile">
-  <div class="sp__pic"><img decoding="async" loading="lazy" src="../images/selfie_pink.webp" alt="Chiara Starcich"></div>
+  <div class="sp__pic"><img decoding="async" loading="lazy" src="../images/selfie_pink_s.webp" alt="Chiara Starcich"></div>
   <p class="sp__name">Chiara Starcich</p>
   <p class="sp__role">Research-led Product Designer</p>
   <p class="sp__loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Netherlands</p>
@@ -4234,7 +4237,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
     <!-- ABOUT -->
     <section class="about2" id="about">
-      <figure class="about__portrait"><span class="about__bubble about__bubble--back" aria-hidden="true"></span><span class="about__bubble" aria-hidden="true"></span><div class="about__cut"><img decoding="async" loading="lazy" src="../images/selfie_pink.webp" alt="Portrait of Chiara Starcich, smiling"></div></figure>
+      <figure class="about__portrait"><span class="about__bubble about__bubble--back" aria-hidden="true"></span><span class="about__bubble" aria-hidden="true"></span><div class="about__cut"><img decoding="async" loading="lazy" src="../images/selfie_pink_s.webp" alt="Portrait of Chiara Starcich, smiling"></div></figure>
       <div class="about2__text">
         <div class="about2__head"><h2 class="about2__name">Chiara Starcich</h2></div>
         <p class="about2__role">Research-led Product Designer <span>·</span> Netherlands</p>
@@ -4252,13 +4255,13 @@ a, button { -webkit-tap-highlight-color: transparent; }
     <section class="life2" aria-label="Outside the studio">
       <h2>Outside the studio</h2>
       <div class="life2__grid">
-        <figure class="life2__item" style="--w:21%;--r:-4deg;--y:0rem;--fs:1.05rem;--cr:3deg"><img decoding="async" src="../images/life_community.webp" alt="A big group of friends at a Christmas party in a living room" loading="lazy"><figcaption><b>My community</b><span>Friends from all over the world</span></figcaption></figure>
-        <figure class="life2__item" style="--w:14.5%;--r:5deg;--y:2.5rem;--fs:0.9rem;--cr:-5deg"><img decoding="async" src="../images/life_backpack.webp" alt="Chiara smiling with a big backpack at a train station" loading="lazy"><figcaption><b>Backpacking</b><span>One backpack, no fixed plan</span></figcaption></figure>
-        <figure class="life2__item" style="--w:17%;--r:-2deg;--y:-1rem;--fs:1.15rem;--cr:2deg"><img decoding="async" src="../images/life_climb.webp" alt="Chiara climbing a rock wall outdoors, with a belayer" loading="lazy"><figcaption><b>Climbing</b><span>On real rock</span></figcaption></figure>
-        <figure class="life2__item" style="--w:13.5%;--r:7deg;--y:3.5rem;--fs:0.85rem;--cr:-3deg"><img decoding="async" src="../images/life_boulder.webp" alt="Chiara bouldering on an indoor wall" loading="lazy"><figcaption><b>Bouldering</b><span>Indoors, every week</span></figcaption></figure>
-        <figure class="life2__item" style="--w:13%;--r:-5deg;--y:1.8rem;--fs:0.95rem;--cr:3deg"><img decoding="async" src="../images/child.jpg" alt="Chiara as a child, playing with a pot on her head and a doll" loading="lazy"><figcaption><b>Me, age 2</b><span>Curious since day one</span></figcaption></figure>
-<figure class="life2__item" style="--w:16%;--r:-6deg;--y:0.5rem;--fs:1rem;--cr:4deg"><img decoding="async" src="../images/life_paint.webp" alt="Chiara painting with pastels at an easel" loading="lazy"><figcaption><b>Painting</b><span>Pastels and messy hands</span></figcaption></figure>
-        <figure class="life2__item" style="--w:14%;--r:3deg;--y:-0.5rem;--fs:0.95rem;--cr:-2deg"><img decoding="async" src="../images/life_museum.webp" alt="Chiara looking at Art Nouveau posters in a museum" loading="lazy"><figcaption><b>Museums</b><span>Every one I can visit</span></figcaption></figure>
+        <figure class="life2__item" style="--w:21%;--r:-4deg;--y:0rem;--fs:1.05rem;--cr:3deg"><img decoding="async" src="../images/life_community_s.webp" alt="A big group of friends at a Christmas party in a living room" loading="lazy"><figcaption><b>My community</b><span>Friends from all over the world</span></figcaption></figure>
+        <figure class="life2__item" style="--w:14.5%;--r:5deg;--y:2.5rem;--fs:0.9rem;--cr:-5deg"><img decoding="async" src="../images/life_backpack_s.webp" alt="Chiara smiling with a big backpack at a train station" loading="lazy"><figcaption><b>Backpacking</b><span>One backpack, no fixed plan</span></figcaption></figure>
+        <figure class="life2__item" style="--w:17%;--r:-2deg;--y:-1rem;--fs:1.15rem;--cr:2deg"><img decoding="async" src="../images/life_climb_s.webp" alt="Chiara climbing a rock wall outdoors, with a belayer" loading="lazy"><figcaption><b>Climbing</b><span>On real rock</span></figcaption></figure>
+        <figure class="life2__item" style="--w:13.5%;--r:7deg;--y:3.5rem;--fs:0.85rem;--cr:-3deg"><img decoding="async" src="../images/life_boulder_s.webp" alt="Chiara bouldering on an indoor wall" loading="lazy"><figcaption><b>Bouldering</b><span>Indoors, every week</span></figcaption></figure>
+        <figure class="life2__item" style="--w:13%;--r:-5deg;--y:1.8rem;--fs:0.95rem;--cr:3deg"><img decoding="async" src="../images/child_s.webp" alt="Chiara as a child, playing with a pot on her head and a doll" loading="lazy"><figcaption><b>Me, age 2</b><span>Curious since day one</span></figcaption></figure>
+<figure class="life2__item" style="--w:16%;--r:-6deg;--y:0.5rem;--fs:1rem;--cr:4deg"><img decoding="async" src="../images/life_paint_s.webp" alt="Chiara painting with pastels at an easel" loading="lazy"><figcaption><b>Painting</b><span>Pastels and messy hands</span></figcaption></figure>
+        <figure class="life2__item" style="--w:14%;--r:3deg;--y:-0.5rem;--fs:0.95rem;--cr:-2deg"><img decoding="async" src="../images/life_museum_s.webp" alt="Chiara looking at Art Nouveau posters in a museum" loading="lazy"><figcaption><b>Museums</b><span>Every one I can visit</span></figcaption></figure>
       </div>
     </section>
 
@@ -5851,6 +5854,11 @@ a, button { -webkit-tap-highlight-color: transparent; }
   addEventListener('resize',function(){ clearTimeout(fit.t); fit.t=setTimeout(fit,150); }); addEventListener('load',fit); fit(); setTimeout(fit,300);
   function sc(){ document.body.classList.toggle('is-scrolled', window.scrollY>8); } addEventListener('scroll',sc,{passive:true}); sc();
 })();
+</script>
+<script>
+(function(){ function pre(){ var pg=document.querySelector('.page[data-route="about"]'); if(!pg) return; pg.querySelectorAll('img').forEach(function(i){ i.loading='eager'; var im=new Image(); im.src=i.currentSrc||i.src; }); }
+  if(location.hash.indexOf('about')>-1) pre(); else addEventListener('load',function(){ setTimeout(pre,1200); });
+  addEventListener('hashchange',function(){ if(location.hash.indexOf('about')>-1) pre(); }); })();
 </script>
 </body>
 </html>
