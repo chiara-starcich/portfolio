@@ -10,5 +10,5 @@
 /images/*
   Cache-Control: public, max-age=31536000, immutable
 
-/ideo/index.html
+/work/index.html
   Cache-Control: public, max-age=0, must-revalidate
