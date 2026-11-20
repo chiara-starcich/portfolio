@@ -7,7 +7,7 @@
 <meta name="description" content="Portfolio of Chiara Starcich, design researcher and interaction designer. MSc Design for Interaction, TU Delft.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* =========================================================
    Chiara Starcich — portfolio
@@ -4095,7 +4095,72 @@ a, button { -webkit-tap-highlight-color: transparent; }
   html.js-rv .rv, html.js-rv .rv-k, html.js-rv .rv-k > *, .rv, .rv-k > * { opacity: 1 !important; transform: none !important; transition: none !important; }
   html.js-reveal #work .wl > li { opacity: 1 !important; transform: none !important; }
 }
-</style>
+
+/* === Wellis: screenshot-style Contents / About / Experience === */
+.ct{background:#1626ff;color:#fff;padding:clamp(4rem,9vw,8rem) clamp(1.25rem,7vw,7rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(2rem,6vw,6rem);align-items:start}
+.ct__title{font-family:"Poppins",var(--font);font-weight:800;font-size:clamp(4.5rem,11vw,10.5rem);line-height:.86;letter-spacing:-.04em;margin:0;color:#fff}
+.ct__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem) clamp(1.5rem,4vw,4rem)}
+.ct__item{color:#fff;text-decoration:none;display:flex;flex-direction:column;gap:.35rem}
+.ct__n{font-family:"Poppins",var(--font);font-weight:500;font-size:clamp(4rem,9vw,8.5rem);line-height:1;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.95);margin-bottom:.6rem;transition:color .3s}
+.ct__item:hover .ct__n{color:#fff}
+.ct__item b{color:#fff!important;font-family:"Poppins",var(--font);font-weight:700;font-size:clamp(1.1rem,1.6vw,1.45rem)}
+.ct__d{font-size:clamp(.85rem,1vw,.98rem);color:rgba(255,255,255,.82);line-height:1.4}
+.ct__d strong{color:#fff;font-weight:700}
+@media (max-width:760px){.ct{grid-template-columns:1fr}.ct__grid{grid-template-columns:1fr 1fr}}
+.ab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem);align-items:center;padding:clamp(6rem,10vw,8rem) clamp(1.25rem,7vw,7rem) clamp(2rem,4vw,3rem)}
+.ab__art{position:relative;aspect-ratio:1/1.05;max-width:620px;width:100%}
+.ab__blob{position:absolute;inset:0;width:100%;height:100%}
+.ab__blob path{fill:#f6d3ea}
+.ab__art img{position:absolute;left:8%;bottom:0;width:84%;height:auto}
+.ab__title{font-family:"Poppins",var(--font);font-weight:800;font-size:clamp(4.5rem,10vw,9.5rem);line-height:.9;letter-spacing:-.045em;margin:0 0 2rem}
+.ab__text p{font-size:clamp(.95rem,1.1vw,1.05rem);line-height:1.6;color:#333;max-width:34rem;margin:0 0 1rem}
+.ab__text b{color:#111}
+.ab__contact{display:flex;align-items:flex-end;gap:2.5rem;margin-top:2rem}
+.ab__contact p{font-size:.95rem!important;margin:0!important}
+.ab__contact a{color:inherit}
+.ab__li{display:inline-block;background:#1626ff;color:#fff!important;text-decoration:none;font-weight:600;padding:.6rem 1rem;font-size:.9rem}
+.ab__life{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin-top:2.2rem;max-width:34rem}
+.ab__life figure{margin:0!important;width:auto!important}.ab__life img{width:100%!important;height:auto!important;max-width:none!important;aspect-ratio:4/5;object-fit:cover;display:block}
+.ab__life figcaption{font-size:.78rem;color:#777;margin-top:.35rem}
+.cv,.sk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(2rem,6vw,6rem);padding:clamp(6rem,10vw,8rem) clamp(1.25rem,7vw,7rem) clamp(4rem,8vw,7rem);position:relative}
+.sk{grid-template-columns:minmax(0,1fr) minmax(0,2fr);padding-top:clamp(2rem,4vw,3rem);overflow:hidden;border-top:1px solid #eee}
+.cv h3,.sk h3{font-family:"Poppins",var(--font);font-weight:700;font-size:clamp(1.5rem,2.2vw,2rem);margin:0 0 1.4rem;letter-spacing:-.01em}
+.cv__gap{margin-top:2.8rem!important}
+.cv__ed{margin-bottom:1.2rem}
+.cv__ed h4,.cv__xp h4,.aw h4{font-family:var(--font);font-weight:500;font-size:clamp(1.05rem,1.35vw,1.25rem);margin:0 0 .25rem;color:#111}
+.cv__ed p{font-size:.85rem;color:#777;line-height:1.45;margin:0}
+.cv__xp{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:2rem;margin-bottom:1.8rem}
+.cv__xp ul{list-style:none;padding:0;margin:0}
+.cv__xp li{font-size:.86rem;color:#666;line-height:1.5;padding-left:.9rem;position:relative}
+.cv__xp li:before{content:"";position:absolute;left:0;top:.7em;width:.4rem;height:1px;background:#888}
+.cv__org{font-size:.8rem;color:#777;line-height:1.45;margin:.3rem 0 0}
+.cv__org b{color:#222}
+.sws{display:grid;grid-template-columns:repeat(4,minmax(0,5.2rem));gap:1.3rem 1.2rem}
+.sw{display:flex;flex-direction:column;align-items:center;text-align:center;font-size:.78rem;font-weight:600;gap:.45rem}
+.sw span{width:4rem;height:4rem;border-radius:1rem;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Poppins",var(--font);font-weight:600;font-size:1.35rem}
+.aw{margin-bottom:1.3rem}
+.aw p{font-size:.82rem;color:#777;margin:0;line-height:1.45}
+.aw p b{color:#333;font-weight:600}
+.cos{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem 2rem}
+.cos li{font-size:.92rem;color:#777;border-top:1px solid #ddd;padding-top:.5rem}
+.cos b{color:#111;font-weight:600;margin-right:.3rem}
+.sk__dash{position:absolute;right:-60px;top:-30px;height:70%;width:auto;pointer-events:none;opacity:.9}
+.sk__dash path{fill:none;stroke:#1626ff;stroke-width:2.5;stroke-dasharray:10 9}
+.sk__col{position:relative;z-index:1}
+@media (max-width:760px){.ab,.cv,.sk{grid-template-columns:1fr}.cv__xp{grid-template-columns:1fr;gap:.4rem}.sk__dash{display:none}}
+#work.panels,.panels{padding:0!important;margin:0;border:0!important;box-shadow:none!important}.panels:before,.panels:after{display:none!important}.panels--top{padding-top:clamp(4rem,7vw,6rem)}.panel{display:block;width:100%;aspect-ratio:16/9;border:0;background:#fff}@media (max-width:760px){
+ :root, body, .page{--side:16px!important}
+ .page:not([data-route="home"]) section, .page:not([data-route="home"]) .chapter, .page:not([data-route="home"]) .section{padding-left:16px!important;padding-right:16px!important}
+ .page:not([data-route="home"]) p, .page:not([data-route="home"]) li, .page:not([data-route="home"]) figcaption{font-size:18px!important;line-height:1.5!important;max-width:none!important}
+ .page:not([data-route="home"]) .label, .page:not([data-route="home"]) .chapter__word{font-size:14px!important}
+ .page:not([data-route="home"]) .statement{font-size:30px!important;line-height:1.2!important}
+ .page:not([data-route="home"]) h3.title, .page:not([data-route="home"]) .display--md{font-size:34px!important;line-height:1.1!important}
+ .page:not([data-route="home"]) figure, .page:not([data-route="home"]) img, .page:not([data-route="home"]) video{max-width:100%!important}
+ .page:not([data-route="home"]) .split, .page:not([data-route="home"]) .cols, .page:not([data-route="home"]) .chapter__body, .page:not([data-route="home"]) .text{max-width:none!important;width:auto!important}
+}@media (min-width:761px){
+ .page:not([data-route="home"]):not([data-route="about"]):not([data-route="experience"]) > section:not(.opener):not(.nextp){zoom:1.3;padding-left:calc(17.5vw / 1.3)!important;padding-right:calc(4vw / 1.3)!important}
+ .sidex{left:2.5vw!important;width:14vw!important}
+}html body .ui-shot img{box-shadow:none!important;background:transparent!important;filter:none!important}</style>
 </head>
 <body class="c-yellow">
 <aside class="side-profile" id="sideProfile" aria-label="Profile">
@@ -4201,939 +4266,580 @@ a, button { -webkit-tap-highlight-color: transparent; }
     </section>
 
     <!-- CONTENT -->
-    <section class="contents contents--grid" id="work" aria-label="Content">
-      <h2 class="contents__title">Selected work</h2>
-            <ol class="wl" aria-label="Projects">
-        <li><a class="wl__row c-teal" href="#/healthblocks" data-cursor="Open HealthBlocks" data-img="../images/wl_healthblocks.webp" data-cut="1"><span class="wl__num">01.</span><span class="wl__name"><span class="wl__eye">01 · eHealth · App + reward system</span><b class="wl__t">HealthBlocks</b><span class="wl__desc">A walking-challenge app redesigned around community</span></span><span class="wl__cat">eHealth · App + reward system</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_healthblocks.webp" alt="" loading="lazy"></span></a></li>
-        <li><a class="wl__row c-coral" href="#/unifood" data-cursor="Open Unifood" data-img="../images/wl_unifood.webp" data-cut="1"><span class="wl__num">02.</span><span class="wl__name"><span class="wl__eye">02 · Service · App design</span><b class="wl__t">Unifood</b><span class="wl__desc">A campus lunch delivery service and app</span></span><span class="wl__cat">Service · App design</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_unifood.webp" alt="" loading="lazy"></span></a></li>
-        <li><a class="wl__row c-mint" href="#/doc" data-cursor="Open DOC" data-img="../images/wl_doc.webp" data-cut="1"><span class="wl__num">03.</span><span class="wl__name"><span class="wl__eye">03 · Sight, sound, touch · Product + screen</span><b class="wl__t">DOC</b><span class="wl__desc">A bedside device that explains vitals to ER patients</span></span><span class="wl__cat">Sight, sound, touch · Product + screen</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_doc.webp" alt="" loading="lazy"></span></a></li>
-        <li><a class="wl__row c-blue" href="#/reliance-toolbox" data-cursor="Open Reliance Toolbox" data-img="../images/wl_reliance-toolbox.webp" data-cut="1"><span class="wl__num">04.</span><span class="wl__name"><span class="wl__eye">04 · Digital tool for experts</span><b class="wl__t">Reliance Toolbox</b><span class="wl__desc">A method and toolbox to study how doctors rely on AI</span></span><span class="wl__cat">Digital tool for experts</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_reliance-toolbox.webp" alt="" loading="lazy"></span></a></li>
-      </ol>
-      <div class="wl__float" aria-hidden="true"><div class="wl__blob"></div><img decoding="async" loading="lazy" alt=""></div>
-      <div class="contents__list">
-        <a class="contents__item" href="#/doc" data-cursor="Stay calm">
-          <div class="contents__img c-mint"><figure class="blob blob--cutout blob--big"><img decoding="async" loading="lazy" src="../images/doc_cutout.webp" alt="The DOC device"></figure></div>
-          <span class="contents__num">05.</span><span class="contents__cat">Sight, sound, touch · Product + screen</span><span class="contents__line"><b>DOC</b> · Team of 4 · Testing &amp; sound</span>
-        </a>
-        <a class="contents__item" href="#/reliance-toolbox" data-cursor="Trust the process">
-          <div class="contents__img c-blue"><figure class="tile-laptop"><div class="laptop laptop--fit"><div class="laptop__device"><div class="laptop__screen"><img decoding="async" loading="lazy" src="../images/tbui_home.webp" alt="The Reliance Toolbox homepage on a MacBook"></div><img decoding="async" loading="lazy" class="laptop__frame" src="../images/macbook.webp" alt=""></div></div></figure></div>
-          <span class="contents__num">06.</span><span class="contents__cat">Digital tool for experts</span><span class="contents__line"><b>Reliance Toolbox</b> · Solo · Graduation at Philips</span>
-        </a>
-        <a class="contents__item" href="#/healthblocks" data-cursor="Walk together">
-          <div class="contents__img c-teal"><figure class="blob blob--b blob--cutout blob--big"><img decoding="async" loading="lazy" src="../images/hb_cover_cut.webp" alt="The redesigned HealthBlocks app on a phone"></figure></div>
-          <span class="contents__num">07.</span><span class="contents__cat">eHealth · App + reward system</span><span class="contents__line"><b>HealthBlocks</b> · Duo project · Research &amp; personas</span>
-        </a>
-        <a class="contents__item" href="#/unifood" data-cursor="Lunch time!">
-          <div class="contents__img c-coral"><figure class="blob blob--cutout blob--big"><img decoding="async" loading="lazy" src="../images/uni_phone_tilt.webp" alt="The Unifood app on a phone"></figure></div>
-          <span class="contents__num">09.</span><span class="contents__cat">Service · App design</span><span class="contents__line"><b>Unifood</b> · Team of 4 · Research to UI</span>
-        </a>
-        </div>
-    </section>
+    <section id="work" class="panels" style="background:#1626ff"><iframe class="panel" src="panels/contents.html" title="contents" loading="eager" scrolling="no" style="background:#1626ff;outline:2px solid #1626ff;outline-offset:-1px"></iframe></section>
 
   </div>
 <div class="page" data-route="about" data-color="c-pink" hidden>
-
-
-    <!-- ABOUT -->
-    <section class="about2" id="about">
-      <figure class="about__portrait"><span class="about__bubble about__bubble--back" aria-hidden="true"></span><span class="about__bubble" aria-hidden="true"></span><div class="about__cut"><img decoding="async" loading="lazy" src="../images/selfie_pink_s.webp" alt="Portrait of Chiara Starcich, smiling"></div></figure>
-      <div class="about2__text">
-        <div class="about2__head"><h2 class="about2__name">Chiara Starcich</h2></div>
-        <p class="about2__role">UX &amp; Product Designer <span>·</span> Netherlands</p>
-        <p class="about2__intro">I design physical and digital products that people hold, wear and use every day. I start from research with the people who will use them, and I stay curious, as I was as a child: I explore, prototype and test early.</p>
-        <p class="about2__edu">MSc Design for Interaction, TU Delft · BSc Industrial Product Design, Ferrara</p>
-        
-        <p class="about2__contact"><a href="mailto:starcich.chiara@gmail.com">starcich.chiara@gmail.com</a> · <a href="tel:+393486545381">+39 348 654 5381</a></p>
-        <p class="about2__li"><a class="li-btn" href="https://www.linkedin.com/in/chiara-starcich" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h-3V20h3V8.5zM5 3.5A1.75 1.75 0 1 0 5 7a1.75 1.75 0 0 0 0-3.5zM20 13.2c0-3-1.6-4.9-4.2-4.9-1.4 0-2.4.7-2.9 1.5V8.5h-3V20h3v-6.1c0-1.5.7-2.6 2-2.6s1.9 1 1.9 2.6V20h3.2v-6.8z"/></svg><span>LinkedIn</span></a></p>
-      </div>
-    </section>
-
-
-
-    <!-- LIFE -->
-    <section class="life2" aria-label="Outside the studio">
-      <h2>Outside the studio</h2>
-      <div class="life2__grid">
-        <figure class="life2__item" style="--w:21%;--r:-4deg;--y:0rem;--fs:1.05rem;--cr:3deg"><img decoding="async" src="../images/life_community_s.webp" alt="A big group of friends at a Christmas party in a living room" loading="lazy"><figcaption><b>My community</b><span>Friends from all over the world</span></figcaption></figure>
-        <figure class="life2__item" style="--w:14.5%;--r:5deg;--y:2.5rem;--fs:0.9rem;--cr:-5deg"><img decoding="async" src="../images/life_backpack_s.webp" alt="Chiara smiling with a big backpack at a train station" loading="lazy"><figcaption><b>Backpacking</b><span>One backpack, no fixed plan</span></figcaption></figure>
-        <figure class="life2__item" style="--w:17%;--r:-2deg;--y:-1rem;--fs:1.15rem;--cr:2deg"><img decoding="async" src="../images/life_climb_s.webp" alt="Chiara climbing a rock wall outdoors, with a belayer" loading="lazy"><figcaption><b>Climbing</b><span>On real rock</span></figcaption></figure>
-        <figure class="life2__item" style="--w:13.5%;--r:7deg;--y:3.5rem;--fs:0.85rem;--cr:-3deg"><img decoding="async" src="../images/life_boulder_s.webp" alt="Chiara bouldering on an indoor wall" loading="lazy"><figcaption><b>Bouldering</b><span>Indoors, every week</span></figcaption></figure>
-        <figure class="life2__item" style="--w:13%;--r:-5deg;--y:1.8rem;--fs:0.95rem;--cr:3deg"><img decoding="async" src="../images/child_s.webp" alt="Chiara as a child, playing with a pot on her head and a doll" loading="lazy"><figcaption><b>Me, age 2</b><span>Curious since day one</span></figcaption></figure>
-<figure class="life2__item" style="--w:16%;--r:-6deg;--y:0.5rem;--fs:1rem;--cr:4deg"><img decoding="async" src="../images/life_paint_s.webp" alt="Chiara painting with pastels at an easel" loading="lazy"><figcaption><b>Painting</b><span>Pastels and messy hands</span></figcaption></figure>
-        <figure class="life2__item" style="--w:14%;--r:3deg;--y:-0.5rem;--fs:0.95rem;--cr:-2deg"><img decoding="async" src="../images/life_museum_s.webp" alt="Chiara looking at Art Nouveau posters in a museum" loading="lazy"><figcaption><b>Museums</b><span>Every one I can visit</span></figcaption></figure>
-      </div>
-    </section>
-
-
-  </div>
+<section class="panels panels--top"><iframe class="panel" src="panels/about.html" title="about" loading="eager" scrolling="no"></iframe></section>
+</div>
 <div class="page" data-route="experience" data-color="c-pink" hidden>
-<section class="xp" aria-label="Curriculum">
-<header class="xp__top"><h2 class="about2__name">Experience</h2><p class="about2__role">Education, work, awards, collaborations and languages</p></header>
-<section class="xp__block "><h3 class="xp__head">Education</h3><div class="xp__rows"><div class="xp__row"><p class="xp__when">2024 to 2026</p><div><h4 class="xp__title">MSc Design for Interaction</h4><p class="xp__sub">TU Delft</p></div></div><div class="xp__row"><p class="xp__when">2021 to 2024</p><div><h4 class="xp__title">BSc Industrial Product Design</h4><p class="xp__sub">Università di Ferrara</p></div></div><div class="xp__row"><p class="xp__when">2016 · 2018</p><div><h4 class="xp__title">Study abroad</h4><p class="xp__sub">University College Dublin · Loughborough University</p></div></div></div></section><section class="xp__block "><h3 class="xp__head">Work</h3><div class="xp__rows"><div class="xp__row"><p class="xp__when">Feb to Aug 2026</p><div><h4 class="xp__title">Design Intern, graduation project</h4><p class="xp__sub">Philips · I&amp;D Usability Excellence, with UMC Utrecht &amp; TU Delft</p><p class="xp__text">Solo project: designed a toolbox for studying how doctors rely on AI in clinical settings.</p></div></div><div class="xp__row"><p class="xp__when">Sep to Nov 2025</p><div><h4 class="xp__title">Design Intern</h4><p class="xp__sub">Collins Aerospace</p><p class="xp__text">Ran comfort and usability studies for aircraft seats.</p></div></div><div class="xp__row"><p class="xp__when">since 2023</p><div><h4 class="xp__title">Product Designer &amp; Communication</h4><p class="xp__sub">Matteo Bazzicalupo · designer, co-founder of deepdesign Studio</p><p class="xp__text">3D modelling, renders, technical manuals and research. The only product designer on <strong>LIT, Life in Tiny</strong>, since 2023. Exhibited at Milan Design Week 2025.</p></div></div><div class="xp__row"><p class="xp__when">Jul to Aug 2023</p><div><h4 class="xp__title">Interior Design Intern</h4><p class="xp__sub">Studio Joanne Paul · Parma</p><p class="xp__text">Technical drawings, client meetings, material research.</p></div></div></div></section><section class="xp__block xp__block--two"><h3 class="xp__head">Awards &amp; exhibitions</h3><div class="xp__rows"><div class="xp__row xp__row--hi"><p class="xp__when">2026</p><div><h4 class="xp__title">International Architecture Awards 2026</h4><p class="xp__sub">Honourable mention, Energy Buildings category · LIT, Life in Tiny</p></div></div><div class="xp__row xp__row--hi"><p class="xp__when">2025</p><div><h4 class="xp__title">Milan Design Week</h4><p class="xp__sub">Exhibition · LIT, Life in Tiny</p></div></div><div class="xp__row"><p class="xp__when">2024</p><div><h4 class="xp__title">Fortezza da Basso, Florence</h4><p class="xp__sub">Exhibition</p></div></div><div class="xp__row"><p class="xp__when">2024</p><div><h4 class="xp__title">Ex Teatro Verdi, Ferrara</h4><p class="xp__sub">Exhibition</p></div></div><div class="xp__row"><p class="xp__when">2022</p><div><h4 class="xp__title">met Museum, Santarcangelo</h4><p class="xp__sub">Exhibition</p></div></div></div></section><section class="xp__block xp__block--two"><h3 class="xp__head">Collaborations</h3><div class="xp__rows"><div class="xp__row"><p class="xp__when">2026</p><div><h4 class="xp__title">Philips</h4><p class="xp__sub">Graduation project</p></div></div><div class="xp__row"><p class="xp__when">2026</p><div><h4 class="xp__title">UMC Utrecht</h4><p class="xp__sub">Graduation project</p></div></div><div class="xp__row"><p class="xp__when">2025</p><div><h4 class="xp__title">Erasmus MC</h4><p class="xp__sub">MSc project · DOC</p></div></div><div class="xp__row"><p class="xp__when">2025</p><div><h4 class="xp__title">HealthBlocks</h4><p class="xp__sub">MSc project</p></div></div><div class="xp__row"><p class="xp__when">2025</p><div><h4 class="xp__title">Logitech</h4><p class="xp__sub">MSc project</p></div></div><div class="xp__row"><p class="xp__when">2022</p><div><h4 class="xp__title">TechnoGym</h4><p class="xp__sub">Bachelor project</p></div></div></div></section><section class="xp__block "><h3 class="xp__head">Skills</h3><div class="xp__rows"><div class="xp__row"><p class="xp__when"></p><div><h4 class="xp__title">Prototyping</h4><p class="xp__text">Physical prototypes, Wizard-of-Oz and VR test set-ups, Figma prototypes, user tests with children and adults</p></div></div><div class="xp__row"><p class="xp__when"></p><div><h4 class="xp__title">Research</h4><p class="xp__text">Interviews, observation, co-creation workshops, context mapping, surveys</p></div></div></div></section><section class="xp__block"><h3 class="xp__head">Software</h3><div class="xp__rows"><ul class="xp__pills"><li>Figma</li><li>Photoshop</li><li>InDesign</li><li>SketchUp</li><li>AutoCAD</li><li>V-Ray</li><li>D5 Render</li><li class="is-learning">Fusion 360 · learning</li></ul></div></section><section class="xp__block "><h3 class="xp__head">Languages</h3><div class="xp__rows"><div class="xp__row"><p class="xp__when">Native</p><div><h4 class="xp__title">Italian</h4></div></div><div class="xp__row"><p class="xp__when">C1</p><div><h4 class="xp__title">English</h4><p class="xp__sub">IELTS 2024</p></div></div></div></section>
+<section class="panels panels--top"><iframe class="panel" src="panels/education.html" title="education" loading="eager" scrolling="no"></iframe><iframe class="panel" src="panels/software.html" title="software" loading="eager" scrolling="no"></iframe></section>
+</div>
+<div class="page" data-color="c-teal" data-route="healthblocks" hidden=""><nav aria-label="All projects" class="projbar"><a aria-current="page" class="c-teal is-current" href="#/healthblocks"><b>01</b> HealthBlocks</a><a class="c-coral" href="#/unifood"><b>02</b> Unifood</a><a class="c-mint" href="#/doc"><b>03</b> DOC</a><a class="c-blue" href="#/reliance-toolbox"><b>04</b> Reliance Toolbox</a></nav>
+<!-- OPENER -->
+<section class="opener opener--split">
+<div>
+<h1 class="display">HealthBlocks</h1>
+<p class="opener__title">Walking together, not just for money</p>
+<p class="intro">A step-challenge app redesign: a community and a second currency, hearts, to bring in more women and keep people moving.</p>
+<p class="meta">
+<strong>eHealth, app + reward system</strong>
+<span>TU Delft, eHealth Design | With Veronique Serné | 2025 to 26</span>
+</p>
+</div>
+<figure class="opener__media opener__media--cut">
+<img alt="The new HealthBlocks Home screen on a tilted phone" decoding="async" loading="lazy" src="../images/hb_cover_cut.webp"/>
+</figure>
 </section>
-  </div>
-<div class="page" data-route="healthblocks" data-color="c-teal" hidden><nav class="projbar" aria-label="All projects"><a class="c-teal is-current" href="#/healthblocks" aria-current="page"><b>01</b> HealthBlocks</a><a class="c-coral" href="#/unifood"><b>02</b> Unifood</a><a class="c-mint" href="#/doc"><b>03</b> DOC</a><a class="c-blue" href="#/reliance-toolbox"><b>04</b> Reliance Toolbox</a></nav>
-
-    <!-- OPENER -->
-    <section class="opener opener--split">
-      <div>
-        <h1 class="display">HealthBlocks</h1>
-        <p class="opener__title">Walking together, not just for money</p>
-        <p class="intro">A step-challenge app redesign: a community and a second currency, hearts, to bring in more women and keep people moving.</p>
-        <p class="meta">
-          <strong>eHealth, app + reward system</strong>
-          <span>TU Delft, eHealth Design | With Veronique Serné | 2025 to 26</span>
-        </p>
-      </div>
-      <figure class="opener__media opener__media--cut">
-      <img decoding="async" loading="lazy" src="../images/hb_cover_cut.webp" alt="The new HealthBlocks Home screen on a tilted phone">
-    </figure>
-    </section>
-
-    <!-- FACTS -->
-    <section class="facts band">
-      <div>
-        <span class="label">The situation</span>
-        <p>HealthBlocks pays you to walk: join a step challenge and win back your fee plus a share of the pool.</p>
-      </div>
-      <div>
-        <span class="label">My role</span>
-        <ul class="dash">
-          <li>Literature review, SWOT &amp; stakeholder analysis</li><li>2 questionnaires</li><li>Personas</li><li>User journeys</li><li>Hearts system (co-designed)</li><li>UI refinement</li>
-        </ul>
-      </div>
-      
-      <div class="facts__result">
-        <span class="label">Result</span>
-        <p><mark class="hl">A second reward next to money: hearts, earned by supporting others. Money still comes only from walking.</mark></p>
-      </div>
-      <div class="facts__methods">
-        <span class="label">Methods</span>
-        <ul class="inline-list">
-          <li>Literature review</li><li>SWOT analysis</li><li>Stakeholder analysis</li><li>2 questionnaires</li><li>Personas</li><li>System diagrams</li><li>Sketching</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SOLUTION -->
-    
-
-    <!-- PROBLEM -->
-    <section class="chapter">
-      <h2 class="chapter__word">Challenge</h2>
-      <div class="chapter__body">
-
-
-        
-
-        <div class="split split--top">
-          <h3 class="display display--md">Built on competition and money. Mostly men joined.</h3>
-          <div class="text">
-            <p>Competition and money are traditionally masculine motivators.</p>
-            <p>But motivation depends on <strong>identity, social context and life experience</strong>, not gender. So we designed for women aged 20 to 45 without stereotypes.</p>
-          </div>
-        </div>
-
-        <figure class="fig fig--center">
-          <img decoding="async" src="../images/hb_original3.webp" alt="The original HealthBlocks screens: Home profile card, Your data, Games" loading="lazy">
-          <figcaption class="caption">The original app: Home, Your data, Games</figcaption>
-        </figure>
-
-        
-
-        <div class="hmw">
-          <span class="label">How might we</span>
-          <p>How might we grow HealthBlocks and attract more women, while keeping people active for the long term?</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- INSIGHT -->
-    <section class="section intro-outcome solution-first">
-      <span class="label">The solution</span>
-      <h2 class="display display--md">Introducing the new HealthBlocks</h2>
-      <p class="intro">Same challenges, reframed as a shared journey: summits instead of rankings, groups instead of leaderboards.</p>
-      <div class="uf-flows">
-        <div class="uf-flows__item">
-          <div class="uf-flows__text"><span class="uf-flows__n">01</span><h4>Your daily summit</h4><p>Daily goal and Summit steps on top, your friends and groups just below.</p></div>
-          <div class="uf-flows__media"><video preload="none" data-cursor="Watch it move" poster="../images/hb_home2_poster.webp" muted loop playsinline aria-label="Animation: scrolling the HealthBlocks Home screen"><source src="../images/hb_home2.mp4" type="video/mp4"><source src="../images/hb_home2.webm" type="video/webm"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/hb_home2_poster.webp" alt="Animation: scrolling the HealthBlocks Home screen"></div>
-        </div>
-        <div class="uf-flows__item">
-          <div class="uf-flows__text"><span class="uf-flows__n">02</span><h4>Choose a summit</h4><p>A recommended pool explained up front, then popular and community pools.</p></div>
-          <div class="uf-flows__media"><video preload="none" data-cursor="Watch it move" poster="../images/hb_pools_poster.webp" muted loop playsinline aria-label="Animation: scrolling the Summit pools screen"><source src="../images/hb_pools.mp4" type="video/mp4"><source src="../images/hb_pools.webm" type="video/webm"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/hb_pools_poster.webp" alt="Animation: scrolling the Summit pools screen"></div>
-        </div>
-        <div class="uf-flows__item">
-          <div class="uf-flows__text"><span class="uf-flows__n">03</span><h4>Progress together</h4><p>What the group achieved, your groups, and what friends did today.</p></div>
-          <div class="uf-flows__media"><video preload="none" data-cursor="Watch it move" poster="../images/hb_community_poster.webp" muted loop playsinline aria-label="Animation: scrolling the Community screen"><source src="../images/hb_community.mp4" type="video/mp4"><source src="../images/hb_community.webm" type="video/webm"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/hb_community_poster.webp" alt="Animation: scrolling the Community screen"></div>
-        </div>
-      </div>
-      <p class="note">Veronique designed the first UI. I refined it, partly with Google Stitch, and we moved from black to a bright palette.</p>
-    </section>
-
-    <section class="chapter band">
-      <h2 class="chapter__word">Define</h2>
-      <div class="chapter__body">
-
-        <h3 class="title">The app had money and challenges. It had no community.</h3>
-
-
-        
-
-        <div class="split split--top">
-          <figure class="persona-pic">
-            <img decoding="async" src="../images/hb_lara2.webp" alt="Lara, the socially motivated user" loading="lazy">
-          </figure>
-          <div class="text">
-            <span class="label">Key user: the socially motivated</span>
-            <h4 class="subtitle">Lara, 32, architect in London</h4>
-            <p>She loves doing things with others and wants to move more, but <strong>only keeps it up when others are involved</strong>.</p>
-            <p>Money doesn’t motivate her. A supportive group does.</p>
-          </div>
-        </div>
-
-        <p class="statement">Money gets people started. A community keeps them going.</p>
-
-      </div>
-    </section>
-
-    <!-- DESIGN INTENT -->
-    <section class="chapter">
-      <h2 class="chapter__word">Process</h2>
-      <div class="chapter__body">
-
-
-
-        <div class="hmw">
-          <span class="label">Design vision</span>
-          <p>“To increase user growth by facilitating a sense of community.”</p>
-        </div>
-
-        <figure class="fig">
-          <img decoding="async" src="../images/hb_vision2.webp" alt="Sketch of the vision: friends invite friends, sign up, connect the watch and wallet, walk and earn, then walk together" loading="lazy">
-          <figcaption class="caption">The vision: from walking alone to walking together</figcaption>
-        </figure>
-
-        
-
-        <div class="sysdiag">
-          <figure class="sysdiag__current">
-            <span class="label">Current system</span>
-            <svg class="sd" viewBox="0 0 1500 960" role="img" aria-label="Current system: losing users only lose money, and new users come from outside micro-influencer communities paid through marketing."><defs><marker id="sd-a-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-ink"/></marker><marker id="sd-a-heart" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-heart"/></marker><marker id="sd-a-money" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-money"/></marker><marker id="sd-a-soft" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-soft"/></marker></defs><path class="sd-soft sd-dot" d="M908,236 L908,352" marker-end="url(#sd-a-soft)"/><text class="sd-lab" x="926" y="300" text-anchor="start"><tspan x="926" dy="0">Provides users</tspan></text><path class="sd-soft sd-dot" d="M908,560 L908,640 L842,640 L842,722" marker-end="url(#sd-a-soft)"/><text class="sd-lab" x="926" y="615" text-anchor="start"><tspan x="926" dy="0">Joins challenge</tspan></text><path class="sd-soft" d="M672,728 L672,133 L748,133" marker-end="url(#sd-a-soft)"/><text class="sd-lab" x="655" y="420" text-anchor="end"><tspan x="655" dy="0">Marketing</tspan></text><path class="sd-money" d="M376,782 L606,782" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="491.0" y="791" text-anchor="middle"><tspan x="491.0" dy="0">$</tspan></text><path class="sd-line" d="M376,830 L606,830" marker-end="url(#sd-a-ink)"/><text class="sd-lab sd-onl" x="491.0" y="839" text-anchor="middle"><tspan x="491.0" dy="0">Steps</tspan></text><path class="sd-money" d="M606,870 L376,870" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="491.0" y="879" text-anchor="middle"><tspan x="491.0" dy="0">$$</tspan></text><path class="sd-money" d="M1152,788 L918,788" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="1035.0" y="797" text-anchor="middle"><tspan x="1035.0" dy="0">$</tspan></text><path class="sd-line" d="M1152,830 L918,830" marker-end="url(#sd-a-ink)"/><text class="sd-lab sd-onl" x="1035.0" y="839" text-anchor="middle"><tspan x="1035.0" dy="0">Steps</tspan></text><path class="sd-money" d="M1152,874 L918,874" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="1035.0" y="883" text-anchor="middle"><tspan x="1035.0" dy="0">$</tspan></text><rect class="sd-box sd-dash sd-muted" x="755" y="30" width="305" height="205" rx="30"/><text class="sd-node" x="907.5" y="125.5" text-anchor="middle"><tspan x="907.5" dy="0">Micro-influencer</tspan><tspan x="907.5" dy="34">community</tspan></text><rect class="sd-box sd-dash" x="755" y="358" width="305" height="202" rx="30"/><text class="sd-node" x="907.5" y="452.0" text-anchor="middle"><tspan x="907.5" dy="0">Potential</tspan><tspan x="907.5" dy="34">new user</tspan></text><rect class="sd-box" x="612" y="728" width="304" height="196" rx="30"/><text class="sd-node" x="764.0" y="819.0" text-anchor="middle"><tspan x="764.0" dy="0">HealthBlocks</tspan><tspan x="764.0" dy="34">Challenge</tspan></text><rect class="sd-box" x="70" y="728" width="304" height="196" rx="30"/><text class="sd-node" x="222.0" y="836.0" text-anchor="middle"><tspan x="222.0" dy="0">Winning user</tspan></text><rect class="sd-box" x="1156" y="728" width="304" height="196" rx="30"/><text class="sd-node" x="1308.0" y="836.0" text-anchor="middle"><tspan x="1308.0" dy="0">Losing user</tspan></text></svg>
-            <figcaption class="caption">Losing users get nothing and drop out, and growth relies on outside micro-influencers.</figcaption>
-          </figure>
-          <figure class="sysdiag__proposed">
-            <span class="sysdiag__tag">Proposed system</span>
-            <svg class="sd" viewBox="0 0 1500 960" role="img" aria-label="Proposed system: the HealthBlocks Community sits at the centre. Winning users give hearts for visibility, losing users receive hearts as community value, hearts signal potential new users who join the community, and the community sends steps to the challenge."><defs><marker id="sd-a-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-ink"/></marker><marker id="sd-a-heart" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-heart"/></marker><marker id="sd-a-money" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-money"/></marker><marker id="sd-a-soft" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sd-fill-soft"/></marker></defs><path class="sd-soft sd-dot" d="M385,125 L612,125" marker-end="url(#sd-a-soft)"/><text class="sd-lab sd-onl" x="498" y="105" text-anchor="middle"><tspan x="498" dy="0">Provides users</tspan></text><path class="sd-heart sd-dot" d="M700,398 L700,232" marker-end="url(#sd-a-heart)"/><text class="sd-lab sd-heart-t" x="688" y="300" text-anchor="end"><tspan x="688" dy="0">Hearts</tspan><tspan x="688" dy="30">(signal)</tspan></text><path class="sd-line sd-dot" d="M840,226 L840,392" marker-end="url(#sd-a-ink)"/><text class="sd-lab" x="856" y="300" text-anchor="start"><tspan x="856" dy="0">Joins</tspan><tspan x="856" dy="30">community</tspan></text><path class="sd-soft" d="M618,497 L168,497 L168,232" marker-end="url(#sd-a-soft)"/><text class="sd-lab sd-onl" x="390" y="482" text-anchor="middle"><tspan x="390" dy="0">Marketing deal with influencer</tspan></text><path class="sd-heart sd-thick" d="M230,722 L230,545 L612,545" marker-end="url(#sd-a-heart)"/><text class="sd-lab sd-heart-t sd-onl" x="230" y="622" text-anchor="middle"><tspan x="230" dy="0">Hearts</tspan><tspan x="230" dy="30">(visibility)</tspan></text><path class="sd-heart sd-thick" d="M922,545 L1315,545 L1315,716" marker-end="url(#sd-a-heart)"/><text class="sd-lab sd-heart-t sd-onl" x="1315" y="622" text-anchor="middle"><tspan x="1315" dy="0">Hearts</tspan><tspan x="1315" dy="30">(community value)</tspan></text><path class="sd-line" d="M770,598 L770,716" marker-end="url(#sd-a-ink)"/><text class="sd-lab" x="788" y="666" text-anchor="start"><tspan x="788" dy="0">Steps</tspan></text><path class="sd-money" d="M382,778 L612,778" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="497.0" y="787" text-anchor="middle"><tspan x="497.0" dy="0">$</tspan></text><path class="sd-line" d="M382,826 L612,826" marker-end="url(#sd-a-ink)"/><text class="sd-lab sd-onl" x="497.0" y="835" text-anchor="middle"><tspan x="497.0" dy="0">Steps</tspan></text><path class="sd-money" d="M612,870 L382,870" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="497.0" y="879" text-anchor="middle"><tspan x="497.0" dy="0">$$</tspan></text><path class="sd-money" d="M1158,784 L922,784" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="1040.0" y="793" text-anchor="middle"><tspan x="1040.0" dy="0">$</tspan></text><path class="sd-line" d="M1158,826 L922,826" marker-end="url(#sd-a-ink)"/><text class="sd-lab sd-onl" x="1040.0" y="835" text-anchor="middle"><tspan x="1040.0" dy="0">Steps</tspan></text><path class="sd-money" d="M1158,870 L922,870" marker-end="url(#sd-a-money)"/><text class="sd-lab sd-onl" x="1040.0" y="879" text-anchor="middle"><tspan x="1040.0" dy="0">$</tspan></text><rect class="sd-box sd-dash sd-muted" x="80" y="25" width="305" height="200" rx="30"/><text class="sd-node" x="232.5" y="118.0" text-anchor="middle"><tspan x="232.5" dy="0">Micro-influencer</tspan><tspan x="232.5" dy="34">community</tspan></text><rect class="sd-box sd-dash" x="620" y="25" width="300" height="200" rx="30"/><text class="sd-node" x="770.0" y="118.0" text-anchor="middle"><tspan x="770.0" dy="0">Potential</tspan><tspan x="770.0" dy="34">new user</tspan></text><rect class="sd-box sd-key" x="620" y="400" width="300" height="198" rx="30"/><text class="sd-node" x="770.0" y="492.0" text-anchor="middle"><tspan x="770.0" dy="0">HealthBlocks</tspan><tspan x="770.0" dy="34">Community</tspan></text><rect class="sd-box" x="80" y="724" width="302" height="196" rx="30"/><text class="sd-node" x="231.0" y="832.0" text-anchor="middle"><tspan x="231.0" dy="0">Winning user</tspan></text><rect class="sd-box" x="620" y="724" width="300" height="196" rx="30"/><text class="sd-node" x="770.0" y="815.0" text-anchor="middle"><tspan x="770.0" dy="0">HealthBlocks</tspan><tspan x="770.0" dy="34">Challenge</tspan></text><rect class="sd-box" x="1160" y="724" width="300" height="196" rx="30"/><text class="sd-node" x="1310.0" y="832.0" text-anchor="middle"><tspan x="1310.0" dy="0">Losing user</tspan></text></svg>
-            <figcaption><span class="sysdiag__key"><i aria-hidden="true"></i>Hearts, the new soft currency</span> An internal community at the centre: hearts bring losing users back in and attract new ones.</figcaption>
-          </figure>
-        </div>
-
-        
-
-        <figure class="fig">
-          <img decoding="async" src="../images/hb_flywheel2.webp" alt="System overview sketch: more users create more community, and more community brings more users" loading="lazy">
-          <figcaption class="caption">The flywheel: more users, more community, more users</figcaption>
-        </figure>
-
-        
-
-      
-      
-        <p class="statement">Money for moving, hearts for helping: social value supports physical effort, it never replaces it.</p>
-        <div class="reshape"><span class="label">What reshaped it</span><ul><li><em>Failed</em><span>Money and competition alone: mostly men joined, and losers dropped out</span><b>→ Groups and summits instead of leaderboards</b></li><li><em>Constraint</em><span>Hearts can’t be cashed in, or people would earn without walking</span><b>→ Money comes only from steps</b></li><li><em>Constraint</em><span>The paid step challenges had to stay</span><b>→ Same challenges, reframed as summits</b></li></ul></div>
-
-
-      </div>
-    </section>
-
-    <section class="chapter">
-      <h2 class="chapter__word">Outcome</h2>
-      <div class="chapter__body">
-        
-
-
-        <div>
-          <h3 class="title">From a list of pools to a summit you choose.</h3>
-          <div class="hb-compare">
-            <figure class="ui-shot">
-              <img decoding="async" src="../images/hb_ui_games_old.webp" alt="The original Games screen: one large pool card after another" loading="lazy">
-              <figcaption><span class="label">Original UI</span><p>One long list of pools, each a big card with dates, entry fee and prize.</p></figcaption>
-            </figure>
-            
-            <figure class="ui-shot">
-              <img decoding="async" src="../images/hb_ui_pools_new.webp" alt="The new Summit pools screen with a recommended pool and categories" loading="lazy">
-              <figcaption><span class="label">New UI</span><p>A recommended pool explained up front, then popular and community pools to choose from.</p></figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <figure class="hb-show">
-          <img decoding="async" src="../images/hb_outcome18.webp" alt="The new Summit pools and Your data screens on two tilted phones" loading="lazy">
-        </figure>
-        <div class="hb-show__notes">
-            <div><span class="label">Summit pools</span><p>One recommended pool to join in one tap, then nature, popular and member-made pools.</p></div>
-            <div><span class="label">Community</span><p>No leaderboards: your hearts, your groups and what you achieved together.</p></div>
-          </div>
-
-        <p class="statement">Communities don’t form because people can talk. They form because people need each other to make progress.</p>
-
-        
-
-      
-        <div class="learned">
-          <span class="label">What I learned</span>
-          <ul><li>Designing for women doesn’t mean designing “for women”: motivation depends on context, not gender.</li></ul>
-        </div>
-
-      </div>
-    </section>
-
-  
-    <a class="nextp c-coral" href="#/unifood" data-cursor="Open Unifood"><span><span class="nextp__eye">Next project</span><span class="nextp__t">Unifood</span><span class="nextp__d">An app that brings lunch to campus</span></span><span class="nextp__img"><img decoding="async" src="../images/wl_unifood.webp" alt="" loading="lazy"></span></a>
+<!-- FACTS -->
+<section class="facts band">
+<div>
+<span class="label">The situation</span>
+<p>HealthBlocks pays you to walk: join a step challenge and win back your fee plus a share of the pool.</p>
+</div>
+<div>
+<span class="label">My role</span>
+<ul class="dash">
+<li>Literature review, SWOT &amp; stakeholder analysis</li><li>2 questionnaires</li><li>Personas</li><li>User journeys</li><li>Hearts system (co-designed)</li><li>UI refinement</li>
+</ul>
+</div>
+<div class="facts__result">
+<span class="label">Result</span>
+<p><mark class="hl">A second reward next to money: hearts, earned by supporting others. Money still comes only from walking.</mark></p>
 </div>
 
-<div class="page" data-route="unifood" data-color="c-coral" hidden><nav class="projbar" aria-label="All projects"><a class="c-teal" href="#/healthblocks"><b>01</b> HealthBlocks</a><a class="c-coral is-current" href="#/unifood" aria-current="page"><b>02</b> Unifood</a><a class="c-mint" href="#/doc"><b>03</b> DOC</a><a class="c-blue" href="#/reliance-toolbox"><b>04</b> Reliance Toolbox</a></nav>
-
-    <!-- OPENER -->
-    <section class="opener opener--split">
-      <div>
-        <h1 class="display">Unifood</h1>
-        <p class="opener__title">Lunch delivered to campus</p>
-        <p class="intro">Order lunch from the canteen, bakeries and delis, delivered by one rider to campus at 1 pm, with discounts that cut food waste.</p>
-        <p class="meta">
-          <strong>Service + app design</strong>
-          <span>Team of 4 | Università di Ferrara | 2023</span>
-        </p>
-      </div>
-      <figure class="opener__media opener__media--cut opener__media--flush">
-      <img decoding="async" loading="lazy" src="../images/uni_cover_cut4.webp" alt="A hand holding a phone with the Unifood home screen: student discount, perks and today's lunch">
-    </figure>
-    </section>
-
-    <!-- FACTS -->
-    <section class="facts band">
-      <div>
-        <span class="label">The situation</span>
-        <p>In Ferrara, students of <strong>architecture and many other faculties</strong> have one hour for lunch, and the canteen is too far.</p>
-      </div>
-      <div>
-        <span class="label">My role</span>
-        <ul class="dash">
-          <li>Survey, interviews &amp; field research</li><li>Actors map &amp; storyboard</li><li>Paper prototypes &amp; testing</li><li>Final UI design</li>
-        </ul>
-      </div>
-      
-      <div class="facts__result">
-        <span class="label">Result</span>
-        <p><mark class="hl">A tested service and app with <strong>student discounts</strong> that also <strong>cut food waste</strong>: cheaper if you order in advance, or choose the day-before leftovers.</mark></p>
-      </div>
-      <div class="facts__methods">
-        <span class="label">Methods</span>
-        <ul class="inline-list">
-          <li>Survey</li><li>Interviews</li><li>Design brief</li><li>Actors map</li><li>Field research</li><li>Storyboard</li><li>Paper prototypes</li><li>Prototype testing (4 students)</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PROBLEM -->
-    <section class="chapter">
-      <h2 class="chapter__word">Challenge</h2>
-      <div class="chapter__body">
-        <span class="label">The brief</span>
-
-        <div class="split split--top">
-          <h3 class="display display--md">One hour for lunch, a canteen too far away.</h3>
-          <div class="text">
-            <p>Most students commute, so they buy lunch near the department.</p>
-            <p>They wanted <strong>healthier, more varied options</strong>, and to spend less money.</p>
-          </div>
-        </div>
-
-        <div class="uf-waste">
-          <span class="label">Two goals from the start</span>
-          <div><b>Lunch on time</b><p>Delivered to campus within the one-hour break.</p></div>
-          <div><b>Less food waste</b><p>Sellers’ leftovers from the day before sold at a student discount.</p></div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section uf-solution">
-      <span class="label">The solution</span>
-      <h2 class="display display--md">Introducing Unifood</h2>
-      <p class="intro">Order from the canteen, bakery, fruit shop or deli. One rider collects everything and delivers it to pickup points on campus at 1 pm.</p>
-      <div class="uf-flows">
-        <div class="uf-flows__item">
-          <div class="uf-flows__text"><span class="uf-flows__n">01</span><h4>Order in three taps</h4><p>From the start screen to today’s discounts, straight to your meal plan.</p></div>
-          <div class="uf-flows__media"><video preload="none" data-cursor="Watch it move" poster="../images/unifood_flow_poster.webp" muted loop playsinline aria-label="Animation: from the splash screen to student perks to the meal plan"><source src="../images/unifood_flow.mp4" type="video/mp4"><source src="../images/unifood_flow.webm" type="video/webm"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/unifood_flow_poster.webp" alt="Animation: from the splash screen to student perks to the meal plan"></div>
-        </div>
-        <div class="uf-flows__item">
-          <div class="uf-flows__text"><span class="uf-flows__n">02</span><h4>Track, then reorder</h4><p>Switch between today’s order and your history.</p></div>
-          <div class="uf-flows__media"><video preload="none" data-cursor="Watch it move" poster="../images/unifood_orders_poster.webp" muted loop playsinline aria-label="Animation: switching between upcoming orders and order history"><source src="../images/unifood_orders.mp4" type="video/mp4"><source src="../images/unifood_orders.webm" type="video/webm"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/unifood_orders_poster.webp" alt="Animation: switching between upcoming orders and order history"></div>
-        </div>
-        <div class="uf-flows__item">
-          <div class="uf-flows__text"><span class="uf-flows__n">03</span><h4>Collect it on campus</h4><p>The rider drops lunch at pickup points on campus: choose the one nearest your lecture.</p></div>
-          <div class="uf-flows__media"><video preload="none" data-cursor="Watch it move" poster="../images/unifood_map_poster.webp" muted loop playsinline aria-label="Animation: scrolling the campus pickup map"><source src="../images/unifood_map.mp4" type="video/mp4"><source src="../images/unifood_map.webm" type="video/webm"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/unifood_map_poster.webp" alt="Animation: scrolling the campus pickup map"></div>
-        </div>
-      </div>
-      <p class="note">Screens and flows designed by our team in 2023. I designed the final UI in 2026 with Google Stitch, keeping the same flows.</p>
-      
-    </section>
-
-    <section class="chapter band">
-      <h2 class="chapter__word">Define</h2>
-      <div class="chapter__body">
-
-        <div class="uf-big">
-          <div><b>40</b><span>students surveyed</span></div>
-          <div><b>4</b><span>sellers visited: canteen, bakery, deli, fruit shop</span></div>
-          <div><b>7</b><span>groups mapped, from commuters to staff</span></div>
-        </div>
-
-        
-
-        <p class="statement">The problem wasn’t the food: one hour isn’t enough to go and get it.</p>
-      </div>
-    </section>
-
-    <section class="chapter">
-      <h2 class="chapter__word">Process</h2>
-      <div class="chapter__body">
-
-        
-
-        <figure class="fig uf-card">
-          <span class="label">Storyboard: from hunger to lunch in hand</span>
-          <img decoding="async" src="../images/uni_story3.webp" alt="Storyboard: a hungry student hears about Unifood, orders in the app, the van collects from the canteen and the student collects lunch on campus" loading="lazy">
-        </figure>
-
-        <div class="uf-card">
-          <span class="label">1 · First sketches</span>
-          <div class="uni-mf uni-mf--lo"><figure><img decoding="async" src="../images/uni_sk5_welcome.webp" alt="Hand-drawn sketch: Welcome" loading="lazy"><figcaption class="caption">Welcome</figcaption></figure><figure><img decoding="async" src="../images/uni_sk6_plan.webp" alt="Hand-drawn sketch: Plan your meals" loading="lazy"><figcaption class="caption">Plan your meals</figcaption></figure><figure><img decoding="async" src="../images/uni_sk6_orders.webp" alt="Hand-drawn sketch: Your orders" loading="lazy"><figcaption class="caption">Your orders</figcaption></figure><figure><img decoding="async" src="../images/uni_sk6_where.webp" alt="Hand-drawn sketch: Where to order" loading="lazy"><figcaption class="caption">Where to order</figcaption></figure></div>
-          <p class="uni-arrow" aria-hidden="true">↓</p>
-          <span class="label">2 · Mid fidelity in Figma</span>
-          <div class="uni-mf"><figure><img decoding="async" src="../images/uni_mf2_welcome.webp" alt="Wireframe: Welcome" loading="lazy"><figcaption class="caption">Welcome</figcaption></figure><figure><img decoding="async" src="../images/uni_mf2_home.webp" alt="Wireframe: Home" loading="lazy"><figcaption class="caption">Home</figcaption></figure><figure><img decoding="async" src="../images/uni_mf2_pickup.webp" alt="Wireframe: Pickup location" loading="lazy"><figcaption class="caption">Pickup location</figcaption></figure><figure><img decoding="async" src="../images/uni_mf2_orders.webp" alt="Wireframe: Your orders" loading="lazy"><figcaption class="caption">Your orders</figcaption></figure><figure><img decoding="async" src="../images/uni_mf2_plan.webp" alt="Wireframe: Plan meals" loading="lazy"><figcaption class="caption">Plan meals</figcaption></figure></div>
-        </div>
-        
-
-        <div class="uf-iter">
-          <span class="label">We iterated</span>
-          <ul>
-            <li><span>Calendar and order history unclear</span><b>→ Orders split into two tabs: upcoming and history</b></li>
-            <li><span>“How do I get the discount?”</span><b>→ The discount explained on the welcome and home screens</b></li>
-            <li><span>Icons didn’t look tappable</span><b>→ Clearer, tappable icons, and fewer words</b></li>
-          </ul>
-        </div>
-
-        
-
-      </div>
-    </section>
-
-    <section class="chapter">
-      <h2 class="chapter__word">Outcome</h2>
-      <div class="chapter__body">
-
-        <div class="uf-service">
-          <span class="label">The service: how an order travels</span>
-          <ol class="uf-flow uf-flow--4"><li class="uf-flow__step"><span class="uf-flow__n">1</span><b>Pick a seller</b><p>Canteen, deli, bakery or fruit shop</p></li><li class="uf-flow__step"><span class="uf-flow__n">2</span><b>Pay in the app</b><p>Discount if ordered in advance, or for yesterday’s leftovers</p></li><li class="uf-flow__step"><span class="uf-flow__n">3</span><b>Choose a pickup point</b><p>On campus, near your lecture</p></li><li class="uf-flow__step"><span class="uf-flow__n">4</span><b>One rider delivers</b><p>Everything, at 1 pm</p></li></ol>
-          <div class="uf-adv">
-            <div><b>On time</b><p>Lunch arrives within the one-hour break.</p></div>
-            <div><b>Cheaper</b><p>Student discounts, and canteen and bakery prices that delivery apps don’t offer.</p></div>
-            <div><b>Less food waste</b><p>Leftovers from the day before are sold, and advance orders let sellers cook the right amount.</p></div>
-            <div><b>Good for sellers</b><p>One collection round, and digital orders for shops that had none.</p></div>
-          </div>
-        </div>
-
-        
-
-        <figure class="uf-closing">
-          <img decoding="async" src="../images/uni_two_phones.webp" alt="Two phones with the Unifood meal planner and the orders screen" loading="lazy">
-          <figcaption>Plan the week, then track today’s order: the two screens students use most.</figcaption>
-        </figure>
-
-        
-
-        <div class="learned">
-          <span class="label">What I learned</span>
-          <ul><li>Sometimes the solution is a service, not a screen: one rider at 1 pm mattered more than any feature.</li><li>Talking to the sellers shaped the concept as much as talking to the students.</li></ul>
-        </div>
-      </div>
-    </section>
-
-  
-    <a class="nextp c-mint" href="#/doc" data-cursor="Open DOC"><span><span class="nextp__eye">Next project</span><span class="nextp__t">DOC</span><span class="nextp__d">A calming companion for ER patients</span></span><span class="nextp__img"><img decoding="async" src="../images/wl_doc.webp" alt="" loading="lazy"></span></a>
+</section>
+<!-- SOLUTION -->
+<!-- PROBLEM -->
+<section class="chapter">
+<h2 class="chapter__word">Challenge</h2>
+<div class="chapter__body">
+<div class="split split--top">
+<h3 class="display display--md">Built on competition and money. Mostly men joined.</h3>
+<div class="text">
+<p>Competition and money are traditionally masculine motivators.</p>
+<p>But motivation depends on identity, social context and life experience , not gender.</p>
+</div>
+</div>
+<figure class="fig fig--center">
+<img alt="The original HealthBlocks screens: Home profile card, Your data, Games" decoding="async" loading="lazy" src="../images/hb_original3.webp"/>
+<figcaption class="caption">The original app: Home, Your data, Games</figcaption>
+</figure>
+<div class="hmw">
+<span class="label">How might we</span>
+<p>How might we grow HealthBlocks and attract more women, while keeping people active for the long term?</p>
+</div>
+</div>
+</section>
+<!-- INSIGHT -->
+<section class="section intro-outcome solution-first">
+<span class="label">The solution</span>
+<h2 class="display display--md">Introducing the new HealthBlocks</h2>
+<p class="intro">Same challenges, reframed as a shared journey: summits instead of rankings, groups instead of leaderboards.</p>
+<div class="uf-flows">
+<div class="uf-flows__item">
+<div class="uf-flows__text"><span class="uf-flows__n">01</span><h4>Your daily summit</h4><p>Daily goal and Summit steps on top, your friends and groups just below.</p></div>
+<div class="uf-flows__media"><video aria-label="Animation: scrolling the HealthBlocks Home screen" data-cursor="Watch it move" loop="" muted="" playsinline="" poster="../images/hb_home2_poster.webp" preload="none"><source src="../images/hb_home2.mp4" type="video/mp4"/><source src="../images/hb_home2.webm" type="video/webm"/></video><img alt="Animation: scrolling the HealthBlocks Home screen" class="print-poster" decoding="async" loading="lazy" src="../images/hb_home2_poster.webp"/></div>
+</div>
+<div class="uf-flows__item">
+<div class="uf-flows__text"><span class="uf-flows__n">02</span><h4>Choose a summit</h4><p>A recommended pool explained up front, then popular and community pools.</p></div>
+<div class="uf-flows__media"><video aria-label="Animation: scrolling the Summit pools screen" data-cursor="Watch it move" loop="" muted="" playsinline="" poster="../images/hb_pools_poster.webp" preload="none"><source src="../images/hb_pools.mp4" type="video/mp4"/><source src="../images/hb_pools.webm" type="video/webm"/></video><img alt="Animation: scrolling the Summit pools screen" class="print-poster" decoding="async" loading="lazy" src="../images/hb_pools_poster.webp"/></div>
+</div>
+<div class="uf-flows__item">
+<div class="uf-flows__text"><span class="uf-flows__n">03</span><h4>Progress together</h4><p>What the group achieved, your groups, and what friends did today.</p></div>
+<div class="uf-flows__media"><video aria-label="Animation: scrolling the Community screen" data-cursor="Watch it move" loop="" muted="" playsinline="" poster="../images/hb_community_poster.webp" preload="none"><source src="../images/hb_community.mp4" type="video/mp4"/><source src="../images/hb_community.webm" type="video/webm"/></video><img alt="Animation: scrolling the Community screen" class="print-poster" decoding="async" loading="lazy" src="../images/hb_community_poster.webp"/></div>
+</div>
 </div>
 
-<div class="page" data-route="doc" data-color="c-mint" hidden><nav class="projbar" aria-label="All projects"><a class="c-teal" href="#/healthblocks"><b>01</b> HealthBlocks</a><a class="c-coral" href="#/unifood"><b>02</b> Unifood</a><a class="c-mint is-current" href="#/doc" aria-current="page"><b>03</b> DOC</a><a class="c-blue" href="#/reliance-toolbox"><b>04</b> Reliance Toolbox</a></nav>
-
-    <!-- OPENER -->
-    <section class="opener opener--split">
-      <div>
-        <h1 class="display">DOC</h1>
-        <p class="opener__title">A calming companion for ER patients</p>
-        <p class="intro">A device for ER patients that hangs on the bed rail and explains their vitals through screen, sound and touch.</p>
-        <p class="meta">
-          <strong>Sight, sound, touch: product + screen</strong>
-          <span>Team of 4 | Erasmus MC | 3 months</span>
-        
-          <span>Cover render by a teammate</span>
-        </p>
-      </div>
-      <figure class="opener__media opener__media--photo" data-kind-noted="1">
-      <img decoding="async" loading="lazy" src="../images/doc_cover_bedside_nov9.webp" alt="DOC hanging on the bed rail next to a patient in a hospital room">
-    </figure>
-      <p class="kind-note">Render</p>
-    </section>
-
-    <!-- FACTS -->
-    <section class="facts band">
-      <div>
-        <span class="label">The situation</span>
-        <p>ER patients wait alone for hours next to a monitor that beeps, but that they can’t read.</p>
-      </div>
-      <div>
-        <span class="label">My role</span>
-        <ul class="dash">
-          <li>Test design &amp; user testing (led): card sort, VR sound test, texture test, final test</li><li>Sound design</li><li>Ideation</li><li>Screen design</li><li>Render refinement</li>
-        </ul>
-      </div>
-      
-      <div class="facts__result">
-        <span class="label">Result</span>
-        <p><mark class="hl">In the final test, <strong>people felt watched over and calmer</strong>, and showed us what to fix: meters and colours.</mark></p>
-      </div>
-      <div class="facts__methods">
-        <span class="label">Methods</span>
-        <ul class="inline-list">
-          <li>Card sorting</li><li>VR sound test</li><li>Texture test</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SOLUTION -->
-    
-
-    <!-- PROBLEM -->
-    <section class="chapter">
-      <h2 class="chapter__word">Challenge</h2>
-      <div class="chapter__body">
-
-
-        
-
-        <div>
-          <h3 class="display display--md">Two hours, one beeping machine, nobody to ask.</h3>
-          <p class="intro">The machine meant to protect them scares them.</p>
-        </div>
-
-        <div class="split split--wide-img">
-          <div>
-            <span class="label">Where it hurts</span>
-            <ul class="dash">
-              <li>Screens and beeps about their health raise anxiety</li>
-              <li>Hours in the same position are frustrating and scary</li>
-              <li>Medical procedures add more anxiety</li>
-            </ul>
-          </div>
-          <figure class="fig">
-            <img decoding="async" src="../images/ms_s3.jpg" alt="Storyboard of a patient alone with the monitor" loading="lazy">
-            <figcaption class="caption">From our storyboard: alone, with questions and no answers</figcaption>
-          </figure>
-        </div>
-
-        <div class="hmw">
-          <span class="label">How might we</span>
-          <p>How might we help ER patients feel safe and in control while they wait?</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- INSIGHT -->
-    <section class="section intro-outcome solution-first">
-      <span class="label">The solution</span>
-      <h2 class="display display--md">Introducing DOC</h2>
-      <div class="text">
-        <p class="intro">Hang it on the bed rail or lift it off: squeeze, touch and tap to see how your body is doing.</p>
-      </div>
-      <figure class="fig render bleed" data-kind="Render">
-        <img decoding="async" src="../images/doc_hand.webp" alt="DOC held in two hands" loading="lazy">
-      </figure>
-    </section>
-
-    <section class="chapter band">
-      <h2 class="chapter__word">Define</h2>
-      <div class="chapter__body">
-
-        <h3 class="title">Patients didn’t want more numbers. They wanted to know they were okay.</h3>
-
-
-        <div class="gallery">
-          <figure class="fig" data-kind="Photo">
-            <img decoding="async" src="../images/doc_room_bw.webp" alt="In an Erasmus MC treatment room: a researcher talks with a person lying on the bed, acting out the wait" loading="lazy">
-            <figcaption class="caption"><strong>In the hospital:</strong> observing Erasmus MC treatment rooms, acting out the wait, 1 expert interview</figcaption>
-          </figure>
-          <figure class="fig">
-            <img decoding="async" src="../images/ms_card.jpg" alt="Card sorting of monitor elements" loading="lazy">
-            <figcaption class="caption"><strong>Sorting cards (6 people):</strong> which parts of the monitor matter. <strong>Visual test (3 people):</strong> graphics vs. numbers</figcaption>
-          </figure>
-          <figure class="fig" data-kind="Photo">
-            <img decoding="async" src="../images/ms_vr_bw.webp" alt="Participants wearing VR headsets during the sound test" loading="lazy">
-            <figcaption class="caption"><strong>Sound test in VR (6 people):</strong> nature sounds, normal beeps and relaxing sounds</figcaption>
-          </figure>
-        </div>
-
-        
-
-
-
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="chapter">
-      <h2 class="chapter__word">Process</h2>
-      <div class="chapter__body">
-
-        <h3 class="title">Two ideas, one made it to the end.</h3>
-
-
-        <div class="concepts">
-          <div class="concept concept--chosen">
-            <span class="concept__tag">✓ Chosen</span>
-            <figure class="fig"><img decoding="async" src="../images/doc_early.jpg" alt="Three early screen styles for the vital monitor" loading="lazy"></figure>
-            <h4 class="subtitle">Concept 1: a vital monitor patients understand</h4>
-            <p>Three early screen styles, tested with patients.</p>
-          </div>
-          <div class="concept concept--dropped">
-            <span class="concept__tag">Dropped</span>
-            <figure class="fig"><img decoding="async" src="../images/doc_game.jpg" alt="Pixel-style recovery exercise game" loading="lazy"></figure>
-            <h4 class="subtitle">Concept 2: a recovery-exercise game</h4>
-            <p>Wall exercises tracked by a camera. Interviewees said they’d soon get bored, so it wouldn’t ease anxiety.</p>
-          </div>
-        </div>
-
-
-
-        
-
-        <figure class="fig fig--small" data-kind="Photo">
-          <div class="gallery">
-            <img decoding="async" src="../images/doc_sketches_bw.webp" alt="Sketches and a cardboard model of DOC" loading="lazy">
-            <img decoding="async" src="../images/doc_print1_bw.webp" alt="3D-printed DOC prototype" loading="lazy">
-            <img decoding="async" src="../images/doc_print2_bw.webp" alt="3D-printed DOC prototype with its cushion" loading="lazy">
-          </div>
-          <figcaption class="caption">Sketches, then cardboard, then 3D print</figcaption>
-        </figure>
-
-        <h3 class="title">Testing the prototype</h3>
-        <figure class="fig fig--small" data-kind="Photo">
-          <div class="gallery gallery--4" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
-            <img decoding="async" src="../images/doc_final1_bw.webp" alt="Final test: a participant using the screen prototype" loading="lazy">
-            <img decoding="async" src="../images/doc_final3_bw.webp" alt="Final test: a participant in bed holding DOC" loading="lazy">
-          </div>
-        </figure>
-
-        <div class="cols cols--2">
-          <div>
-            <span class="label">Final test: 4 people, mock patient room</span>
-            <p><strong>Worked:</strong> they felt watched over; icons, short texts and a kind tone on bad news calmed them</p>
-            <p><strong>Didn’t:</strong> the green smiley looked like a sick emoji; the meter and all-green colours confused people</p>
-          </div>
-          <div>
-            <span class="label">Touch test</span>
-            <p>Bubble and ridged textures, taken from anti-stress toys on the market, were preferred: touching them distracted the body, stuck in bed, and eased anxiety.</p>
-            <div class="gallery gallery--2 mt-s">
-              <figure class="kindwrap" data-kind="Photo"><img decoding="async" src="../images/doc_textures_bw.webp" alt="Coloured texture samples and a soft ball" loading="lazy"></figure>
-              <figure class="kindwrap" data-kind="Photo"><img decoding="async" src="../images/doc_touchtest_bw.webp" alt="A participant trying the texture samples" loading="lazy"></figure>
-            </div>
-          </div>
-        </div>
-
-        
-
-      
-        <div class="reshape insights"><span class="label">Insights → design decisions</span><ul><li><em>Card sort, visual test</em><span>Patients didn’t want more numbers; they wanted to know they were okay</span><b>→ An avatar and simple meters instead of raw numbers</b></li><li><em>VR sound test</em><span>Beeps raised anxiety; calm sounds lowered it</span><b>→ Relaxing sounds; beeping only in an emergency</b></li><li><em>Touch test</em><span>Hours stuck in bed made people restless</span><b>→ Bubble and ridged textures to squeeze and hold</b></li><li><em>Final test</em><span>A kind tone on bad news calmed people</span><b>→ A gentler message when a value drops: “You’re being looked after”</b></li><li><em>Final test</em><span>The green smiley looked sick and the meters confused people</span><b>→ Next step: clearer meters and colours</b></li></ul></div>
-
-        <p class="statement">Show only what patients care about, explain it calmly, and tell them when they’re okay, without hiding anything.</p>
-
-      </div>
-    </section>
-
-    <section class="chapter">
-      <h2 class="chapter__word">Outcome</h2>
-      <div class="chapter__body">
-
-
-        <div>
-          <h3 class="title">How a patient uses it</h3>
-          <ol class="steps steps--row steps--small">
-            <li class="step">
-              <figure class="fig" data-kind="Render"><img decoding="async" src="../images/ms_bed.webp" alt="DOC hanging on a hospital bed rail" loading="lazy"></figure>
-              <span class="step__n">1</span>
-              <div><h4>On the rail</h4><p>Hangs next to the hospital monitor</p></div>
-            </li>
-            <li class="step">
-              <figure class="fig" data-kind="Render"><img decoding="async" src="../images/doc_hand.webp" alt="DOC held in two hands" loading="lazy"></figure>
-              <span class="step__n">2</span>
-              <div><h4>Lift it off</h4><p>Shaped to be held in both hands</p></div>
-            </li>
-            <li class="step">
-              <figure class="fig doc-texfull" data-kind="Render"><img decoding="async" src="../images/ms_tex.jpg" alt="Close-up of DOC’s textured grips" loading="lazy"></figure>
-              <span class="step__n">3</span>
-              <div><h4>Touch it</h4><p>Squishy cushion, bubbly grips, ridged sides: textures that calm and help focus</p></div>
-            </li>
-          </ol>
-        </div>
-
-        <figure class="fig render">
-          <img decoding="async" src="../images/ms_screens.webp" alt="Two DOC screens: all good, and a value that drops" loading="lazy">
-          <figcaption class="caption">Same calm screen, gentler message when a value drops</figcaption>
-        </figure>
-
-        <div>
-          <h3 class="title">How DOC behaves</h3>
-          <ol class="steps steps--screens">
-            <li class="step">
-              <span class="step__n">1</span>
-              <div><h4>All good</h4><p>The avatar greets the patient, green meters, calm, relaxing sound</p><div class="step__media"><figure class="fig"><img decoding="async" src="../images/doc_scr_good.webp" alt="Heart rate screen showing a good value" loading="lazy"></figure></div></div>
-            </li>
-            <li class="step">
-              <span class="step__n">2</span>
-              <div><h4>A value drops</h4><p>A gentler message and a yellow note: “You’re being looked after”</p><div class="step__media"><figure class="fig"><img decoding="async" src="../images/doc_scr_alert.webp" alt="Oxygen screen with a yellow reassuring note" loading="lazy"></figure></div></div>
-            </li>
-            <li class="step">
-              <span class="step__n">3</span>
-              <div><h4>Emergency</h4><p>Only now does the beeping start</p></div>
-            </li>
-          </ol>
-          <p class="note mt-s">The back, home and forward buttons flip through heart rate, oxygen and temperature.</p>
-        </div>
-
-        
-
-      
-        <div class="learned">
-          <span class="label">What I learned</span>
-          <ul><li>Tone of voice, sound and touch calmed people more than data did.</li><li>Feeling in control calmed people: knowing how they are, even when it isn’t good news.</li><li>Testing one sense at a time made a complex, multi-sensory product manageable.</li></ul>
-        </div>
-
-      </div>
-    </section>
-
-
-  
-    <a class="nextp c-blue" href="#/reliance-toolbox" data-cursor="Open Reliance Toolbox"><span><span class="nextp__eye">Next project</span><span class="nextp__t">Reliance Toolbox</span><span class="nextp__d">A method to study how doctors rely on AI</span></span><span class="nextp__img"><img decoding="async" src="../images/wl_reliance-toolbox.webp" alt="" loading="lazy"></span></a>
+</section>
+<section class="chapter band">
+<h2 class="chapter__word">Define</h2>
+<div class="chapter__body">
+<h3 class="title">The app had money and challenges. It had no community.</h3>
+<div class="split split--top">
+<figure class="persona-pic">
+<img alt="Lara, the socially motivated user" decoding="async" loading="lazy" src="../images/hb_lara2.webp"/>
+</figure>
+<div class="text">
+<span class="label">Key user: the socially motivated</span>
+<h4 class="subtitle">Lara, 32, architect in London</h4>
+<p>She loves doing things with others and wants to move more, but <strong>only keeps it up when others are involved</strong>.</p>
+<p>Money doesn’t motivate her. A supportive group does.</p>
 </div>
-<div class="page" data-route="reliance-toolbox" data-color="c-blue" hidden><nav class="projbar" aria-label="All projects"><a class="c-teal" href="#/healthblocks"><b>01</b> HealthBlocks</a><a class="c-coral" href="#/unifood"><b>02</b> Unifood</a><a class="c-mint" href="#/doc"><b>03</b> DOC</a><a class="c-blue is-current" href="#/reliance-toolbox" aria-current="page"><b>04</b> Reliance Toolbox</a></nav>
-
-    <!-- OPENER -->
-    <section class="opener opener--split">
-      <div>
-        <h1 class="display">Reliance Toolbox</h1>
-        <p class="opener__title">A method and clickable toolbox to study how doctors rely on AI</p>
-        <p class="intro">An interactive toolbox for Philips usability designers who test medical products with users.</p>
-        <p class="meta">
-          <strong>Digital tool for experts</strong>
-          <span>Solo graduation project | Philips × UMC Utrecht × TU Delft | Feb to Aug 2026</span>
-        </p>
-      </div>
-      <figure class="opener__media opener__media--cut opener__media--device"><img decoding="async" loading="lazy" src="../images/tb_laptop_comp2.webp" alt="The Reliance Toolbox homepage on a MacBook"></figure>
-    </section>
-
-    <!-- FACTS -->
-    <section class="facts band">
-      <div>
-        <span class="label">The situation</span>
-        <p>AI helps doctors diagnose but is never 100% right. Usability designers had no method to study how much doctors rely on it.</p>
-        <p><strong>The field lab:</strong> a real hospital ward used to test new medical technology with real data, without the answers affecting patient care.</p>
-      </div>
-      <div>
-        <span class="label">My role</span>
-        <ul class="dash">
-          <li>Research: 7 expert interviews</li><li>Concept &amp; method</li><li>Expert testing (2 rounds)</li><li>UX/UI design</li><li>Figma prototype, refined with Claude</li>
-        </ul>
-      </div>
-      
-      <div class="facts__result">
-        <span class="label">What I designed</span>
-        <p><mark class="hl">Two things: a method to study how doctors’ reliance on AI changes over time in the field lab, and a clickable toolbox that helps usability designers apply it.</mark> <span class="facts__more">The method comes from my research; the toolbox was shaped by two rounds of testing with Philips usability experts.</span></p>
-      </div>
-      <div class="facts__methods">
-        <span class="label">Methods</span>
-        <ul class="inline-list">
-          <li>7 expert interviews</li><li>2 rounds of expert feedback</li><li>Prototyping in Figma</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SOLUTION -->
-    
-
-    <!-- PROBLEM -->
-    <section class="chapter">
-      <h2 class="chapter__word">Challenge</h2>
-      <div class="chapter__body">
-
-
-        
-
-        <div>
-          <h3 class="display display--md">A new colleague in the reading room. It is never 100% right.</h3>
-          <div class="text">
-            <p>AI can be wrong. <strong>What matters is what doctors do with it, and that changes over time.</strong></p>
-            <p>Long hospital studies are hard to run.</p>
-          </div>
-        </div>
-
-        <p class="statement">One lab test can’t show how reliance changes over time.</p>
-
-        <div class="hmw">
-          <span class="label">How might we</span>
-          <p>How might designers test, over time and in a real hospital, how doctors rely on AI?</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- INSIGHT -->
-    <section class="section intro-outcome solution-first">
-      <span class="label">The solution</span>
-      <h2 class="display display--md">Introducing the Reliance Toolbox</h2>
-      <p class="intro">Learn the basics, or jump straight to a table of tools you can filter.</p>
-      <p class="proof"><span class="proof__dot"></span>Tested with Philips usability experts in two rounds. The team now plans to use it in a real usability study.</p>
-      <div class="tb-core">
-          <span class="label">The core</span>
-          <h3 class="title">Compare and filter tools</h3>
-          <p>Every tool side by side on 9 criteria, grouped before, during and after the test.</p>
-          <figure class="laptop laptop--big">
-            <div class="laptop__device"><div class="laptop__screen"><video preload="none" class="laptop__video" src="../images/tbui_tools_vid.mp4" poster="../images/tbui_tools_vid.webp" muted loop playsinline aria-label="Screen recording: filtering the comparison table and opening a tool"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/tbui_tools_vid.webp" alt="The comparison table of tools"></div><img decoding="async" loading="lazy" class="laptop__frame" src="../images/macbook.webp" alt=""></div>
-            <figcaption class="caption">The comparison table</figcaption>
-          </figure>
-        </div>
-    </section>
-
-    <section class="chapter band chapter--compact">
-      <h2 class="chapter__word">Define</h2>
-      <div class="chapter__body">
-
-        <h3 class="title">Seven interviews rewrote the brief.</h3>
-
-
-        
-
-        <div class="cols cols--2">
-          <div>
-            <span class="label">Field lab limits</span>
-            <ul class="dash">
-              <li>Access to patients and staff is limited</li>
-              <li>Doctors have very little time</li>
-              <li>Measuring must not disturb their work</li>
-              <li>Privacy approval needed; data stays anonymous</li>
-              <li>Real data, but answers don’t affect patients</li>
-            </ul>
-          </div>
-          <div>
-            <span class="label">What changes reliance over time</span>
-            <ul class="dash">
-              <li>Fatigue</li><li>AI errors</li><li>Workload</li><li>Growing familiarity</li>
-            </ul>
-          </div>
-        </div>
-
-        <p class="statement">Designers needed guidance and suitable tools, not another tool.</p>
-
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="chapter">
-      <h2 class="chapter__word">Process</h2>
-      <div class="chapter__body">
-
-        <h3 class="title">Four structures. Experts picked the hub.</h3>
-        <div class="tb-opts" role="list">
-          <figure class="tb-opt" role="listitem" data-kind="Wireframe"><div class="tb-opt__img"><img decoding="async" src="../images/tb_s1.webp" alt="Wireframe: five pages in a fixed order" loading="lazy"></div><figcaption><b>Fixed sequence</b><span>One set path, page after page.</span></figcaption></figure>
-          <figure class="tb-opt" role="listitem" data-kind="Wireframe"><div class="tb-opt__img"><img decoding="async" src="../images/tb_s2.webp" alt="Wireframe: a start page and a page with a menu bar of sections" loading="lazy"></div><figcaption><b>Top bar</b><span>Every section in a menu at the top.</span></figcaption></figure>
-          <figure class="tb-opt" role="listitem" data-kind="Wireframe"><div class="tb-opt__img"><img decoding="async" src="../images/tb_s3.webp" alt="Wireframe: a homepage splitting into a new-user path and an experienced path" loading="lazy"></div><figcaption><b>Novice / expert</b><span>Two separate routes.</span></figcaption></figure>
-          <figure class="tb-opt is-picked" role="listitem" data-kind="Wireframe"><span class="tb-opt__badge">✓ Chosen</span><div class="tb-opt__img"><img decoding="async" src="../images/tb_hub2.webp" alt="Wireframe: the hub homepage linked to four sections, each with a way back" loading="lazy"></div><figcaption><b>Hub</b><span>One homepage, four sections, a way back from each.</span></figcaption></figure>
-        </div>
+</div>
+<p class="statement">Money gets people started. A community keeps them going.</p>
+</div>
+</section>
+<!-- DESIGN INTENT -->
+<section class="chapter">
+<h2 class="chapter__word">Process</h2>
+<div class="chapter__body">
 
 
 
-        <div class="stats">
-          <div class="stat"><div class="stat__num">5</div><p>experts tested my concepts: 4 Philips usability designers, 1 researcher</p></div>
-          <div class="stats__link" aria-hidden="true"></div>
-          <div class="stat"><div class="stat__num">2</div><p>rounds of expert testing</p></div>
-          <div class="stats__link" aria-hidden="true"></div>
-          <div class="stat"><div class="stat__num">1</div><p>real hospital test ward studied from the inside, plus research papers</p></div>
-        </div>
+<figure class="fig">
+<img alt="System overview sketch: more users create more community, and more community brings more users" decoding="async" loading="lazy" src="../images/hb_flywheel2.webp"/>
+<figcaption class="caption">The flywheel: more users, more community, more users</figcaption>
+</figure>
+<p class="statement">Money for moving, hearts for helping: social value supports physical effort, it never replaces it.</p>
+<div class="reshape"><span class="label">What reshaped it</span><ul><li><em>Failed</em><span>Money and competition alone: mostly men joined, and losers dropped out</span><b>→ Groups and summits instead of leaderboards</b></li><li><em>Constraint</em><span>Hearts can’t be cashed in, or people would earn without walking</span><b>→ Money comes only from steps</b></li><li><em>Constraint</em><span>The paid step challenges had to stay</span><b>→ Same challenges, reframed as summits</b></li></ul></div>
+</div>
+</section>
+<section class="chapter">
+<h2 class="chapter__word">Outcome</h2>
+<div class="chapter__body">
+<div>
+<h3 class="title">From a list of pools to a summit you choose.</h3>
+<div class="hb-compare">
+<figure class="ui-shot">
+<img alt="The original Games screen: one large pool card after another" decoding="async" loading="lazy" src="../images/hb_ui_games_old_w.webp"/>
+<figcaption><span class="label">Original UI</span><p>One long list of pools, each a big card with dates, entry fee and prize.</p></figcaption>
+</figure>
+<figure class="ui-shot">
+<img alt="The new Summit pools screen with a recommended pool and categories" decoding="async" loading="lazy" src="../images/hb_ui_pools_new_w.webp"/>
+<figcaption><span class="label">New UI</span><p>A recommended pool explained up front, then popular and community pools to choose from.</p></figcaption>
+</figure>
+</div>
+</div>
+<figure class="hb-show">
+<img alt="The new Summit pools and Your data screens on two tilted phones" decoding="async" loading="lazy" src="../images/hb_outcome18.webp"/>
+</figure>
 
-        
+<p class="statement">Communities don’t form because people can talk. They form because people need each other to make progress.</p>
+<div class="learned">
+<span class="label">What I learned</span>
+<ul><li>Designing for women doesn’t mean designing “for women”: motivation depends on context, not gender.</li></ul>
+</div>
+</div>
+</section>
+<a class="nextp c-coral" data-cursor="Open Unifood" href="#/unifood"><span><span class="nextp__eye">Next project</span><span class="nextp__t">Unifood</span><span class="nextp__d">An app that brings lunch to campus</span></span><span class="nextp__img"><img alt="" decoding="async" loading="lazy" src="../images/wl_unifood.webp"/></span></a>
+</div>
+<div class="page" data-color="c-coral" data-route="unifood" hidden=""><nav aria-label="All projects" class="projbar"><a class="c-teal" href="#/healthblocks"><b>01</b> HealthBlocks</a><a aria-current="page" class="c-coral is-current" href="#/unifood"><b>02</b> Unifood</a><a class="c-mint" href="#/doc"><b>03</b> DOC</a><a class="c-blue" href="#/reliance-toolbox"><b>04</b> Reliance Toolbox</a></nav>
+<!-- OPENER -->
+<section class="opener opener--split">
+<div>
+<h1 class="display">Unifood</h1>
+<p class="opener__title">Lunch delivered to campus</p>
+<p class="intro">Order lunch from the canteen, bakeries and delis, delivered by one rider to campus at 1 pm, with discounts that cut food waste.</p>
+<p class="meta">
+<strong>Service + app design</strong>
+<span>Team of 4 | Università di Ferrara | 2023</span>
+</p>
+</div>
+<figure class="opener__media opener__media--cut opener__media--flush">
+<img alt="A hand holding a phone with the Unifood home screen: student discount, perks and today's lunch" decoding="async" loading="lazy" src="../images/uni_cover_cut4.webp"/>
+</figure>
+</section>
+<!-- FACTS -->
+<section class="facts band">
+<div>
+<span class="label">The situation</span>
+<p>In Ferrara, students of <strong>architecture and many other faculties</strong> have one hour for lunch, and the canteen is too far.</p>
+</div>
+<div>
+<span class="label">My role</span>
+<ul class="dash">
+<li>Survey, interviews &amp; field research</li><li>Actors map &amp; storyboard</li><li>Paper prototypes &amp; testing</li><li>Final UI design</li>
+</ul>
+</div>
+<div class="facts__result">
+<span class="label">Result</span>
+<p>A tested service and app with student discounts that also cut food waste : cheaper if you order in advance, or choose the day-before leftovers.</p>
+</div>
 
-        <div>
-          <h3 class="title">The hub in Figma</h3>
-          
-          
-          <div class="tb-evo">
-            
-            
-            <figure class="fig tb-evo__mf" data-kind="Wireframe"><div class="tb-evo__img"><img decoding="async" src="../images/tb_mf_map3.webp" alt="Mid-fidelity wireframes in Figma: the hub homepage connected with arrows to What is reliance, Why test in the field lab, the example study and Choose your tools" loading="lazy"></div><figcaption class="caption"><b>Mid fidelity (Figma).</b> Every page laid out, each one linked back to the hub.</figcaption></figure>
-          </div>
-        </div>
+</section>
+<!-- PROBLEM -->
+<section class="chapter">
+<h2 class="chapter__word">Challenge</h2>
+<div class="chapter__body">
+<span class="label">The brief</span>
+<div class="split split--top">
+<h3 class="display display--md">One hour for lunch, a canteen too far away.</h3>
+<div class="text">
+<p>Most students commute, so they buy lunch near the department.</p>
+<p>They wanted <strong>healthier, more varied options</strong>, and to spend less money.</p>
+</div>
+</div>
+<div class="uf-waste">
+<span class="label">Two goals from the start</span>
+<div><b>Lunch on time</b><p>Delivered to campus within the one-hour break.</p></div>
+<div><b>Less food waste</b><p>Sellers’ leftovers from the day before sold at a student discount.</p></div>
+</div>
+</div>
+</section>
+<section class="section uf-solution">
+<span class="label">The solution</span>
+<h2 class="display display--md">Introducing Unifood</h2>
+<p class="intro">Order from the canteen, bakery, fruit shop or deli. One rider collects everything and delivers it to pickup points on campus at 1 pm.</p>
+<div class="uf-flows">
+<div class="uf-flows__item">
+<div class="uf-flows__text"><span class="uf-flows__n">01</span><h4>Order in three taps</h4><p>From the start screen to today’s discounts, straight to your meal plan.</p></div>
+<div class="uf-flows__media"><video aria-label="Animation: from the splash screen to student perks to the meal plan" data-cursor="Watch it move" loop="" muted="" playsinline="" poster="../images/unifood_flow_poster.webp" preload="none"><source src="../images/unifood_flow.mp4" type="video/mp4"/><source src="../images/unifood_flow.webm" type="video/webm"/></video><img alt="Animation: from the splash screen to student perks to the meal plan" class="print-poster" decoding="async" loading="lazy" src="../images/unifood_flow_poster.webp"/></div>
+</div>
+<div class="uf-flows__item">
+<div class="uf-flows__text"><span class="uf-flows__n">02</span><h4>Track, then reorder</h4><p>Switch between today’s order and your history.</p></div>
+<div class="uf-flows__media"><video aria-label="Animation: switching between upcoming orders and order history" data-cursor="Watch it move" loop="" muted="" playsinline="" poster="../images/unifood_orders_poster.webp" preload="none"><source src="../images/unifood_orders.mp4" type="video/mp4"/><source src="../images/unifood_orders.webm" type="video/webm"/></video><img alt="Animation: switching between upcoming orders and order history" class="print-poster" decoding="async" loading="lazy" src="../images/unifood_orders_poster.webp"/></div>
+</div>
+<div class="uf-flows__item">
+<div class="uf-flows__text"><span class="uf-flows__n">03</span><h4>Collect it on campus</h4><p>The rider drops lunch at pickup points on campus: choose the one nearest your lecture.</p></div>
+<div class="uf-flows__media"><video aria-label="Animation: scrolling the campus pickup map" data-cursor="Watch it move" loop="" muted="" playsinline="" poster="../images/unifood_map_poster.webp" preload="none"><source src="../images/unifood_map.mp4" type="video/mp4"/><source src="../images/unifood_map.webm" type="video/webm"/></video><img alt="Animation: scrolling the campus pickup map" class="print-poster" decoding="async" loading="lazy" src="../images/unifood_map_poster.webp"/></div>
+</div>
+</div>
 
-        
+</section>
+<section class="chapter band">
+<h2 class="chapter__word">Define</h2>
+<div class="chapter__body">
+<div class="uf-big">
+<div><b>40</b><span>students surveyed</span></div>
+<div><b>4</b><span>sellers visited: canteen, bakery, deli, fruit shop</span></div>
+<div><b>7</b><span>groups mapped, from commuters to staff</span></div>
+</div>
+<p class="statement">The problem wasn’t the food: one hour isn’t enough to go and get it.</p>
+</div>
+</section>
+<section class="chapter">
+<h2 class="chapter__word">Process</h2>
+<div class="chapter__body">
+<figure class="fig uf-card">
+<span class="label">Storyboard: from hunger to lunch in hand</span>
+<img alt="Storyboard: a hungry student hears about Unifood, orders in the app, the van collects from the canteen and the student collects lunch on campus" decoding="async" loading="lazy" src="../images/uni_story3.webp"/>
+</figure>
+<div class="uf-card">
+<span class="label">1 · First sketches</span>
+<div class="uni-mf uni-mf--lo"><figure><img alt="Hand-drawn sketch: Welcome" decoding="async" loading="lazy" src="../images/uni_sk5_welcome.webp"/><figcaption class="caption">Welcome</figcaption></figure><figure><img alt="Hand-drawn sketch: Plan your meals" decoding="async" loading="lazy" src="../images/uni_sk6_plan.webp"/><figcaption class="caption">Plan your meals</figcaption></figure><figure><img alt="Hand-drawn sketch: Your orders" decoding="async" loading="lazy" src="../images/uni_sk6_orders.webp"/><figcaption class="caption">Your orders</figcaption></figure><figure><img alt="Hand-drawn sketch: Where to order" decoding="async" loading="lazy" src="../images/uni_sk6_where.webp"/><figcaption class="caption">Where to order</figcaption></figure></div>
+<p aria-hidden="true" class="uni-arrow">↓</p>
+<span class="label">2 · Mid fidelity in Figma</span>
+<div class="uni-mf"><figure><img alt="Wireframe: Welcome" decoding="async" loading="lazy" src="../images/uni_mf2_welcome.webp"/><figcaption class="caption">Welcome</figcaption></figure><figure><img alt="Wireframe: Home" decoding="async" loading="lazy" src="../images/uni_mf2_home.webp"/><figcaption class="caption">Home</figcaption></figure><figure><img alt="Wireframe: Pickup location" decoding="async" loading="lazy" src="../images/uni_mf2_pickup.webp"/><figcaption class="caption">Pickup location</figcaption></figure><figure><img alt="Wireframe: Your orders" decoding="async" loading="lazy" src="../images/uni_mf2_orders.webp"/><figcaption class="caption">Your orders</figcaption></figure><figure><img alt="Wireframe: Plan meals" decoding="async" loading="lazy" src="../images/uni_mf2_plan.webp"/><figcaption class="caption">Plan meals</figcaption></figure></div>
+</div>
+<div class="uf-iter">
+<span class="label">We iterated</span>
+<ul>
+<li><span>Calendar and order history unclear</span><b>→ Orders split into two tabs: upcoming and history</b></li>
+<li><span>“How do I get the discount?”</span><b>→ The discount explained on the welcome and home screens</b></li>
+<li><span>Icons didn’t look tappable</span><b>→ Clearer, tappable icons, and fewer words</b></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="chapter">
+<h2 class="chapter__word">Outcome</h2>
+<div class="chapter__body">
+<div class="uf-service">
+<span class="label">The service: how an order travels</span>
+<ol class="uf-flow uf-flow--4"><li class="uf-flow__step"><span class="uf-flow__n">1</span><b>Pick a seller</b><p>Canteen, deli, bakery or fruit shop</p></li><li class="uf-flow__step"><span class="uf-flow__n">2</span><b>Pay in the app</b><p>Discount if ordered in advance, or for yesterday’s leftovers</p></li><li class="uf-flow__step"><span class="uf-flow__n">3</span><b>Choose a pickup point</b><p>On campus, near your lecture</p></li><li class="uf-flow__step"><span class="uf-flow__n">4</span><b>One rider delivers</b><p>Everything, at 1 pm</p></li></ol>
+<div class="uf-adv">
+<div><b>On time</b><p>Lunch arrives within the one-hour break.</p></div>
+<div><b>Cheaper</b><p>Student discounts, and canteen and bakery prices that delivery apps don’t offer.</p></div>
+<div><b>Less food waste</b><p>Leftovers from the day before are sold, and advance orders let sellers cook the right amount.</p></div>
+<div><b>Good for sellers</b><p>One collection round, and digital orders for shops that had none.</p></div>
+</div>
+</div>
+<figure class="uf-closing">
+<img alt="Two phones with the Unifood meal planner and the orders screen" decoding="async" loading="lazy" src="../images/uni_two_phones.webp"/>
+<figcaption>Plan the week, then track today’s order: the two screens students use most.</figcaption>
+</figure>
+<div class="learned">
+<span class="label">What I learned</span>
+<ul><li>Sometimes the solution is a service, not a screen: one rider at 1 pm mattered more than any feature.</li></ul>
+</div>
+</div>
+</section>
+<a class="nextp c-mint" data-cursor="Open DOC" href="#/doc"><span><span class="nextp__eye">Next project</span><span class="nextp__t">DOC</span><span class="nextp__d">A calming companion for ER patients</span></span><span class="nextp__img"><img alt="" decoding="async" loading="lazy" src="../images/wl_doc.webp"/></span></a>
+</div>
+<div class="page" data-color="c-mint" data-route="doc" hidden=""><nav aria-label="All projects" class="projbar"><a class="c-teal" href="#/healthblocks"><b>01</b> HealthBlocks</a><a class="c-coral" href="#/unifood"><b>02</b> Unifood</a><a aria-current="page" class="c-mint is-current" href="#/doc"><b>03</b> DOC</a><a class="c-blue" href="#/reliance-toolbox"><b>04</b> Reliance Toolbox</a></nav>
+<!-- OPENER -->
+<section class="opener opener--split">
+<div>
+<h1 class="display">DOC</h1>
+<p class="opener__title">A calming companion for ER patients</p>
+<p class="intro">A device for ER patients that hangs on the bed rail and explains their vitals through screen, sound and touch.</p>
+<p class="meta">
+<strong>Sight, sound, touch: product + screen</strong>
+<span>Team of 4 | Erasmus MC | 3 months</span>
+<span>Cover render by a teammate</span>
+</p>
+</div>
+<figure class="opener__media opener__media--photo" data-kind-noted="1">
+<img alt="DOC hanging on the bed rail next to a patient in a hospital room" decoding="async" loading="lazy" src="../images/doc_cover_bedside_nov9.webp"/>
+</figure>
+<p class="kind-note">Render</p>
+</section>
+<!-- FACTS -->
+<section class="facts band">
+<div>
+<span class="label">The situation</span>
+<p>ER patients wait alone for hours next to a monitor that beeps, but that they can’t read.</p>
+</div>
+<div>
+<span class="label">My role</span>
+<ul class="dash">
+<li>Test design &amp; user testing (led): card sort, VR sound test, texture test, final test</li><li>Sound design</li><li>Ideation</li><li>Screen design</li><li>Render refinement</li>
+</ul>
+</div>
+<div class="facts__result">
+<span class="label">Result</span>
+<p><mark class="hl">In the final test, <strong>people felt watched over and calmer</strong>, and showed us what to fix: meters and colours.</mark></p>
+</div>
 
-        
+</section>
+<!-- SOLUTION -->
+<!-- PROBLEM -->
+<section class="chapter">
+<h2 class="chapter__word">Challenge</h2>
+<div class="chapter__body">
+<div>
+<h3 class="display display--md">Two hours, one beeping machine, nobody to ask.</h3>
+<p class="intro">The machine meant to protect them scares them.</p>
+</div>
+<div class="split split--wide-img">
+<div>
+<span class="label">Where it hurts</span>
+<ul class="dash">
+<li>Screens and beeps about their health raise anxiety</li>
+<li>Hours in the same position are frustrating and scary</li>
+<li>Medical procedures add more anxiety</li>
+</ul>
+</div>
+<figure class="fig">
+<img alt="Storyboard of a patient alone with the monitor" decoding="async" loading="lazy" src="../images/ms_s3.jpg"/>
+<figcaption class="caption">From our storyboard: alone, with questions and no answers</figcaption>
+</figure>
+</div>
+<div class="hmw">
+<span class="label">How might we</span>
+<p>How might we help ER patients feel safe and in control while they wait?</p>
+</div>
+</div>
+</section>
+<!-- INSIGHT -->
+<section class="section intro-outcome solution-first">
+<span class="label">The solution</span>
+<h2 class="display display--md">Introducing DOC</h2>
+<div class="text">
+<p class="intro">Hang it on the bed rail or lift it off: squeeze, touch and tap to see how your body is doing.</p>
+</div>
+<figure class="fig render bleed" data-kind="Render">
+<img alt="DOC held in two hands" decoding="async" loading="lazy" src="../images/doc_hand.webp"/>
+</figure>
+</section>
+<section class="chapter band">
+<h2 class="chapter__word">Define</h2>
+<div class="chapter__body">
+<h3 class="title">Patients didn’t want more numbers. They wanted to know they were okay.</h3>
+<div class="gallery">
+<figure class="fig" data-kind="Photo">
+<img alt="In an Erasmus MC treatment room: a researcher talks with a person lying on the bed, acting out the wait" decoding="async" loading="lazy" src="../images/doc_room_bw.webp"/>
+<figcaption class="caption"><strong>In the hospital:</strong> observing Erasmus MC treatment rooms, acting out the wait, 1 expert interview</figcaption>
+</figure>
+<figure class="fig">
+<img alt="Card sorting of monitor elements" decoding="async" loading="lazy" src="../images/ms_card.jpg"/>
+<figcaption class="caption"><strong>Sorting cards (6 people):</strong> which parts of the monitor matter. <strong>Visual test (3 people):</strong> graphics vs. numbers</figcaption>
+</figure>
+<figure class="fig" data-kind="Photo">
+<img alt="Participants wearing VR headsets during the sound test" decoding="async" loading="lazy" src="../images/ms_vr_bw.webp"/>
+<figcaption class="caption"><strong>Sound test in VR (6 people):</strong> nature sounds, normal beeps and relaxing sounds</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<!-- PROCESS -->
+<section class="chapter">
+<h2 class="chapter__word">Process</h2>
+<div class="chapter__body">
 
-        
 
-      
-        <div class="reshape insights"><span class="label">Insights → design decisions</span><ul><li><em>Field lab visit</em><span>Doctors have very little time, and measuring must not disturb their work</span><b>→ A table comparing every tool on 9 criteria, so designers pick what fits the ward</b></li><li><em>7 interviews</em><span>Reliance changes over time: fatigue, AI errors, workload, familiarity</span><b>→ Tools grouped before, during and after the test, to follow change over time</b></li><li><em>7 interviews</em><span>Designers didn’t need another tool; they needed guidance to choose</span><b>→ A method that guides the choice, plus a toolbox of existing tools</b></li><li><em>Expert testing, round 1</em><span>Experts wanted freedom, not fixed steps</span><b>→ A hub with four sections instead of a fixed sequence</b></li><li><em>Expert testing, round 2</em><span>A real example helped more than instructions</span><b>→ A one-page example study</b></li></ul></div>
-
-        <p class="statement">Let designers pick their own tools, with guidance and a real example, not fixed steps.</p>
-
-      </div>
-    </section>
-
-    <section class="chapter">
-      <h2 class="chapter__word">Outcome</h2>
-      <div class="chapter__body">
+<figure class="fig fig--small" data-kind="Photo">
+<div class="gallery">
+<img alt="Sketches and a cardboard model of DOC" decoding="async" loading="lazy" src="../images/doc_sketches_bw.webp"/>
+<img alt="3D-printed DOC prototype" decoding="async" loading="lazy" src="../images/doc_print1_bw.webp"/>
+<img alt="3D-printed DOC prototype with its cushion" decoding="async" loading="lazy" src="../images/doc_print2_bw.webp"/>
+</div>
+<figcaption class="caption">Sketches, then cardboard, then 3D print</figcaption>
+</figure>
 
 
-        
 
-        <div class="laptops">
-          <figure class="laptop">
-            <div class="laptop__device"><div class="laptop__screen"><video preload="none" class="laptop__video" src="../images/tbui_reliance_vid2.mp4" poster="../images/tbui_reliance_vid2.webp" muted loop playsinline aria-label="Screen recording: browsing the What is reliance page and the reliance dimensions"></video><img decoding="async" loading="lazy" class="print-poster" src="../images/tbui_reliance_vid2.webp" alt="The What is reliance page"></div><img decoding="async" loading="lazy" class="laptop__frame" src="../images/macbook.webp" alt=""></div>
-            <figcaption class="caption">What is reliance?</figcaption>
-          </figure>
-          <figure class="laptop">
-            <div class="laptop__device"><div class="laptop__screen"><img decoding="async" src="../images/tbui_fieldlab2.webp" alt="The Why test in the field lab page, scrolling" loading="lazy"></div><img decoding="async" loading="lazy" class="laptop__frame" src="../images/macbook.webp" alt=""></div>
-            <figcaption class="caption">Why test in the field lab?</figcaption>
-          </figure>
-          <figure class="laptop">
-            <div class="laptop__device"><div class="laptop__screen"><img decoding="async" src="../images/tbui_example2.webp" alt="The one-page example study, scrolling" loading="lazy"></div><img decoding="async" loading="lazy" class="laptop__frame" src="../images/macbook.webp" alt=""></div>
-            <figcaption class="caption">A one-page example study</figcaption>
-          </figure>
-        </div>
+<div class="reshape insights"><span class="label">Insights → design decisions</span><ul><li><em>Card sort, visual test</em><span>Patients didn’t want more numbers; they wanted to know they were okay</span><b>→ An avatar and simple meters instead of raw numbers</b></li><li><em>VR sound test</em><span>Beeps raised anxiety; calm sounds lowered it</span><b>→ Relaxing sounds; beeping only in an emergency</b></li><li><em>Touch test</em><span>Hours stuck in bed made people restless</span><b>→ Bubble and ridged textures to squeeze and hold</b></li><li><em>Final test</em><span>A kind tone on bad news calmed people</span><b>→ A gentler message when a value drops: “You’re being looked after”</b></li></ul></div>
+<p class="statement">Show only what patients care about, explain it calmly, and tell them when they’re okay, without hiding anything.</p>
+</div>
+</section>
+<section class="chapter">
+<h2 class="chapter__word">Outcome</h2>
+<div class="chapter__body">
+<div>
+<h3 class="title">How a patient uses it</h3>
+<ol class="steps steps--row steps--small">
+<li class="step">
+<figure class="fig" data-kind="Render"><img alt="DOC hanging on a hospital bed rail" decoding="async" loading="lazy" src="../images/ms_bed.webp"/></figure>
+<span class="step__n">1</span>
+<div><h4>On the rail</h4><p>Hangs next to the hospital monitor</p></div>
+</li>
+<li class="step">
+<figure class="fig" data-kind="Render"><img alt="DOC held in two hands" decoding="async" loading="lazy" src="../images/doc_hand.webp"/></figure>
+<span class="step__n">2</span>
+<div><h4>Lift it off</h4><p>Shaped to be held in both hands</p></div>
+</li>
+<li class="step">
+<figure class="fig doc-texfull" data-kind="Render"><img alt="Close-up of DOC’s textured grips" decoding="async" loading="lazy" src="../images/ms_tex.jpg"/></figure>
+<span class="step__n">3</span>
+<div><h4>Touch it</h4><p>Squishy cushion, bubbly grips, ridged sides: textures that calm and help focus</p></div>
+</li>
+</ol>
+</div>
+<figure class="fig render">
+<img alt="Two DOC screens: all good, and a value that drops" decoding="async" loading="lazy" src="../images/ms_screens.webp"/>
+<figcaption class="caption">Same calm screen, gentler message when a value drops</figcaption>
+</figure>
 
-        
+<div class="learned">
+<span class="label">What I learned</span>
+<ul><li>Tone of voice, sound and touch calmed people more than data did.</li></ul>
+</div>
+</div>
+</section>
+<a class="nextp c-blue" data-cursor="Open Reliance Toolbox" href="#/reliance-toolbox"><span><span class="nextp__eye">Next project</span><span class="nextp__t">Reliance Toolbox</span><span class="nextp__d">A method to study how doctors rely on AI</span></span><span class="nextp__img"><img alt="" decoding="async" loading="lazy" src="../images/wl_reliance-toolbox.webp"/></span></a>
+</div>
+<div class="page" data-color="c-blue" data-route="reliance-toolbox" hidden=""><nav aria-label="All projects" class="projbar"><a class="c-teal" href="#/healthblocks"><b>01</b> HealthBlocks</a><a class="c-coral" href="#/unifood"><b>02</b> Unifood</a><a class="c-mint" href="#/doc"><b>03</b> DOC</a><a aria-current="page" class="c-blue is-current" href="#/reliance-toolbox"><b>04</b> Reliance Toolbox</a></nav>
+<!-- OPENER -->
+<section class="opener opener--split">
+<div>
+<h1 class="display">Reliance Toolbox</h1>
+<p class="opener__title">A method and clickable toolbox to study how doctors rely on AI</p>
+<p class="intro">An interactive toolbox for Philips usability designers who test medical products with users.</p>
+<p class="meta">
+<strong>Digital tool for experts</strong>
+<span>Solo graduation project | Philips × UMC Utrecht × TU Delft | Feb to Aug 2026</span>
+</p>
+</div>
+<figure class="opener__media opener__media--cut opener__media--device"><img alt="The Reliance Toolbox homepage on a MacBook" decoding="async" loading="lazy" src="../images/tb_laptop_comp2.webp"/></figure>
+</section>
+<!-- FACTS -->
+<section class="facts band">
+<div>
+<span class="label">The situation</span>
+<p>AI helps doctors diagnose but is never 100% right.</p>
+<p>The field lab: a real hospital ward used to test new medical technology with real data, without the answers affecting patient care.</p>
+</div>
+<div>
+<span class="label">My role</span>
+<ul class="dash">
+<li>Research: 7 expert interviews</li><li>Concept &amp; method</li><li>Expert testing (2 rounds)</li><li>UX/UI design</li><li>Figma prototype, refined with Claude</li>
+</ul>
+</div>
+<div class="facts__result">
+<span class="label">What I designed</span>
+<p>Two things: a method to study how doctors’ reliance on AI changes over time in the field lab, and a clickable toolbox that helps usability designers apply it.</p>
+</div>
 
-      
-        <div class="learned">
-          <span class="label">What I learned</span>
-          <ul><li>Experts don’t want to be guided step by step: they want freedom, with a good example.</li><li>Seven interviews can rewrite a brief. Listening first kept me from building the wrong method.</li></ul>
-        </div>
+</section>
+<!-- SOLUTION -->
+<!-- PROBLEM -->
+<section class="chapter">
+<h2 class="chapter__word">Challenge</h2>
+<div class="chapter__body">
+<div>
+<h3 class="display display--md">A new colleague in the reading room. It is never 100% right.</h3>
+<div class="text">
+<p>AI can be wrong. <strong>What matters is what doctors do with it, and that changes over time.</strong></p>
+<p>Long hospital studies are hard to run.</p>
+</div>
+</div>
+<p class="statement">One lab test can’t show how reliance changes over time.</p>
+<div class="hmw">
+<span class="label">How might we</span>
+<p>How might designers test, over time and in a real hospital, how doctors rely on AI?</p>
+</div>
+</div>
+</section>
+<!-- INSIGHT -->
+<section class="section intro-outcome solution-first">
+<span class="label">The solution</span>
+<h2 class="display display--md">Introducing the Reliance Toolbox</h2>
+<p class="intro">Learn the basics, or jump straight to a table of tools you can filter.</p>
+<p class="proof"><span class="proof__dot"></span>Tested with Philips usability experts in two rounds. The team now plans to use it in a real usability study.</p>
+<div class="tb-core">
+<span class="label">The core</span>
+<h3 class="title">Compare and filter tools</h3>
+<p>Every tool side by side on 9 criteria, grouped before, during and after the test.</p>
+<figure class="laptop laptop--big">
+<div class="laptop__device"><div class="laptop__screen"><video aria-label="Screen recording: filtering the comparison table and opening a tool" class="laptop__video" loop="" muted="" playsinline="" poster="../images/tbui_tools_vid.webp" preload="none" src="../images/tbui_tools_vid.mp4"></video><img alt="The comparison table of tools" class="print-poster" decoding="async" loading="lazy" src="../images/tbui_tools_vid.webp"/></div><img alt="" class="laptop__frame" decoding="async" loading="lazy" src="../images/macbook.webp"/></div>
+<figcaption class="caption">The comparison table</figcaption>
+</figure>
+</div>
+</section>
+<section class="chapter band chapter--compact">
+<h2 class="chapter__word">Define</h2>
+<div class="chapter__body">
+<h3 class="title">Seven interviews rewrote the brief.</h3>
+<div class="cols cols--2">
+<div>
+<span class="label">Field lab limits</span>
+<ul class="dash">
+<li>Access to patients and staff is limited</li>
+<li>Doctors have very little time</li>
+<li>Measuring must not disturb their work</li>
+<li>Privacy approval needed; data stays anonymous</li>
+<li>Real data, but answers don’t affect patients</li>
+</ul>
+</div>
+<div>
+<span class="label">What changes reliance over time</span>
+<ul class="dash">
+<li>Fatigue</li><li>AI errors</li><li>Workload</li><li>Growing familiarity</li>
+</ul>
+</div>
+</div>
+<p class="statement">Designers needed guidance and suitable tools, not another tool.</p>
+</div>
+</section>
+<!-- PROCESS -->
+<section class="chapter">
+<h2 class="chapter__word">Process</h2>
+<div class="chapter__body">
+<h3 class="title">Four structures. Experts picked the hub.</h3>
+<div class="tb-opts" role="list">
+<figure class="tb-opt" data-kind="Wireframe" role="listitem"><div class="tb-opt__img"><img alt="Wireframe: five pages in a fixed order" decoding="async" loading="lazy" src="../images/tb_s1.webp"/></div><figcaption><b>Fixed sequence</b><span>One set path, page after page.</span></figcaption></figure>
+<figure class="tb-opt" data-kind="Wireframe" role="listitem"><div class="tb-opt__img"><img alt="Wireframe: a start page and a page with a menu bar of sections" decoding="async" loading="lazy" src="../images/tb_s2.webp"/></div><figcaption><b>Top bar</b><span>Every section in a menu at the top.</span></figcaption></figure>
+<figure class="tb-opt" data-kind="Wireframe" role="listitem"><div class="tb-opt__img"><img alt="Wireframe: a homepage splitting into a new-user path and an experienced path" decoding="async" loading="lazy" src="../images/tb_s3.webp"/></div><figcaption><b>Novice / expert</b><span>Two separate routes.</span></figcaption></figure>
+<figure class="tb-opt is-picked" data-kind="Wireframe" role="listitem"><span class="tb-opt__badge">✓ Chosen</span><div class="tb-opt__img"><img alt="Wireframe: the hub homepage linked to four sections, each with a way back" decoding="async" loading="lazy" src="../images/tb_hub2.webp"/></div><figcaption><b>Hub</b><span>One homepage, four sections, a way back from each.</span></figcaption></figure>
+</div>
+<div class="stats">
+<div class="stat"><div class="stat__num">5</div><p>experts tested my concepts: 4 Philips usability designers, 1 researcher</p></div>
+<div aria-hidden="true" class="stats__link"></div>
+<div class="stat"><div class="stat__num">2</div><p>rounds of expert testing</p></div>
+<div aria-hidden="true" class="stats__link"></div>
+<div class="stat"><div class="stat__num">1</div><p>real hospital test ward studied from the inside, plus research papers</p></div>
+</div>
 
-      </div>
-    </section>
-
-
-  
-    <a class="nextp c-teal" href="#/healthblocks" data-cursor="Open HealthBlocks"><span><span class="nextp__eye">Next project</span><span class="nextp__t">HealthBlocks</span><span class="nextp__d">A walking app built on community</span></span><span class="nextp__img"><img decoding="async" src="../images/wl_healthblocks.webp" alt="" loading="lazy"></span></a>
+<div class="reshape insights"><span class="label">Insights → design decisions</span><ul><li><em>Field lab visit</em><span>Doctors have very little time, and measuring must not disturb their work</span><b>→ A table comparing every tool on 9 criteria, so designers pick what fits the ward</b></li><li><em>7 interviews</em><span>Reliance changes over time: fatigue, AI errors, workload, familiarity</span><b>→ Tools grouped before, during and after the test, to follow change over time</b></li><li><em>7 interviews</em><span>Designers didn’t need another tool; they needed guidance to choose</span><b>→ A method that guides the choice, plus a toolbox of existing tools</b></li><li><em>Expert testing, round 1</em><span>Experts wanted freedom, not fixed steps</span><b>→ A hub with four sections instead of a fixed sequence</b></li></ul></div>
+<p class="statement">Let designers pick their own tools, with guidance and a real example, not fixed steps.</p>
+</div>
+</section>
+<section class="chapter">
+<h2 class="chapter__word">Outcome</h2>
+<div class="chapter__body">
+<div class="laptops">
+<figure class="laptop">
+<div class="laptop__device"><div class="laptop__screen"><video aria-label="Screen recording: browsing the What is reliance page and the reliance dimensions" class="laptop__video" loop="" muted="" playsinline="" poster="../images/tbui_reliance_vid2.webp" preload="none" src="../images/tbui_reliance_vid2.mp4"></video><img alt="The What is reliance page" class="print-poster" decoding="async" loading="lazy" src="../images/tbui_reliance_vid2.webp"/></div><img alt="" class="laptop__frame" decoding="async" loading="lazy" src="../images/macbook.webp"/></div>
+<figcaption class="caption">What is reliance?</figcaption>
+</figure>
+<figure class="laptop">
+<div class="laptop__device"><div class="laptop__screen"><img alt="The Why test in the field lab page, scrolling" decoding="async" loading="lazy" src="../images/tbui_fieldlab2.webp"/></div><img alt="" class="laptop__frame" decoding="async" loading="lazy" src="../images/macbook.webp"/></div>
+<figcaption class="caption">Why test in the field lab?</figcaption>
+</figure>
+<figure class="laptop">
+<div class="laptop__device"><div class="laptop__screen"><img alt="The one-page example study, scrolling" decoding="async" loading="lazy" src="../images/tbui_example2.webp"/></div><img alt="" class="laptop__frame" decoding="async" loading="lazy" src="../images/macbook.webp"/></div>
+<figcaption class="caption">A one-page example study</figcaption>
+</figure>
+</div>
+<div class="learned">
+<span class="label">What I learned</span>
+<ul><li>Experts don’t want to be guided step by step: they want freedom, with a good example.</li></ul>
+</div>
+</div>
+</section>
+<a class="nextp c-teal" data-cursor="Open HealthBlocks" href="#/healthblocks"><span><span class="nextp__eye">Next project</span><span class="nextp__t">HealthBlocks</span><span class="nextp__d">A walking app built on community</span></span><span class="nextp__img"><img alt="" decoding="async" loading="lazy" src="../images/wl_healthblocks.webp"/></span></a>
 </div>
 </main>
 
@@ -5457,5 +5163,5 @@ a, button { -webkit-tap-highlight-color: transparent; }
   if(location.hash.indexOf('about')>-1) pre(); else addEventListener('load',function(){ setTimeout(pre,1200); });
   addEventListener('hashchange',function(){ if(location.hash.indexOf('about')>-1) pre(); }); })();
 </script>
-<script>/* add96 */(function(){ if(!window.matchMedia('(max-width: 900px)').matches) return; function eager(){ document.querySelectorAll('.page:not([hidden]) img[loading="lazy"]').forEach(function(i){ i.loading='eager'; }); } eager(); addEventListener('hashchange',function(){ setTimeout(eager,50); }); addEventListener('load',eager); })();</script></body>
+<script>/* add96 */(function(){ if(!window.matchMedia('(max-width: 900px)').matches) return; function eager(){ document.querySelectorAll('.page:not([hidden]) img[loading="lazy"]').forEach(function(i){ i.loading='eager'; }); } eager(); addEventListener('hashchange',function(){ setTimeout(eager,50); }); addEventListener('load',eager); })();</script><script>(function(){function go(){var pages=document.querySelectorAll('.page[data-route]:not([data-route="home"]):not([data-route="about"]):not([data-route="experience"])');var list=[];pages.forEach(function(pg){pg.querySelectorAll('p,li,figcaption,span,b,strong,em,h4,h5,a,dd,dt,small,div').forEach(function(e){if(e.closest('.opener')||e.closest('.nextp')||e.closest('.projbar'))return;var t=0;for(var n=e.firstChild;n;n=n.nextSibling){if(n.nodeType===3&&n.textContent.trim()){t=1;break}}if(!t)return;var f=parseFloat(getComputedStyle(e).fontSize);if(f&&f<=21)list.push([e,f])})});list.forEach(function(x){x[0].style.setProperty('font-size',(x[1]*1.22).toFixed(1)+'px','important')})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();</script></body>
 </html>
