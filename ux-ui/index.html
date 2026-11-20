@@ -4086,6 +4086,15 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
 /* add95: About photos load fast and appear together */
 .page[data-route="about"] .rv-k, .page[data-route="about"] .rv { transition-delay: 0s !important; }
+
+/* add96: phone fixes: static cover words, art below text, nothing stays invisible */
+@media (max-width: 900px){
+  .page[data-route="home"] .cover { padding-bottom: 118vw !important; }
+  html .hand .lt, html .hand .lt.bend { animation: none !important; opacity: 1 !important; transform: none !important; will-change: auto !important; }
+  html .hand .lt.bend { transform: rotate(var(--r)) !important; }
+  html.js-rv .rv, html.js-rv .rv-k, html.js-rv .rv-k > *, .rv, .rv-k > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+  html.js-reveal #work .wl > li { opacity: 1 !important; transform: none !important; }
+}
 </style>
 </head>
 <body class="c-yellow">
@@ -5164,7 +5173,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
   function fit(){
     var mob=window.matchMedia('(max-width: 900px)').matches;
     var art=svg.parentNode, cov=art.parentNode, hl=cov.querySelector('.cover__line');
-    if(mob&&hl){ var t=Math.round(hl.getBoundingClientRect().bottom-cov.getBoundingClientRect().top+18); art.style.setProperty('--art-top',t+'px'); } else { art.style.removeProperty('--art-top'); }
+    if(mob&&hl){ var tx=cov.querySelector('.cover__text')||hl; var t=Math.round(tx.getBoundingClientRect().bottom-cov.getBoundingClientRect().top+24); art.style.setProperty('--art-top',t+'px'); } else { art.style.removeProperty('--art-top'); }
     var box=svg.getBoundingClientRect();
     if(mob && box.width>0 && box.height>0){
       var W=760, H=W*box.height/box.width, k=Math.max(1,H/760), key='m'+Math.round(H);
@@ -5182,5 +5191,5 @@ a, button { -webkit-tap-highlight-color: transparent; }
   if(location.hash.indexOf('about')>-1) pre(); else addEventListener('load',function(){ setTimeout(pre,1200); });
   addEventListener('hashchange',function(){ if(location.hash.indexOf('about')>-1) pre(); }); })();
 </script>
-</body>
+<script>/* add96 */(function(){ if(!window.matchMedia('(max-width: 900px)').matches) return; function eager(){ document.querySelectorAll('.page:not([hidden]) img[loading="lazy"]').forEach(function(i){ i.loading='eager'; }); } eager(); addEventListener('hashchange',function(){ setTimeout(eager,50); }); addEventListener('load',eager); })();</script></body>
 </html>
