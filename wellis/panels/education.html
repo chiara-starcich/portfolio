@@ -163,7 +163,7 @@ div>ul li:before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2
 .wed p{font-size:17px;color:#777;line-height:1.3}
 .wxp{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;margin-bottom:12px}
 .wxp ul{list-style:none} .wxp li{font-size:18px!important;color:#666!important;line-height:1.3!important;margin-top:1px!important}
-.wxp__org{font-size:20px;color:#666;line-height:1.25;padding-top:2px} .wxp__org b{color:#222}
+.wxp__org{font-size:19px;color:#666;line-height:1.3;padding-top:0} .wxp__org b{color:#111;font-family:Poppins;font-weight:700;font-size:25px;line-height:1.15;display:inline-block;margin-bottom:2px}
 .wsws{display:grid;grid-template-columns:repeat(4,104px);gap:26px 22px}
 .wsw{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:16px;font-weight:600;text-align:center}
 .wsw span{width:80px;height:80px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-family:Poppins;font-weight:600;font-size:28px}
@@ -209,7 +209,7 @@ div>ul li:before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2
  .slot>.pg{position:absolute;left:0;top:0;transform-origin:0 0;transform:scale(var(--s,.5))}
 }
 @media print{.slot{display:block}}
-html,body{margin:0;overflow:hidden;background:#fff}</style></head><body><main class="deck"><div class="slot"><section class="pg  num">
+html,body{margin:0;overflow:hidden;background:#fff}</style></head><body data-trim="1"><main class="deck"><div class="slot"><section class="pg  num">
 <div class="abs wcv" style="left:140px;top:120px;width:1640px">
   <div>
     <h3>Education</h3>
@@ -222,4 +222,4 @@ html,body{margin:0;overflow:hidden;background:#fff}</style></head><body><main cl
   </div>
   <div><h3>Experience</h3><div class="wxp"><div><h4>Product Designer &amp; Communication</h4><ul><li>3D modelling, renders, technical manuals and research</li><li>The only product designer on LIT, Life in Tiny</li><li>Exhibited at Milan Design Week 2025</li></ul></div><p class="wxp__org"><b>Matteo Bazzicalupo</b><br><b>deepdesign Studio</b><br>since 2023</p></div><div class="wxp"><div><h4>Design Intern, graduation project</h4><ul><li>Solo project: a method and toolbox to study how doctors rely on AI in clinical settings</li><li>7 expert interviews and 2 rounds of expert testing</li><li>Clickable prototype in Figma</li></ul></div><p class="wxp__org"><b>Philips</b><br><b>I&amp;D Usability Excellence</b><br>with UMC Utrecht &amp; TU Delft<br>2026 February to August</p></div><div class="wxp"><div><h4>Design Intern</h4><ul><li>Ran comfort and usability studies for aircraft seats</li><li>Worked with engineers and other experts</li></ul></div><p class="wxp__org"><b>Collins Aerospace</b><br>2025 September to November</p></div><div class="wxp"><div><h4>Interior Design Intern</h4><ul><li>Technical drawings and material research</li><li>Client meetings</li></ul></div><p class="wxp__org"><b>Studio Joanne Paul</b><br>Parma<br>2023 July to August</p></div></div>
 </div>
-</section></div></main><script>function fit(){var s=document.querySelector('.slot');s.style.setProperty('--s',s.clientWidth/1920)}addEventListener('resize',fit);fit();</script></body></html>
+</section></div></main><script>function fit(){var s=document.querySelector('.slot'),k=s.clientWidth/1920;s.style.setProperty('--s',k);if(!document.body.dataset.trim)return;var pg=s.querySelector('.pg'),m=0;pg.querySelectorAll('.abs').forEach(function(e){m=Math.max(m,e.offsetTop+e.offsetHeight)});var H=Math.ceil((m+70)*k);s.style.aspectRatio='auto';s.style.height=H+'px';if(window.frameElement){window.frameElement.style.aspectRatio='auto';window.frameElement.style.height=H+'px'}}addEventListener('resize',fit);addEventListener('load',fit);fit();</script></body></html>

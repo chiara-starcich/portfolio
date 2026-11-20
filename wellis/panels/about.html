@@ -163,7 +163,7 @@ div>ul li:before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2
 .wed p{font-size:17px;color:#777;line-height:1.3}
 .wxp{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;margin-bottom:12px}
 .wxp ul{list-style:none} .wxp li{font-size:18px!important;color:#666!important;line-height:1.3!important;margin-top:1px!important}
-.wxp__org{font-size:20px;color:#666;line-height:1.25;padding-top:2px} .wxp__org b{color:#222}
+.wxp__org{font-size:19px;color:#666;line-height:1.3;padding-top:0} .wxp__org b{color:#111;font-family:Poppins;font-weight:700;font-size:25px;line-height:1.15;display:inline-block;margin-bottom:2px}
 .wsws{display:grid;grid-template-columns:repeat(4,104px);gap:26px 22px}
 .wsw{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:16px;font-weight:600;text-align:center}
 .wsw span{width:80px;height:80px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-family:Poppins;font-weight:600;font-size:28px}
@@ -210,11 +210,12 @@ div>ul li:before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2
 }
 @media print{.slot{display:block}}
 html,body{margin:0;overflow:hidden;background:#fff}</style></head><body><main class="deck"><div class="slot"><section class="pg  num">
-<svg class="abs" style="left:-90px;top:-150px;width:1000px;height:1000px" viewBox="0 0 960 960">
+<svg class="abs" style="left:-60px;top:-110px;width:1000px;height:1000px" viewBox="0 0 960 960">
+  <defs><clipPath id="abclip"><path d="M520,40 C700,30 860,160 900,340 C950,560 880,760 700,860 C520,960 260,950 140,800 C20,650 30,430 110,260 C190,100 340,50 520,40Z"/></clipPath></defs>
   <path d="M470,30 C650,10 900,120 930,330 C960,560 850,800 640,900 C450,990 200,930 100,760 C10,600 40,380 140,220 C230,90 330,45 470,30Z" fill="#efe0fa" transform="translate(30,40) rotate(-10 480 480)"/>
   <path d="M520,40 C700,30 860,160 900,340 C950,560 880,760 700,860 C520,960 260,950 140,800 C20,650 30,430 110,260 C190,100 340,50 520,40Z" fill="#dcbcf2"/>
+  <image href="img/selfie_blue_992.png" x="40" y="170" width="780" height="998" clip-path="url(#abclip)"/>
 </svg>
-<img loading="lazy" decoding="async" class="abs" src="img/selfie_blue_837.png" style="left:200px;top:200px;width:540px">
 <div class="abs" style="left:980px;top:130px;width:800px">
   <h1 class="wab__title">About</h1>
   <p class="wab__p"><b>Chiara Starcich</b> · <b>UX &amp; Product Designer</b> · Netherlands</p>
@@ -222,4 +223,4 @@ html,body{margin:0;overflow:hidden;background:#fff}</style></head><body><main cl
   <p class="wab__p">MSc Design for Interaction, TU Delft · BSc Industrial Product Design, Ferrara</p>
   <div class="wab__contact"><p><span class="wab__k">Email</span>starcich.chiara@gmail.com</p><p><span class="wab__k">Phone</span>+39 348 654 5381</p><p><span class="wab__k">LinkedIn</span>linkedin.com/in/chiara-starcich-1a9060357</p></div>
 </div>
-</section></div></main><script>function fit(){var s=document.querySelector('.slot');s.style.setProperty('--s',s.clientWidth/1920)}addEventListener('resize',fit);fit();</script></body></html>
+</section></div></main><script>function fit(){var s=document.querySelector('.slot'),k=s.clientWidth/1920;s.style.setProperty('--s',k);if(!document.body.dataset.trim)return;var pg=s.querySelector('.pg'),m=0;pg.querySelectorAll('.abs').forEach(function(e){m=Math.max(m,e.offsetTop+e.offsetHeight)});var H=Math.ceil((m+70)*k);s.style.aspectRatio='auto';s.style.height=H+'px';if(window.frameElement){window.frameElement.style.aspectRatio='auto';window.frameElement.style.height=H+'px'}}addEventListener('resize',fit);addEventListener('load',fit);fit();</script></body></html>
