@@ -1,0 +1,438 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chiara Starcich, UX &amp; Product Designer</title><meta name="description" content="Portfolio of Chiara Starcich, UX and Product Designer: HealthBlocks, Unifood, DOC, Reliance Toolbox."><style>
+@font-face{font-family:Figtree;src:url(fonts/figtree-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:Figtree;src:url(fonts/figtree-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Figtree;src:url(fonts/figtree-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Figtree;src:url(fonts/figtree-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Poppins;src:url(fonts/poppins-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Poppins;src:url(fonts/poppins-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:Poppins;src:url(fonts/poppins-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Poppins;src:url(fonts/poppins-latin-400-normal.woff2);font-weight:400}
+@page{size:1920px 1080px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff}
+body{font-family:Figtree,sans-serif;color:#141414;-webkit-print-color-adjust:exact;print-color-adjust:exact;counter-reset:pg}
+.pg{position:relative;width:1920px;height:1080px;overflow:hidden;page-break-after:always;break-after:page;background:#fff}
+.pg:last-child{page-break-after:auto}
+.pg.num{counter-increment:pg}
+.abs{position:absolute}
+.blob{position:absolute}
+.blue{color:#1626ff}
+.white{color:#fff}
+.bluepage{background:#1626ff}
+h1,h2,h3,h4,.mega,.chap,.pnum,.stmt{font-family:Poppins,sans-serif}
+.mega{font-weight:700;font-size:190px;line-height:.92;letter-spacing:-.045em}
+.cover__role{font-family:Poppins;font-weight:600;font-size:34px;margin-top:44px;letter-spacing:-.01em}
+.cover__line{font-size:30px;line-height:1.35;margin-top:16px;max-width:780px;color:#333}
+.cover__line b{font-weight:600}
+.cover__cols{display:flex;gap:70px;font-size:17px;line-height:1.6;color:#444}
+.cover__cols b{color:#141414;font-weight:700}
+.bluepage .cover__cols, .bluepage .cover__cols b{color:#fff}
+.walk{position:absolute;left:0;right:0;bottom:0;height:150px;border-bottom:6px solid #1626ff;display:flex;align-items:flex-end;justify-content:flex-start;gap:70px;padding-left:1000px}
+.walk img{display:block;margin-bottom:0}
+.walk.white{border-color:#fff} .walk.white img{filter:invert(1)}
+.cover .walk{padding-left:140px;gap:90px;height:0;border:none}
+.cover .walk{display:none}
+.toc{display:grid;grid-template-columns:440px 440px;column-gap:80px;row-gap:70px}
+.toc__n{font-family:Poppins;font-weight:600;font-size:190px;line-height:.9;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2.5px #fff}
+.toc h3{color:#fff;font-weight:700;font-size:34px;margin-top:18px}
+.toc p{color:#d9ddff;font-size:18px;line-height:1.45;margin-top:6px}
+.toc p b{color:#fff;font-weight:600}
+.toc__aside{font-size:22px;line-height:1.5;opacity:.85}
+.lead{font-size:26px;margin-top:40px;line-height:1.4}
+.body{font-size:23px;line-height:1.55;color:#333;margin-top:18px}
+.lbl{display:block;font-family:Figtree;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#8a8a8a;margin-bottom:8px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px 40px;margin-top:40px;font-size:19px}
+.life{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.life figure img{width:100%;height:150px;object-fit:cover;display:block}
+.life figcaption{font-size:14px;color:#666;margin-top:8px;line-height:1.35}
+.life figcaption b{color:#141414;display:block}
+.cols3{display:grid;grid-template-columns:480px 1fr;gap:120px}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:140px}
+.sec{font-size:40px;font-weight:700;letter-spacing:-.02em;margin-bottom:34px}
+.hl{background:linear-gradient(transparent 52%,var(--h) 52%,var(--h) 92%,transparent 92%);padding:0 6px;margin-left:-6px}
+.ed{margin-bottom:26px}
+.ed h4,.xp h4,.sk h4,.aw h4{font-family:Figtree;font-size:22px;font-weight:600}
+.ed p{font-size:17px;color:#666;line-height:1.5;margin-top:4px}
+.xp{display:grid;grid-template-columns:1fr 330px;gap:50px;margin-bottom:34px}
+.xp ul,.facts ul{list-style:none;margin-top:8px}
+.xp li{font-size:18px;color:#555;line-height:1.5;padding-left:18px;position:relative}
+.xp li:before,.facts li:before,.body+ul li:before{content:"";position:absolute;left:0;top:.68em;width:7px;height:2px;background:#999}
+.xp__org{font-size:16px;line-height:1.5;color:#333;padding-top:4px}
+.xp__org span{color:#888}
+.sk{margin-bottom:24px} .sk p{font-size:18px;color:#555;line-height:1.5;margin-top:4px}
+.sws{display:grid;grid-template-columns:repeat(4,1fr);gap:18px 30px}
+.sw{border-top:2px solid #141414;padding-top:10px;font-size:19px;font-weight:600}
+.sw__ic{width:74px;height:74px;background:#141414;color:#fff;font-family:Poppins;font-weight:600;font-size:30px;display:flex;align-items:center;justify-content:center;border-radius:18px}
+.aw{display:grid;grid-template-columns:80px 1fr;margin-bottom:20px}
+.aw>span{font-weight:700;color:#1626ff;font-size:19px;padding-top:2px}
+.aw p{font-size:16px;color:#777;margin-top:2px}
+.cos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px 30px}
+.co{border-top:2px solid #141414;padding-top:10px;font-size:19px;display:flex;justify-content:space-between}
+.co span{color:#888;font-size:16px}
+.pnum{font-weight:600;font-size:26px;letter-spacing:.02em;margin-bottom:22px}
+.sub{font-family:Poppins;font-weight:600;font-size:34px;line-height:1.25;margin-top:30px;letter-spacing:-.01em;max-width:760px}
+.meta{display:grid;grid-template-columns:repeat(4,max-content);gap:30px;margin-top:40px;font-size:17px;line-height:1.4;justify-content:start}
+.meta>div{max-width:230px}
+.facts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:44px;border-top:2px solid #141414;padding-top:24px}
+.fact p,.fact li{font-size:19px;line-height:1.5;color:#333}
+.facts li{padding-left:16px;position:relative}
+.chap{font-weight:600;font-size:20px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px}
+.h2{font-weight:700;font-size:66px;line-height:1.05;letter-spacing:-.035em}
+.stmt{font-weight:600;font-size:50px;line-height:1.18;letter-spacing:-.025em}
+.hmw{margin-top:40px;padding:30px 34px;font-family:Poppins;font-weight:500;font-size:26px;line-height:1.35}
+figure figcaption{font-size:17px;color:#666;margin-top:12px;line-height:1.45}
+figure img{display:block}
+.round{border-radius:50%;object-fit:cover}
+.rs{border-top:1px solid #ddd;padding:22px 0}
+.rs p{font-size:19px;line-height:1.45;color:#444;margin-top:10px}
+.rs p.b{color:#141414;font-weight:600}
+.tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--c);padding:5px 10px}
+.feat{border-top:1px solid #ddd;padding:18px 0 4px;margin-top:18px}
+.feat:first-of-type{margin-top:34px}
+.feat h4{font-family:Figtree;font-weight:700;font-size:21px}
+.feat p{font-size:19px;color:#555;line-height:1.45;margin-top:4px}
+.feat.sm{margin-top:10px} .feat.sm:first-of-type{margin-top:6px}
+.feat.dark{border-color:#2a3d73} .feat.dark p{color:#c9d4f7}
+.note{font-size:16px;color:#777;line-height:1.5;margin-top:30px;padding-left:16px;border-left:3px solid #ddd}
+.arrow{font-size:56px;color:#bbb}
+.learn{padding:30px 34px}
+.learn p{font-size:22px;line-height:1.5;margin-top:6px}
+.goal{display:flex;gap:18px;align-items:baseline;margin-top:12px}
+.goal b{font-family:Poppins;font-size:28px;color:#f06a4e}
+.goal p{font-size:20px;line-height:1.45}
+.phones{display:flex;gap:18px;margin-top:10px}
+.phones figure{width:200px}
+.phones img{width:200px;height:auto}
+.phones figcaption{text-align:center;font-size:15px;margin-top:6px}
+.iter{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-top:6px}
+.iter p{font-size:20px;line-height:1.45;color:#555} .iter b{display:block;color:#141414;font-weight:600;margin-top:4px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.step{border-top:6px solid var(--c);padding-top:20px}
+.step b{font-family:Poppins;font-size:44px;color:var(--c);line-height:1}
+.step h4{font-family:Figtree;font-size:24px;font-weight:700;margin-top:12px}
+.step p{font-size:20px;color:#555;line-height:1.45;margin-top:6px}
+.ben{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.ben p{font-size:22px;line-height:1.5;color:#333}
+.tiny{font-size:14px;opacity:.9}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px}
+.grid3.tight{gap:16px}
+.crop{overflow:hidden;height:340px}
+.crop img{width:100%;height:100%;object-fit:cover;display:block}
+.dec{border-top:2px solid #141414}
+.dec__row{display:grid;grid-template-columns:280px 1fr 50px 1fr;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid #ddd}
+.dec__row .tag{justify-self:start;background:none;color:var(--c);padding:0;font-size:14px}
+.dec__row p{font-size:21px;line-height:1.4;color:#555}
+.dec__row p.b{color:#141414;font-weight:600}
+.dec__row .arr{font-size:26px;color:#aaa;text-align:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.chips span{background:#e5ebfe;padding:8px 14px;font-size:17px;font-weight:600}
+.body+ul,div>ul{list-style:none}
+div>ul li{position:relative;padding-left:18px;font-size:20px;line-height:1.5;color:#444;margin-top:4px}
+div>ul li:before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2px;background:#999}
+.sts{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.st__img{height:300px;background:#f5f5f7;display:flex;align-items:center;justify-content:center;padding:20px}
+.st__img img{max-width:100%;max-height:100%}
+.st--on .st__img{background:#e5ebfe;outline:3px solid var(--c)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;border-top:2px solid #141414;padding-top:24px}
+.stats b{font-family:Poppins;font-weight:700;font-size:80px;line-height:1}
+.stats p{font-size:19px;color:#444;margin-top:8px;line-height:1.45}
+.shot{box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.foot{position:absolute;left:140px;right:140px;bottom:40px;display:flex;justify-content:space-between;font-size:14px;color:#999;letter-spacing:.02em}
+.foot.dark{color:#7d8bb5}
+
+.wct__title{font-family:Poppins;font-weight:800;font-size:210px;line-height:.86;letter-spacing:-.04em;color:#fff}
+.wct__grid{display:grid;grid-template-columns:1fr 1fr;gap:80px 70px}
+.wct__item{display:flex;flex-direction:column;gap:8px;color:#fff}
+.wct__n{font-family:Poppins;font-weight:500;font-size:170px;line-height:1;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:2.5px #fff;margin-bottom:14px}
+.wct__item b{font-family:Poppins;font-weight:700;font-size:32px}
+.wct__d{font-size:21px;color:rgba(255,255,255,.85);line-height:1.4} .wct__d strong{color:#fff}
+.wab__title{font-family:Poppins;font-weight:800;font-size:200px;line-height:.9;letter-spacing:-.045em;margin-bottom:44px}
+.wab__p{font-size:22px;line-height:1.6;color:#333;margin-bottom:18px} .wab__p b{color:#111}
+.wab__contact{display:flex;align-items:flex-end;gap:44px;margin-top:34px;font-size:19px;line-height:1.55}
+.wab__li{background:#1626ff;color:#fff;font-weight:600;padding:12px 20px;font-size:18px;white-space:nowrap}
+.wab__life{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.wab__life img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.wab__life figcaption{font-size:15px;color:#777;margin-top:6px}
+.wcv{display:grid;grid-template-columns:1fr 2fr;gap:110px}
+.wcv h3{font-family:Poppins;font-weight:700;font-size:40px;margin-bottom:28px}
+.wed{margin-bottom:24px} .wed h4,.wxp h4,.waw h4{font-family:Figtree;font-weight:500;font-size:25px;margin-bottom:4px}
+.wed p{font-size:17px;color:#777;line-height:1.5}
+.wxp{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;margin-bottom:34px}
+.wxp ul{list-style:none} .wxp li{font-size:18px!important;color:#666!important}
+.wxp__org{font-size:16px;color:#777;line-height:1.5;padding-top:6px} .wxp__org b{color:#222}
+.wsws{display:grid;grid-template-columns:repeat(4,104px);gap:26px 22px}
+.wsw{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:16px;font-weight:600;text-align:center}
+.wsw span{width:80px;height:80px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-family:Poppins;font-weight:600;font-size:28px}
+.waw{margin-bottom:24px} .waw p{font-size:16px;color:#777;line-height:1.5} .waw p b{color:#333;font-weight:600}
+.wcos{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}
+.wcos li:before{content:none!important} .wcos li{padding-left:0!important;font-size:19px!important;color:#777;border-top:1px solid #ddd;padding-top:10px} .wcos b{color:#111;margin-right:6px}
+.foot .pn:before{content:counter(pg,decimal-leading-zero)}
+.bt{font-family:Poppins;font-weight:800;letter-spacing:-.045em;line-height:.92;color:#111}
+.bt__kind{font-family:Poppins;font-weight:700;font-size:30px;margin-top:40px;letter-spacing:-.01em}
+.bt__meta{font-size:15px;font-weight:700;letter-spacing:.08em;color:#777;margin-top:6px}
+.bt__desc{font-size:21px;line-height:1.55;color:#444;margin-top:30px;max-width:620px}
+.bt__cols{display:grid;grid-template-columns:260px 1fr;gap:50px;font-size:16px;color:#555;line-height:1.5}
+.bt__cols b{color:#111;font-size:17px}
+.cvcols{display:grid;grid-template-columns:380px 420px;gap:60px}
+.cvcols p{font-size:18px;line-height:1.55;color:#444}
+.circs{display:flex;gap:120px;justify-content:center}
+.circ{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.circ__d{width:230px;height:230px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Poppins;font-weight:700;font-size:56px;color:#111;letter-spacing:-.03em;padding:20px;line-height:1}
+.circ b{font-size:19px;font-weight:600;max-width:220px}
+.lbl2{font-family:Poppins;font-weight:700;font-size:22px;margin-bottom:14px}
+.bh{font-family:Poppins;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-.025em}
+.bp{font-size:20px;line-height:1.55;color:#555;margin-top:18px}
+.wq{font-family:Poppins;font-weight:600;font-size:40px;line-height:1.2;letter-spacing:-.02em}
+.ws{font-family:Poppins;font-weight:700;font-size:46px;line-height:1.15;color:#111;letter-spacing:-.02em}
+.rot{position:absolute;font-family:Poppins;font-weight:800;writing-mode:vertical-rl;letter-spacing:-.04em;line-height:.85;white-space:nowrap}
+.pgrid{display:grid;gap:22px}
+.pgrid figure{margin:0}
+.pc{background:transparent;height:300px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pgrid .pc img{max-width:100%;max-height:100%;object-fit:contain}
+.pgrid figcaption{font-size:16px;margin-top:10px;color:#333;font-weight:600}
+.sfs{margin-top:50px}
+.sf{border-top:1px solid #ddd;padding:18px 0}
+.sf b{font-size:22px} .sf p{font-size:18px;color:#666;margin-top:4px}
+.learn2{margin-top:36px;border-left:6px solid;padding:6px 0 6px 22px;font-family:Poppins;font-weight:600;font-size:28px;line-height:1.25;letter-spacing:-.015em}
+.learn2 span{display:block;font-family:Figtree;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:8px}
+.blobimg{border-radius:46% 54% 42% 58% / 52% 44% 56% 48%}
+
+
+@media screen{
+ body{background:#fff}
+ .deck{display:flex;flex-direction:column;align-items:stretch}
+ .slot{width:100%;aspect-ratio:16/9;position:relative;overflow:hidden;background:#fff}
+ .slot>.pg{position:absolute;left:0;top:0;transform-origin:0 0;transform:scale(var(--s,.5))}
+}
+@media print{.slot{display:block}}
+</style></head><body><main class="deck"><div class="slot"><section class="pg ">
+<svg class="abs" style="left:1180px;top:110px;width:520px;height:620px" viewBox="0 0 520 620"><path d="M260,40 C350,38 420,60 410,130 C400,200 470,240 490,330 C515,450 420,575 260,578 C100,575 5,450 30,330 C50,240 120,200 110,130 C100,60 170,38 260,40Z" fill="none" stroke="#1626ff" stroke-width="4" stroke-dasharray="16 12"/></svg>
+<svg class="abs" style="left:-120px;top:930px;width:620px;height:300px" viewBox="0 0 620 300"><ellipse cx="310" cy="200" rx="300" ry="160" fill="#f6d3ea"/></svg>
+<h1 class="abs bt" style="left:140px;top:150px;font-size:230px;line-height:.86">Chiara<br>Starcich.</h1>
+<div class="abs cvcols" style="left:146px;top:640px">
+  <p><b>Hi, I’m Chiara!</b> A UX &amp; Product Designer finishing my MSc Design for Interaction at TU Delft, based in Delft.</p>
+  <p>This portfolio shows four health and wellbeing projects, from apps and services to a bedside device. I research how people live, then design for their wellbeing.</p>
+</div>
+<div class="abs" style="left:146px;top:860px;font-size:17px;color:#555;line-height:1.6">starcich.chiara@gmail.com · +39 348 654 5381 · chiara-starcich.com</div>
+</section></div><div class="slot"><section class="pg  num">
+<svg class="abs" style="left:120px;top:150px;width:760px;height:760px" viewBox="0 0 960 960"><path d="M520,40 C700,30 860,160 900,340 C950,560 880,760 700,860 C520,960 260,950 140,800 C20,650 30,430 110,260 C190,100 340,50 520,40Z" fill="#f6d3ea"/></svg>
+<img loading="lazy" decoding="async" class="abs" src="img/selfie_pink_992.png" style="left:180px;bottom:0;width:640px">
+<div class="abs" style="left:980px;top:130px;width:800px">
+  <h1 class="wab__title">About</h1>
+  <p class="wab__p"><b>Chiara</b> is a <b>UX &amp; Product Designer</b> based in Delft, finishing her MSc Design for Interaction at TU Delft. She studied in Ferrara, Dublin and Loughborough.</p>
+  <p class="wab__p">She designs physical and digital products that people hold, wear and use every day, starting from research with the people who will use them. Outside design she climbs, paints and visits every museum she can.</p>
+  <div class="wab__contact"><p>Chiara Starcich<br>starcich.chiara@gmail.com<br>+39 348 654 5381<br>linkedin.com/in/chiara-starcich-1a9060357</p><span class="wab__li">LinkedIn ↗</span></div>
+</div>
+</section></div><div class="slot"><section class="pg  num">
+<div class="abs wcv" style="left:140px;top:120px;width:1640px">
+  <div>
+    <h3>Education</h3>
+    <div class="wed"><h4>Master’s Degree</h4><p>MSc Design for Interaction<br>Delft University of Technology<br>2024 to 2026</p></div>
+    <div class="wed"><h4>Bachelor’s Degree</h4><p>BSc Industrial Product Design<br>Università di Ferrara<br>2021 to 2024</p></div>
+    <div class="wed"><h4>Study abroad</h4><p>University College Dublin · 2016<br>Loughborough University · 2018</p></div>
+    <h3 style="margin-top:56px">Language</h3>
+    <div class="wed"><h4>Italian</h4><p>Native</p></div>
+    <div class="wed"><h4>English</h4><p>Professional Working Proficiency · C1, IELTS 2024</p></div>
+  </div>
+  <div><h3>Experience</h3><div class="wxp"><div><h4>Design Intern, graduation project</h4><ul><li>Solo project: a method and toolbox to study how doctors rely on AI in clinical settings</li><li>7 expert interviews and 2 rounds of expert testing</li><li>Clickable prototype in Figma</li></ul></div><p class="wxp__org"><b>Philips</b><br><b>I&amp;D Usability Excellence</b><br>with UMC Utrecht &amp; TU Delft<br>2026 February to August</p></div><div class="wxp"><div><h4>Design Intern</h4><ul><li>Ran comfort and usability studies for aircraft seats</li><li>Worked with engineers and other experts</li></ul></div><p class="wxp__org"><b>Collins Aerospace</b><br>2025 September to November</p></div><div class="wxp"><div><h4>Product Designer &amp; Communication</h4><ul><li>3D modelling, renders, technical manuals and research</li><li>The only product designer on LIT, Life in Tiny</li><li>Exhibited at Milan Design Week 2025</li></ul></div><p class="wxp__org"><b>Matteo Bazzicalupo</b><br><b>deepdesign Studio</b><br>since 2023</p></div><div class="wxp"><div><h4>Interior Design Intern</h4><ul><li>Technical drawings and material research</li><li>Client meetings</li></ul></div><p class="wxp__org"><b>Studio Joanne Paul</b><br>Parma<br>2023 July to August</p></div></div>
+</div>
+</section></div><div class="slot"><section class="pg  num">
+<svg class="abs" style="right:-40px;top:-30px;height:760px;width:360px" viewBox="0 0 600 900"><path d="M60,10 C200,80 330,200 360,380 C390,560 300,720 420,890" fill="none" stroke="#1626ff" stroke-width="3" stroke-dasharray="12 10" vector-effect="non-scaling-stroke"/></svg>
+<div class="abs wcv" style="left:140px;top:120px;width:1500px">
+  <div>
+    <h3>Software</h3>
+    <div class="wsws"><div class="wsw"><span>Fg</span>Figma</div><div class="wsw"><span>Ps</span>Photoshop</div><div class="wsw"><span>Id</span>InDesign</div><div class="wsw"><span>Su</span>SketchUp</div><div class="wsw"><span>Ac</span>AutoCAD</div><div class="wsw"><span>Vr</span>V Ray</div><div class="wsw"><span>D5</span>D5 Render</div><div class="wsw"><span>F3</span>Fusion 360</div></div>
+    <h3 style="margin-top:56px">Skills</h3>
+    <div class="wed"><h4>Research</h4><p>Interviews, observation, cocreation workshops, context mapping, surveys, personas, user journeys</p></div>
+    <div class="wed"><h4>Prototyping &amp; testing</h4><p>Physical prototypes, VR and Wizard of Oz set ups, Figma prototypes, user tests with children and adults</p></div>
+  </div>
+  <div>
+    <h3>Awards</h3><div class="waw"><h4>International Architecture Awards</h4><p>2026 Energy Buildings · <b>Honourable mention</b><br><b>LIT, Life in Tiny</b></p></div><div class="waw"><h4>Milan Design Week</h4><p>2025 · <b>Exhibition</b><br><b>LIT, Life in Tiny</b></p></div><div class="waw"><h4>Fortezza da Basso, Florence</h4><p>2024 · <b>Exhibition</b></p></div><div class="waw"><h4>Ex Teatro Verdi, Ferrara</h4><p>2024 · <b>Exhibition</b></p></div><div class="waw"><h4>met Museum, Santarcangelo</h4><p>2022 · <b>Exhibition</b></p></div>
+    <h3 style="margin-top:44px">Collaborations</h3><ul class="wcos"><li><b>Philips</b> 2026</li><li><b>UMC Utrecht</b> 2026</li><li><b>Erasmus MC</b> 2025</li><li><b>HealthBlocks</b> 2025</li><li><b>Logitech</b> 2025</li><li><b>TechnoGym</b> 2022</li></ul>
+  </div>
+</div>
+</section></div><div class="slot"><section class="pg bluepage">
+<h1 class="abs wct__title" style="left:140px;top:150px">Con-<br>tent</h1>
+<div class="abs wct__grid" style="left:820px;top:150px;width:960px"><div class="wct__item"><span class="wct__n">01.</span><b>UX/UI Design</b><span class="wct__d"><strong>HealthBlocks</strong> · Step challenge app with a community</span></div><div class="wct__item"><span class="wct__n">02.</span><b>Service + App Design</b><span class="wct__d"><strong>Unifood</strong> · Lunch delivered to campus</span></div><div class="wct__item"><span class="wct__n">03.</span><b>Product + Screen Design</b><span class="wct__d"><strong>DOC</strong> · A calming companion for ER patients</span></div><div class="wct__item"><span class="wct__n">04.</span><b>Digital Tool for Experts</b><span class="wct__d"><strong>Reliance Toolbox</strong> · How doctors rely on AI, for Philips</span></div></div>
+</section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:1020px;top:-120px;width:1060px;height:1000px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M922.0,669.4 Q862.3,875.9 634.8,903.9 Q407.4,931.8 204.8,790.2 Q2.2,648.6 44.6,435.2 Q86.9,221.8 216.0,148.9 Q345.1,76.0 562.5,69.1 Q779.9,62.3 880.9,262.6 Q981.8,462.9 922.0,669.4Z" fill="#edf6e0"/></svg><img loading="lazy" decoding="async" class="abs" src="img/hb_cover_cut_806.png" style="left:1180px;top:90px;width:520px">
+<div class="abs" style="left:140px;top:150px;width:900px">
+  <h1 class="bt" style="font-size:200px">Health<br>Blocks</h1>
+  <p class="bt__kind">UX/UI Design</p>
+  <p class="bt__meta">TU DELFT · eHEALTH DESIGN | 2025 TO 26</p>
+  <p class="bt__desc">A step challenge app redesigned around a community and a second currency, hearts, to bring in more women and keep people moving.</p>
+</div>
+<div class="abs bt__cols" style="left:140px;top:860px;width:860px">
+  <div><b>Team</b><br>Veronique Serné</div>
+  <div><b>My contributions</b><br>Research, personas, user journeys, hearts system, UI refinement</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>HealthBlocks</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs" style="left:140px;top:110px;width:1640px"><div class="circs"><div class="circ"><div class="circ__d" style="background:#9ccb55">2</div><b>questionnaires</b></div><div class="circ"><div class="circ__d" style="background:#9ccb55">20 to 45</div><b>women, our target</b></div><div class="circ"><div class="circ__d" style="background:#9ccb55">1</div><b>new currency: hearts</b></div></div></div>
+<div class="abs" style="left:140px;top:500px;width:620px">
+  <p class="lbl2">Background</p>
+  <h3 class="bh">Built on competition and money. Mostly men joined.</h3>
+  <p class="bp">Losing users got nothing and dropped out. Motivation depends on context, not gender, so we designed without stereotypes.</p>
+</div>
+<figure class="abs" style="left:860px;top:480px;width:920px"><img loading="lazy" decoding="async" src="img/hb_original3_1426.jpg" style="width:100%;max-height:480px;object-fit:contain;object-position:left top"><figcaption>The original app</figcaption></figure>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>HealthBlocks</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:-200px;top:520px;width:2400px;height:1000px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M889.9,705.7 Q804.6,955.0 611.6,961.8 Q418.6,968.5 249.2,848.7 Q79.8,728.9 59.3,461.6 Q38.8,194.2 255.0,75.4 Q471.2,-43.4 586.8,40.8 Q702.5,124.9 838.8,290.7 Q975.1,456.5 889.9,705.7Z" fill="#9ccb55"/></svg>
+<div class="abs" style="left:140px;top:120px;width:860px">
+  <p class="lbl2">The question</p>
+  <p class="wq">How might we grow HealthBlocks and attract more women, while keeping people active?</p>
+</div>
+<p class="abs ws" style="left:140px;top:640px;width:760px">Money gets people started. A community keeps them going.</p>
+<img loading="lazy" decoding="async" class="abs" src="img/hb_flywheel2_1178.jpg" style="left:900px;top:330px;width:760px;mix-blend-mode:multiply;">
+<div class="rot" style="right:40px;top:40px;font-size:210px;color:#111">What if?</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>HealthBlocks</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:420px;top:140px;width:1500px;height:900px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M864.0,680.5 Q770.2,926.4 563.6,931.1 Q356.9,935.9 203.4,794.7 Q49.9,653.6 52.7,512.7 Q55.6,371.8 170.7,186.3 Q285.8,0.7 559.3,104.8 Q832.8,208.9 895.3,321.8 Q957.7,434.7 864.0,680.5Z" fill="#edf6e0"/></svg>
+<div class="rot" style="left:40px;top:60px;font-size:230px;color:#111">Process</div>
+<div class="abs pgrid" style="left:420px;top:150px;width:1360px;grid-template-columns:repeat(1,1fr)"><figure><div class="pc" style="height:470px"><img loading="lazy" decoding="async" src="img/hb_vision2_2170.jpg"></div><figcaption>Vision: from walking alone to walking together</figcaption></figure></div>
+<p class="abs bp" style="left:420px;top:900px;width:1100px">Literature review, SWOT, 2 questionnaires, personas and user journeys, then the hearts system, co designed with Veronique.</p>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>HealthBlocks</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs fill" style="left:860px;top:0;right:0;bottom:0;background:#edf6e0"></div>
+<img loading="lazy" decoding="async" class="abs" src="img/hb_outcome13_1333.jpg" style="left:940px;top:40px;width:820px;mix-blend-mode:multiply">
+<div class="abs" style="left:140px;top:120px;width:640px">
+  <h2 class="bt" style="font-size:170px">Summits</h2>
+  <p class="bt__kind" style="margin-top:10px">Not leaderboards.</p>
+  <div class="sfs"><div class="sf"><b>Home</b><p>Daily goal, friends and groups</p></div><div class="sf"><b>Summit pools</b><p>One recommended pool, one tap</p></div><div class="sf"><b>Community</b><p>Hearts and what you did together</p></div></div>
+  <div class="learn2" style="border-color:#9ccb55"><span>What I learned</span>Designing for women doesn’t mean designing “for women”.</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>HealthBlocks</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:1020px;top:-120px;width:1060px;height:1000px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M854.6,687.0 Q729.5,875.0 576.5,935.9 Q423.5,996.8 261.3,846.3 Q99.1,695.8 97.3,509.8 Q95.5,323.7 211.7,181.3 Q327.8,38.8 599.2,100.2 Q870.6,161.5 925.1,330.2 Q979.6,498.9 854.6,687.0Z" fill="#fce4df"/></svg><img loading="lazy" decoding="async" class="abs" src="img/uni_cover_cut4_868.png" style="left:1160px;top:90px;width:560px">
+<div class="abs" style="left:140px;top:150px;width:900px">
+  <h1 class="bt" style="font-size:200px">Unifood</h1>
+  <p class="bt__kind">Service + App Design</p>
+  <p class="bt__meta">UNIVERSITÀ DI FERRARA | 2023</p>
+  <p class="bt__desc">Lunch from the canteen, bakeries and delis, delivered by one rider to campus at 1 pm, with discounts that cut food waste.</p>
+</div>
+<div class="abs bt__cols" style="left:140px;top:860px;width:860px">
+  <div><b>Team</b><br>Team of 4</div>
+  <div><b>My contributions</b><br>Survey, interviews, field research, storyboard, paper prototypes, final UI</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Unifood</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs" style="left:140px;top:110px;width:1640px"><div class="circs"><div class="circ"><div class="circ__d" style="background:#f06a4e">40</div><b>students surveyed</b></div><div class="circ"><div class="circ__d" style="background:#f06a4e">4</div><b>sellers visited</b></div><div class="circ"><div class="circ__d" style="background:#f06a4e">1 h</div><b>for lunch</b></div></div></div>
+<div class="abs" style="left:140px;top:500px;width:620px">
+  <p class="lbl2">Background</p>
+  <h3 class="bh">One hour for lunch, a canteen too far away.</h3>
+  <p class="bp">Most students commute and buy lunch near the department. They wanted healthier, cheaper, more varied food.</p>
+</div>
+<figure class="abs" style="left:860px;top:480px;width:920px"><img loading="lazy" decoding="async" src="img/uni_story2_1426.jpg" style="width:100%;max-height:480px;object-fit:contain;object-position:left top"><figcaption>Storyboard: from hunger to lunch in hand</figcaption></figure>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Unifood</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:-200px;top:520px;width:2400px;height:1000px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M867.3,679.8 Q772.6,858.6 564.0,872.4 Q355.4,886.2 198.2,809.3 Q41.0,732.4 33.0,489.1 Q25.0,245.9 194.7,160.5 Q364.4,75.2 546.5,118.7 Q728.6,162.3 845.3,331.7 Q962.1,501.1 867.3,679.8Z" fill="#f06a4e"/></svg>
+<div class="abs" style="left:140px;top:120px;width:860px">
+  <p class="lbl2">The question</p>
+  <p class="wq">What if one rider brought everyone’s lunch to campus, on time and cheaper?</p>
+</div>
+<p class="abs ws" style="left:140px;top:640px;width:760px">The problem wasn’t the food: one hour isn’t enough to go and get it.</p>
+<img loading="lazy" decoding="async" class="abs" src="img/uni_phone_tilt_1178.png" style="left:900px;top:300px;width:560px;">
+<div class="rot" style="right:40px;top:40px;font-size:210px;color:#111">What if?</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Unifood</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:420px;top:140px;width:1500px;height:900px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M835.8,746.2 Q753.6,978.7 574.6,982.7 Q395.6,986.6 269.0,856.2 Q142.4,725.7 86.4,523.3 Q30.4,321.0 173.7,151.3 Q317.0,-18.3 509.0,57.5 Q700.9,133.3 809.5,323.5 Q918.1,513.6 835.8,746.2Z" fill="#fce4df"/></svg>
+<div class="rot" style="left:40px;top:60px;font-size:230px;color:#111">Process</div>
+<div class="abs pgrid" style="left:420px;top:150px;width:1360px;grid-template-columns:repeat(4,1fr)"><figure><div class="pc" style="height:560px"><img loading="lazy" decoding="async" src="img/uni_sk5_welcome_542.png"></div><figcaption>Paper sketch</figcaption></figure><figure><div class="pc" style="height:560px"><img loading="lazy" decoding="async" src="img/uni_sk6_plan_542.png"></div><figcaption>Paper sketch</figcaption></figure><figure><div class="pc" style="height:560px"><img loading="lazy" decoding="async" src="img/uni_mf2_home_542.png"></div><figcaption>Mid fidelity</figcaption></figure><figure><div class="pc" style="height:560px"><img loading="lazy" decoding="async" src="img/uni_mf2_pickup_542.png"></div><figcaption>Mid fidelity</figcaption></figure></div>
+<p class="abs bp" style="left:420px;top:900px;width:1100px">Sketched, tested with 4 students, iterated: two tabs for orders, the discount explained up front, clearer icons.</p>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Unifood</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs fill" style="left:860px;top:0;right:0;bottom:0;background:#fce4df"></div>
+<img loading="lazy" decoding="async" class="abs" src="img/uni_two_phones_1333.jpg" style="left:940px;top:40px;width:820px;mix-blend-mode:multiply">
+<div class="abs" style="left:140px;top:120px;width:640px">
+  <h2 class="bt" style="font-size:170px">1 pm</h2>
+  <p class="bt__kind" style="margin-top:10px">Lunch, on campus.</p>
+  <div class="sfs"><div class="sf"><b>Pick a seller</b><p>Canteen, deli, bakery, fruit shop</p></div><div class="sf"><b>Pay in the app</b><p>Cheaper in advance or for leftovers</p></div><div class="sf"><b>Pick up</b><p>One rider, at 1 pm, near your lecture</p></div></div>
+  <div class="learn2" style="border-color:#f06a4e"><span>What I learned</span>Sometimes the solution is a service, not a screen.</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Unifood</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<img loading="lazy" decoding="async" class="abs blobimg" src="img/doc_cover_bedside_nov9_1178.jpg" style="left:1040px;top:120px;width:760px;height:840px;object-fit:cover;object-position:40% 50%">
+<div class="abs" style="left:140px;top:150px;width:900px">
+  <h1 class="bt" style="font-size:230px">DOC</h1>
+  <p class="bt__kind">Product + Screen Design</p>
+  <p class="bt__meta">ERASMUS MC | 3 MONTHS</p>
+  <p class="bt__desc">A calming companion for ER patients: it hangs on the bed rail and explains vitals through screen, sound and touch.</p>
+</div>
+<div class="abs bt__cols" style="left:140px;top:860px;width:860px">
+  <div><b>Team</b><br>Team of 4 · cover render by a teammate</div>
+  <div><b>My contributions</b><br>Led test design and user testing, sound design, ideation, screen design</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>DOC</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs" style="left:140px;top:110px;width:1640px"><div class="circs"><div class="circ"><div class="circ__d" style="background:#4cc9a6">Beeps</div><b>they can’t read</b></div><div class="circ"><div class="circ__d" style="background:#4cc9a6">Hours</div><b>in the same position</b></div><div class="circ"><div class="circ__d" style="background:#4cc9a6">Alone</div><b>with nobody to ask</b></div></div></div>
+<div class="abs" style="left:140px;top:500px;width:620px">
+  <p class="lbl2">Background</p>
+  <h3 class="bh">Two hours, one beeping machine, nobody to ask.</h3>
+  <p class="bp">The machine meant to protect ER patients scares them.</p>
+</div>
+<figure class="abs" style="left:860px;top:480px;width:920px"><img loading="lazy" decoding="async" src="img/ms_s3_1426.jpg" style="width:100%;max-height:480px;object-fit:contain;object-position:left top"><figcaption>From our storyboard</figcaption></figure>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>DOC</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:-200px;top:520px;width:2400px;height:1000px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M902.6,681.9 Q841.6,930.2 582.0,959.0 Q322.4,987.8 219.7,819.7 Q117.0,651.5 121.0,443.6 Q125.1,235.7 274.3,170.4 Q423.5,105.1 609.9,84.2 Q796.3,63.2 879.9,248.4 Q963.6,433.7 902.6,681.9Z" fill="#4cc9a6"/></svg>
+<div class="abs" style="left:140px;top:120px;width:860px">
+  <p class="lbl2">The question</p>
+  <p class="wq">How might we help ER patients feel safe and in control while they wait?</p>
+</div>
+<p class="abs ws" style="left:140px;top:640px;width:760px">Patients didn’t want more numbers. They wanted to know they were okay.</p>
+<img loading="lazy" decoding="async" class="abs" src="img/doc_cutout_1178.png" style="left:900px;top:300px;width:560px;">
+<div class="rot" style="right:40px;top:40px;font-size:210px;color:#111">What if?</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>DOC</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:420px;top:140px;width:1500px;height:900px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M924.8,640.9 Q864.8,850.6 622.9,892.5 Q380.9,934.4 219.0,811.3 Q57.1,688.2 49.4,531.6 Q41.6,375.1 229.2,204.6 Q416.9,34.0 645.7,94.0 Q874.5,154.1 929.6,292.7 Q984.8,431.3 924.8,640.9Z" fill="#dff5ef"/></svg>
+<div class="rot" style="left:40px;top:60px;font-size:230px;color:#111">Process</div>
+<div class="abs pgrid" style="left:420px;top:150px;width:1360px;grid-template-columns:repeat(3,1fr)"><figure><div class="pc" style="height:300px"><img loading="lazy" decoding="async" src="img/doc_room_bw_722.jpg"></div><figcaption>Observation, Erasmus MC</figcaption></figure><figure><div class="pc" style="height:300px"><img loading="lazy" decoding="async" src="img/ms_vr_bw_722.jpg"></div><figcaption>Sound test in VR, 6 people</figcaption></figure><figure><div class="pc" style="height:300px"><img loading="lazy" decoding="async" src="img/doc_sketches_bw_722.jpg"></div><figcaption>Sketches</figcaption></figure><figure><div class="pc" style="height:300px"><img loading="lazy" decoding="async" src="img/doc_print1_bw_722.jpg"></div><figcaption>3D print</figcaption></figure><figure><div class="pc" style="height:300px"><img loading="lazy" decoding="async" src="img/doc_textures_bw_722.jpg"></div><figcaption>Touch test</figcaption></figure><figure><div class="pc" style="height:300px"><img loading="lazy" decoding="async" src="img/doc_final3_bw_722.jpg"></div><figcaption>Final test, 4 people</figcaption></figure></div>
+<p class="abs bp" style="left:420px;top:900px;width:1100px">One sense at a time: card sorting, a VR sound test, a touch test, then a final test in a mock patient room.</p>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>DOC</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs fill" style="left:860px;top:0;right:0;bottom:0;background:#dff5ef"></div>
+<img loading="lazy" decoding="async" class="abs" src="img/ms_bed_868.jpg" style="left:900px;top:110px;width:560px;height:470px;object-fit:cover"><img loading="lazy" decoding="async" class="abs" src="img/ms_tex_589.jpg" style="left:1480px;top:110px;width:320px;height:470px;object-fit:cover"><img loading="lazy" decoding="async" class="abs" src="img/ms_screens_1395.jpg" style="left:900px;top:610px;width:600px">
+<div class="abs" style="left:140px;top:120px;width:640px">
+  <h2 class="bt" style="font-size:170px">Calm</h2>
+  <p class="bt__kind" style="margin-top:10px">On the rail, in your hands.</p>
+  <div class="sfs"><div class="sf"><b>Avatar, not numbers</b><p>Simple meters and a kind tone</p></div><div class="sf"><b>Calm sounds</b><p>Beeps only in an emergency</p></div><div class="sf"><b>Textures</b><p>To squeeze and hold</p></div></div>
+  <div class="learn2" style="border-color:#4cc9a6"><span>What I learned</span>Tone, sound and touch calmed people more than data.</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>DOC</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:1020px;top:-120px;width:1060px;height:1000px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M831.5,699.2 Q727.9,908.0 598.8,959.7 Q469.7,1011.4 313.9,877.4 Q158.1,743.4 92.7,554.1 Q27.2,364.9 242.3,189.0 Q457.3,13.1 619.5,33.0 Q781.6,52.9 858.3,271.7 Q935.1,490.5 831.5,699.2Z" fill="#e5ebfe"/></svg><img loading="lazy" decoding="async" class="abs" src="img/tb_laptop_comp2_1271.png" style="left:1030px;top:280px;width:820px">
+<div class="abs" style="left:140px;top:150px;width:900px">
+  <h1 class="bt" style="font-size:160px">Reliance<br>Toolbox</h1>
+  <p class="bt__kind">Digital Tool for Experts</p>
+  <p class="bt__meta">PHILIPS × UMC UTRECHT × TU DELFT | 2026</p>
+  <p class="bt__desc">A method and a clickable toolbox that help Philips usability designers study how doctors rely on AI, over time, in a real hospital ward.</p>
+</div>
+<div class="abs bt__cols" style="left:140px;top:860px;width:860px">
+  <div><b>Team</b><br>Solo graduation project</div>
+  <div><b>My contributions</b><br>7 expert interviews, concept and method, 2 rounds of expert testing, UX/UI</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Reliance Toolbox</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs" style="left:140px;top:110px;width:1640px"><div class="circs"><div class="circ"><div class="circ__d" style="background:#6e8ef7">7</div><b>expert interviews</b></div><div class="circ"><div class="circ__d" style="background:#6e8ef7">5</div><b>experts tested it</b></div><div class="circ"><div class="circ__d" style="background:#6e8ef7">2</div><b>rounds of testing</b></div></div></div>
+<div class="abs" style="left:140px;top:500px;width:620px">
+  <p class="lbl2">Background</p>
+  <h3 class="bh">AI is never 100% right.</h3>
+  <p class="bp">What matters is what doctors do with it, and that changes with fatigue, AI errors, workload and familiarity.</p>
+</div>
+<figure class="abs" style="left:860px;top:480px;width:920px"><img loading="lazy" decoding="async" src="img/tbui_fieldlab2_1426.jpg" style="width:100%;max-height:480px;object-fit:contain;object-position:left top"><figcaption>The field lab: a real ward for testing new tech safely</figcaption></figure>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Reliance Toolbox</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:-200px;top:520px;width:2400px;height:1000px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M932.2,650.0 Q834.0,800.7 656.1,897.8 Q478.2,994.9 305.2,866.1 Q132.3,737.3 150.7,511.1 Q169.1,285.0 257.1,188.5 Q345.1,92.1 589.3,133.4 Q833.5,174.7 931.9,337.0 Q1030.4,499.2 932.2,650.0Z" fill="#6e8ef7"/></svg>
+<div class="abs" style="left:140px;top:120px;width:860px">
+  <p class="lbl2">The question</p>
+  <p class="wq">How might designers test, over time and in a real hospital, how doctors rely on AI?</p>
+</div>
+<p class="abs ws" style="left:140px;top:640px;width:760px">Designers needed guidance and suitable tools, not another tool.</p>
+<img loading="lazy" decoding="async" class="abs" src="img/tb_hub2_1178.jpg" style="left:900px;top:330px;width:760px;mix-blend-mode:multiply;">
+<div class="rot" style="right:40px;top:40px;font-size:210px;color:#111">What if?</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Reliance Toolbox</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<svg class="blob" style="left:420px;top:140px;width:1500px;height:900px" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M867.9,756.4 Q781.8,924.8 618.9,910.5 Q456.1,896.2 291.7,778.6 Q127.3,661.0 67.0,475.7 Q6.7,290.5 238.1,193.1 Q469.4,95.7 587.2,112.8 Q705.1,130.0 829.6,359.0 Q954.1,588.1 867.9,756.4Z" fill="#e5ebfe"/></svg>
+<div class="rot" style="left:40px;top:60px;font-size:230px;color:#111">Process</div>
+<div class="abs pgrid" style="left:420px;top:150px;width:1360px;grid-template-columns:repeat(2,1fr)"><figure><div class="pc" style="height:290px"><img loading="lazy" decoding="async" src="img/tb_s1_1085.png"></div><figcaption>Fixed sequence</figcaption></figure><figure><div class="pc" style="height:290px"><img loading="lazy" decoding="async" src="img/tb_s2_1085.png"></div><figcaption>Top bar</figcaption></figure><figure><div class="pc" style="height:290px"><img loading="lazy" decoding="async" src="img/tb_s3_1085.png"></div><figcaption>Novice / expert</figcaption></figure><figure><div class="pc" style="height:290px"><img loading="lazy" decoding="async" src="img/tb_hub2_1085.png"></div><figcaption>Hub: the experts’ pick</figcaption></figure></div>
+<p class="abs bp" style="left:420px;top:900px;width:1100px">Four structures tested with Philips experts. They wanted freedom, with guidance and a real example: a hub won.</p>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Reliance Toolbox</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg  num">
+<div class="abs fill" style="left:860px;top:0;right:0;bottom:0;background:#e5ebfe"></div>
+<img loading="lazy" decoding="async" class="abs shot" src="img/tbui_home_961.jpg" style="left:1080px;top:110px;width:620px"><img loading="lazy" decoding="async" class="abs shot" src="img/tbui_tools2_589.jpg" style="left:900px;top:470px;width:380px"><img loading="lazy" decoding="async" class="abs shot" src="img/tbui_reliance2_806.jpg" style="left:1320px;top:560px;width:520px">
+<div class="abs" style="left:140px;top:120px;width:640px">
+  <h2 class="bt" style="font-size:170px">Hub</h2>
+  <p class="bt__kind" style="margin-top:10px">Learn the basics, or jump to the tools.</p>
+  <div class="sfs"><div class="sf"><b>Compare and filter</b><p>Every tool on 9 criteria</p></div><div class="sf"><b>Over time</b><p>Before, during and after the test</p></div><div class="sf"><b>A real example</b><p>A one page example study</p></div></div>
+  <div class="learn2" style="border-color:#6e8ef7"><span>What I learned</span>Listening first kept me from building the wrong method.</div>
+</div>
+<div class="foot"><span>Chiara Starcich · Portfolio 2026</span><span>Reliance Toolbox</span><span class="pn"></span></div></section></div><div class="slot"><section class="pg bluepage">
+<h1 class="mega white abs" style="left:140px;top:200px">Thank<br>you.</h1>
+<div class="abs white cover__cols" style="left:146px;top:720px;color:#fff">
+  <div><b>Email</b><br>starcich.chiara@gmail.com</div>
+  <div><b>Phone</b><br>+39 348 654 5381</div>
+  <div><b>Website</b><br>chiara-starcich.com</div>
+  <div><b>LinkedIn</b><br>linkedin.com/in/chiara-starcich-1a9060357</div>
+</div>
+
+</section></div></main><script>function fit(){document.querySelectorAll('.slot').forEach(function(s){s.style.setProperty('--s',s.clientWidth/1920)})}addEventListener('resize',fit);fit();</script></body></html>
