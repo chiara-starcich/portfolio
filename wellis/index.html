@@ -5154,5 +5154,5 @@ a, button { -webkit-tap-highlight-color: transparent; }
   if(location.hash.indexOf('about')>-1) pre(); else addEventListener('load',function(){ setTimeout(pre,1200); });
   addEventListener('hashchange',function(){ if(location.hash.indexOf('about')>-1) pre(); }); })();
 </script>
-</body>
+<script>(function(){function go(){var pages=document.querySelectorAll('.page[data-route]:not([data-route="home"]):not([data-route="about"]):not([data-route="experience"])');var list=[];pages.forEach(function(pg){pg.querySelectorAll('p,li,figcaption,span,b,strong,em,h4,h5,a,dd,dt,small,div').forEach(function(e){if(e.closest('.opener')||e.closest('.nextp')||e.closest('.projbar'))return;var t=0;for(var n=e.firstChild;n;n=n.nextSibling){if(n.nodeType===3&&n.textContent.trim()){t=1;break}}if(!t)return;var f=parseFloat(getComputedStyle(e).fontSize);if(f&&f<=21)list.push([e,f])})});list.forEach(function(x){x[0].style.setProperty('font-size',(x[1]*1.22).toFixed(1)+'px','important')})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();</script></body>
 </html>
