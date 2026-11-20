@@ -12,3 +12,6 @@
 
 /work/index.html
   Cache-Control: public, max-age=0, must-revalidate
+
+/health/index.html
+  Cache-Control: public, max-age=0, must-revalidate
