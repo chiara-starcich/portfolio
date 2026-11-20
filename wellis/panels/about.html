@@ -209,7 +209,33 @@ div>ul li:before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2
  .slot>.pg{position:absolute;left:0;top:0;transform-origin:0 0;transform:scale(var(--s,.5))}
 }
 @media print{.slot{display:block}}
-html,body{margin:0;overflow:hidden;background:#fff}</style></head><body><main class="deck"><div class="slot"><section class="pg  num">
+html,body{margin:0;overflow:hidden;background:#fff}@media (max-width:760px){
+.slot{aspect-ratio:auto!important;height:auto!important}
+.slot>.pg{position:static!important;transform:none!important;width:auto!important;height:auto!important;padding:44px 20px 36px!important;overflow:visible!important}
+.pg .abs{position:static!important;width:auto!important;height:auto!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;transform:none!important}
+.pg img.abs{display:block;width:72%!important;max-width:320px;margin:0 auto 24px}
+.wcv{grid-template-columns:1fr!important;gap:34px!important}
+.wxp{grid-template-columns:1fr!important;gap:2px!important;margin-bottom:18px!important}
+.wcv h3{font-size:30px!important;margin-bottom:12px!important}
+.wed h4,.wxp h4,.waw h4{font-size:20px!important}
+.wed p,.waw p,.wxp li,.wxp__org{font-size:16px!important}
+.wxp__org b{font-size:19px!important}
+.wsws{grid-template-columns:repeat(4,1fr)!important;gap:16px 10px!important}
+.wcos{grid-template-columns:1fr 1fr!important;gap:10px 20px!important} .wcos li{font-size:16px!important}
+.wab__title{font-size:76px!important;margin-bottom:22px!important}
+.wab__p{font-size:18px!important}
+.wab__contact{grid-template-columns:1fr!important;font-size:17px!important;gap:14px!important;margin-top:24px!important}
+.wct__title{font-size:96px!important;margin-bottom:36px!important;display:block}
+.wct__grid{grid-template-columns:1fr!important;gap:34px!important}
+.wct__n{font-size:72px!important;margin-bottom:4px!important}
+.wct__item b{font-size:36px!important}
+.wct__d{font-size:17px!important}
+.ty__p{font-size:28px!important;margin:30px 0!important}
+.ty__c{flex-direction:column!important;gap:18px!important;font-size:19px!important}
+.ty__walk{display:flex!important;gap:16px!important;margin-top:40px!important;padding:0 6px!important}
+.ty__walk img{height:64px!important}
+.pg h1.wct__title[style]{font-size:96px!important}
+}</style></head><body><main class="deck"><div class="slot"><section class="pg  num">
 <img loading="lazy" decoding="async" class="abs" src="img/about_blob_pink_868.jpg" style="left:230px;top:200px;width:560px">
 <div class="abs" style="left:980px;top:130px;width:800px">
   <h1 class="wab__title">About</h1>
@@ -218,4 +244,4 @@ html,body{margin:0;overflow:hidden;background:#fff}</style></head><body><main cl
   <p class="wab__p">MSc Design for Interaction, TU Delft · BSc Industrial Product Design, Ferrara</p>
   <div class="wab__contact"><p><span class="wab__k">Email</span>starcich.chiara@gmail.com</p><p><span class="wab__k">Phone</span>+39 348 654 5381</p><p><span class="wab__k">LinkedIn</span>linkedin.com/in/chiara-starcich</p></div>
 </div>
-</section></div></main><script>function fit(){var s=document.querySelector('.slot'),k=s.clientWidth/1920;s.style.setProperty('--s',k);if(!document.body.dataset.trim)return;var pg=s.querySelector('.pg'),m=0;pg.querySelectorAll('.abs').forEach(function(e){m=Math.max(m,e.offsetTop+e.offsetHeight)});var H=Math.ceil((m+70)*k);s.style.aspectRatio='auto';s.style.height=H+'px';if(window.frameElement){window.frameElement.style.aspectRatio='auto';window.frameElement.style.height=H+'px'}}addEventListener('resize',fit);addEventListener('load',fit);fit();</script></body></html>
+</section></div></main><script>function fit(){var s=document.querySelector('.slot'),fe=window.frameElement;if(innerWidth<=760){s.style.removeProperty('height');var H=document.documentElement.scrollHeight;if(fe){fe.style.aspectRatio='auto';fe.style.height=H+'px'}return}var k=s.clientWidth/1920;s.style.setProperty('--s',k);if(!document.body.dataset.trim){if(fe){fe.style.removeProperty('height');fe.style.removeProperty('aspect-ratio')}return}var pg=s.querySelector('.pg'),m=0;pg.querySelectorAll('.abs').forEach(function(e){m=Math.max(m,e.offsetTop+e.offsetHeight)});var H=Math.ceil((m+70)*k);s.style.aspectRatio='auto';s.style.height=H+'px';if(fe){fe.style.aspectRatio='auto';fe.style.height=H+'px'}}addEventListener('resize',fit);addEventListener('load',fit);fit();setTimeout(fit,300);</script></body></html>
