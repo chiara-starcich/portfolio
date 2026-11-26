@@ -4097,11 +4097,27 @@ a, button { -webkit-tap-highlight-color: transparent; }
 }
 </style>
 <style>
-#work .wl-grp__h{font:800 clamp(1.6rem,2.6vw,2.4rem)/1 Poppins,var(--font);letter-spacing:-0.02em;color:#fff !important;margin:0 0 clamp(1rem,1.6vw,1.4rem);display:flex;align-items:center;gap:.7rem}
-#work .wl-grp__h::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.35)}
-#work .wl--grp + .wl-grp__h{margin-top:clamp(3rem,5vw,4.5rem)}
+#work .wl-grp__hw{margin:0;border-bottom:1px solid rgba(255,255,255,.35)}
+#work .wl-grp__hw + .wl--grp{margin-top:clamp(.5rem,1vw,1rem)}
+#work .wl--grp + .wl-grp__hw, #work .wl-grp__hw + .wl-grp__hw{margin-top:clamp(.6rem,1.2vw,1rem)}
+#work .wl-grp__h{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:flex;align-items:center;gap:1rem;padding:clamp(1.1rem,2vw,1.8rem) 0;color:#fff !important}
+#work .wl-grp__t{font:800 clamp(2rem,4vw,3.6rem)/1 Poppins,var(--font);letter-spacing:-0.03em;transition:padding .3s ease}
+#work .wl-grp__h:hover .wl-grp__t{padding-left:1rem}
+#work .wl-grp__n{font:600 .82rem/1 var(--font);letter-spacing:.14em;text-transform:uppercase;opacity:.7;margin-left:auto}
+#work .wl-grp__ic{position:relative;width:clamp(2.4rem,3.4vw,3rem);height:clamp(2.4rem,3.4vw,3rem);border:1.5px solid rgba(255,255,255,.7);border-radius:50% !important;flex:none;transition:transform .35s ease,background .25s}
+#work .wl-grp__ic::before,#work .wl-grp__ic::after{content:"";position:absolute;left:50%;top:50%;width:40%;height:2px;background:#fff;transform:translate(-50%,-50%)}
+#work .wl-grp__ic::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .35s ease}
+#work .wl-grp__h[aria-expanded="true"] .wl-grp__ic::after{transform:translate(-50%,-50%) rotate(0deg)}
+#work .wl-grp__h:hover .wl-grp__ic{background:rgba(255,255,255,.15)}
+#work .wl-grp__h:focus-visible{outline:2px solid #fff;outline-offset:4px}
+#work .wl--grp[hidden]{display:none !important}
+#work .wl-grp__hw:has(.wl-grp__h[aria-expanded="true"]){border-bottom-color:transparent}
 @media (min-width:901px){#work .wl--grp > li:nth-child(n){grid-column:span 2 !important}}
-</style></head>
+@media (max-width:600px){#work .wl-grp__n{font-size:.62rem}}
+</style>
+<script>
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.wl-grp__h');if(!b)return;var l=document.getElementById(b.getAttribute('aria-controls'));if(!l)return;var o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);l.hidden=!o;if(o){requestAnimationFrame(function(){requestAnimationFrame(function(){l.querySelectorAll(':scope > li').forEach(function(li){li.classList.add('in')})})})}});
+</script></head>
 <body class="c-yellow">
 <aside class="side-profile" id="sideProfile" aria-label="Profile">
   <div class="sp__pic"><img decoding="async" loading="lazy" src="../images/selfie_pink_s.webp" alt="Chiara Starcich"></div>
@@ -4208,14 +4224,14 @@ a, button { -webkit-tap-highlight-color: transparent; }
     <!-- CONTENT -->
     <section class="contents contents--grid" id="work" aria-label="Content">
       <h2 class="contents__title">Selected work</h2>
-            <h3 class="wl-grp__h">Physical</h3>
-      <ol class="wl wl--grp" aria-label="Physical projects">
+            <h3 class="wl-grp__hw"><button type="button" class="wl-grp__h" aria-expanded="false" aria-controls="grp-physical"><span class="wl-grp__t">Physical</span><span class="wl-grp__n">3 projects</span><span class="wl-grp__ic" aria-hidden="true"></span></button></h3>
+      <ol class="wl wl--grp" id="grp-physical" aria-label="Physical projects" hidden>
         <li><a class="wl__row c-yellow" href="#/unfreeze" data-cursor="Open Unfreeze" data-img="../images/wl_unfreeze.webp" data-cut="1"><span class="wl__num">01.</span><span class="wl__name"><span class="wl__eye">01 · Wearable · Physical</span><b class="wl__t">Unfreeze</b><span class="wl__desc">A running glove that senses panic and helps you call for help</span></span><span class="wl__cat">Wearable · Physical</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_unfreeze.webp" alt="" loading="lazy"></span></a></li>
         <li><a class="wl__row c-sage" href="#/lit" data-cursor="Open LIT" data-img="../images/wl_lit.webp" data-cut="1"><span class="wl__num">02.</span><span class="wl__name"><span class="wl__eye">02 · Tiny house · Product design</span><b class="wl__t">LIT</b><span class="wl__desc">A tiny house on wheels you can live in all year</span></span><span class="wl__cat">Tiny house · Product design</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_lit.webp" alt="" loading="lazy"></span></a></li>
         <li><a class="wl__row c-mint" href="#/doc" data-cursor="Open DOC" data-img="../images/wl_doc.webp" data-cut="1"><span class="wl__num">03.</span><span class="wl__name"><span class="wl__eye">03 · Sight, sound, touch · Product + screen</span><b class="wl__t">DOC</b><span class="wl__desc">A bedside device that explains vitals to ER patients</span></span><span class="wl__cat">Sight, sound, touch · Product + screen</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_doc.webp" alt="" loading="lazy"></span></a></li>
       </ol>
-      <h3 class="wl-grp__h">Digital</h3>
-      <ol class="wl wl--grp" aria-label="Digital projects">
+      <h3 class="wl-grp__hw"><button type="button" class="wl-grp__h" aria-expanded="false" aria-controls="grp-digital"><span class="wl-grp__t">Digital</span><span class="wl-grp__n">3 projects</span><span class="wl-grp__ic" aria-hidden="true"></span></button></h3>
+      <ol class="wl wl--grp" id="grp-digital" aria-label="Digital projects" hidden>
         <li><a class="wl__row c-coral" href="#/unifood" data-cursor="Open Unifood" data-img="../images/wl_unifood.webp" data-cut="1"><span class="wl__num">04.</span><span class="wl__name"><span class="wl__eye">04 · Service · App design</span><b class="wl__t">Unifood</b><span class="wl__desc">A campus lunch delivery service and app</span></span><span class="wl__cat">Service · App design</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_unifood.webp" alt="" loading="lazy"></span></a></li>
         <li><a class="wl__row c-blue" href="#/reliance-toolbox" data-cursor="Open Reliance Toolbox" data-img="../images/wl_reliance-toolbox.webp" data-cut="1"><span class="wl__num">05.</span><span class="wl__name"><span class="wl__eye">05 · Digital tool for experts</span><b class="wl__t">Reliance Toolbox</b><span class="wl__desc">A method and toolbox to study how doctors rely on AI</span></span><span class="wl__cat">Digital tool for experts</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_reliance-toolbox.webp" alt="" loading="lazy"></span></a></li>
         <li><a class="wl__row c-teal" href="#/healthblocks" data-cursor="Open HealthBlocks" data-img="../images/wl_healthblocks.webp" data-cut="1"><span class="wl__num">06.</span><span class="wl__name"><span class="wl__eye">06 · eHealth · App + reward system</span><b class="wl__t">HealthBlocks</b><span class="wl__desc">A walking-challenge app redesigned around community</span></span><span class="wl__cat">eHealth · App + reward system</span><span class="wl__thumb" aria-hidden="true"><img decoding="async" src="../images/wl_healthblocks.webp" alt="" loading="lazy"></span></a></li>
