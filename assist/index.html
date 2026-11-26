@@ -4096,7 +4096,11 @@ a, button { -webkit-tap-highlight-color: transparent; }
   html.js-reveal #work .wl > li { opacity: 1 !important; transform: none !important; }
 }
 </style>
-</head>
+<style id="phonefix">.uf-hero .uf-anim{display:none}
+@media (max-width:900px){.page[data-route="unfreeze"] .opener__media.uf-hero video{display:none !important}
+.page[data-route="unfreeze"] .opener__media.uf-hero .uf-anim{display:block !important;position:absolute;top:3%;left:50%;transform:translateX(-50%);height:94% !important;width:auto !important;max-width:none !important;filter:none !important}
+.opener__media--device img{filter:none !important}}
+@media print{.uf-hero .uf-anim{display:none !important}}</style></head>
 <body class="c-yellow">
 <aside class="side-profile" id="sideProfile" aria-label="Profile">
   <div class="sp__pic"><img decoding="async" loading="lazy" src="../images/selfie_pink_s.webp" alt="Chiara Starcich"></div>

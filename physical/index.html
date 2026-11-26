@@ -4096,7 +4096,11 @@ a, button { -webkit-tap-highlight-color: transparent; }
   html.js-reveal #work .wl > li { opacity: 1 !important; transform: none !important; }
 }
 </style>
-</head>
+<style id="phonefix">.uf-hero .uf-anim{display:none}
+@media (max-width:900px){.page[data-route="unfreeze"] .opener__media.uf-hero video{display:none !important}
+.page[data-route="unfreeze"] .opener__media.uf-hero .uf-anim{display:block !important;position:absolute;top:3%;left:50%;transform:translateX(-50%);height:94% !important;width:auto !important;max-width:none !important;filter:none !important}
+.opener__media--device img{filter:none !important}}
+@media print{.uf-hero .uf-anim{display:none !important}}</style></head>
 <body class="c-yellow">
 <aside class="side-profile" id="sideProfile" aria-label="Profile">
   <div class="sp__pic"><img decoding="async" loading="lazy" src="../images/selfie_pink_s.webp" alt="Chiara Starcich"></div>
@@ -4291,7 +4295,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
         </p>
       </div>
       <figure class="opener__media opener__media--cut uf-hero" data-kind-noted="1">
-      <video preload="none" data-cursor="Watch it move" poster="../images/uf_hero3_poster.webp" muted loop playsinline aria-label="Animation: the open hand closes, presses the yellow button and the glove vibrates"><source src="../images/uf_hero3.webm" type="video/webm; codecs=vp9"><source src="../images/uf_hero3.mp4" type="video/mp4"></video><script>(function(){var ua=navigator.userAgent;if(/Safari/.test(ua)&&!/Chrome|Chromium|Edg|Firefox/.test(ua)){var v=document.currentScript.previousElementSibling;var w=v.querySelector('source[type^="video/webm"]');if(w){w.remove();v.load();}}})();</script>
+      <video preload="none" data-cursor="Watch it move" poster="../images/uf_hero3_poster.webp" muted loop playsinline aria-label="Animation: the open hand closes, presses the yellow button and the glove vibrates"><source src="../images/uf_hero3.webm" type="video/webm; codecs=vp9"><source src="../images/uf_hero3.mp4" type="video/mp4"></video><script>(function(){var ua=navigator.userAgent;if(/Safari/.test(ua)&&!/Chrome|Chromium|Edg|Firefox/.test(ua)){var v=document.currentScript.previousElementSibling;var w=v.querySelector('source[type^="video/webm"]');if(w){w.remove();v.load();}}})();</script><img class="uf-anim" src="../images/uf_hero3_anim.webp" alt="The Unfreeze glove: the hand closes, presses the yellow button and the glove vibrates" decoding="async">
       <img decoding="async" loading="lazy" class="print-poster" src="../images/uf_hero3_press.webp" alt="The Unfreeze glove: the fingers press the yellow button and the glove vibrates">
     </figure>
       <p class="kind-note">Photo, animated</p>
